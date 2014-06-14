@@ -1,0 +1,775 @@
+dt   {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color: #EEEE88;
+     }
+
+td   {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+     }
+
+th   {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+     }
+
+.link
+     {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       text-decoration: underline;
+       color:       #770000;
+     }
+
+.label
+     {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+     }
+
+.text
+     {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+     }
+
+.buttontext
+     {
+       font-family: Courier, Courier New;
+       font-size:   12px;
+       font-weight: normal;
+     }
+
+.header1 {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   9pt;
+       color: #FFFF00;
+     }
+.header2 {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   9pt;
+       color: #FFFFFF;
+     }
+.header3 {
+       font-size: 11pt;
+       color: #cc0000;
+     }
+.header4 {
+       font-size: 9pt;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: bold;
+     }
+.header5 {
+       font-size: 36px
+     }
+
+.normaltext {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+     }
+.normalbluegray {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+       color:  #293F69;
+     }
+.normaldarkblue {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+       color:  #000099;
+     }
+.normalblue {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+       color:  #0000FF;
+     }
+.normalgreen {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+       color:  #009900;
+     }
+.normalyellow {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+       color:  #FFFF00;
+     }
+.normalwhite  {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+       color:  #FFFFFF;
+     }
+.normalred {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+       color:  #CC0000;
+     }
+.normaldarkred {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+       color:  #990000;
+     }
+.normalbold {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+     }
+.normalbluebold {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       color:  #0000FF;
+     }
+.normaldarkbluebold {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       color:  #000099;
+     }
+.normalbluegraybold {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       color:  #293F69;
+     }
+.normalgreenbold {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       color:  #009900;
+     }
+
+.normalyellowbold {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       color:  #FFFF00;
+     }
+.normalwhitebold  {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       color:  #FFFFFF;
+     }
+
+.normalredbold {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       color:  #CC0000;
+     }
+.normaldarkredbold {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       color:  #990000;
+     }
+
+.normaldarkredboldlink {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       text-decoration: none;
+       color:  #990000;
+     }
+
+.bigbold {
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: bold;
+     }
+
+.bigredbold {
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: bold;
+       color:  #CC0000;
+     }
+.bigyellowbold {
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: bold;
+       color:  #FFFF00;
+     }
+.bigwhitebold {
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: bold;
+       color:  #FFFFFF;
+     }
+.bigdarkredbold {
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: bold;
+       color:  #990000;
+     }
+.bigbluebold {
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: bold;
+       color:  #0000FF;
+     }
+.bigbluegraybold {
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: bold;
+       color:  #293F69;
+     }
+.bigdarkbluebold {
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: bold;
+       color:  #000099;
+     }
+
+.hugebold {
+       font-family: Arial, Helvetica;
+       font-size:   20px;
+       font-weight: bold;
+     }
+
+.hugeredbold {
+       font-family: Arial, Helvetica;
+       font-size:   20px;
+       font-weight: bold;
+       color:  #CC0000;
+     }
+.hugeyellowbold {
+       font-family: Arial, Helvetica;
+       font-size:   20px;
+       font-weight: bold;
+       color:  #FFFF00;
+     }
+.hugewhitebold {
+       font-family: Arial, Helvetica;
+       font-size:   20px;
+       font-weight: bold;
+       color:  #FFFFFF;
+     }
+.hugedarkredbold {
+       font-family: Arial, Helvetica;
+       font-size:   20px;
+       font-weight: bold;
+       color:  #990000;
+     }
+.hugebluebold {
+       font-family: Arial, Helvetica;
+       font-size:   20px;
+       font-weight: bold;
+       color:  #0000FF;
+     }
+.hugebluegraybold {
+       font-family: Arial, Helvetica;
+       font-size:   20px;
+       font-weight: bold;
+       color:  #293F69;
+     }
+.hugedarkbluebold {
+       font-family: Arial, Helvetica;
+       font-size:   20px;
+       font-weight: bold;
+       color:  #000099;
+     }
+
+.smalltext {
+       font-family: Arial, Helvetica;
+       font-size:   11px;
+       font-weight: normal;
+       color:  #000000;
+     }
+
+.text10 {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #000000;
+     }
+
+.text11 {
+       font-family: Arial, Helvetica;
+       font-size:   11px;
+       font-weight: normal;
+       color:  #000000;
+     }
+
+.text12 {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color:  #000000;
+     }
+
+.text13 {
+       font-family: Arial, Helvetica;
+       font-size:   13px;
+       font-weight: normal;
+       color:  #000000;
+     }
+
+.text14 {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+       color:  #000000;
+     }
+
+.smallbluegray {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color:  #293F69;
+     }
+.smalldarkblue {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color:  #000099;
+     }
+.smallblue {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color:  #0000FF;
+     }
+.smallgreen {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color:  #009900;
+     }
+.smallyellow {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color:  #FFFF00;
+     }
+.smallwhite  {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color:  #FFFFFF;
+     }
+.smallred {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color:  #CC0000;
+     }
+.smalldarkred {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+       color:  #990000;
+     }
+.smallbold {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #000000;
+     }
+.smallbluebold {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #0000FF;
+     }
+.smallbluegraybold {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #293F69;
+     }
+.smalldarkbluebold {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #000099;
+     }
+.smallgreenbold {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #009900;
+     }
+.smallyellowbold {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #FFFF00;
+     }
+.smallwhitebold {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #FFFFFF;
+     }
+.smallredbold {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #CC0000;
+     }
+.smalldarkredbold {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #990000;
+     }
+
+.tinytext {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+     }
+
+.tinybluegray {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #293F69;
+     }
+.tinydarkblue {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #000099;
+     }
+
+.tinyblue {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #0000FF;
+     }
+.tinygreen {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #009900;
+     }
+.tinyyellow {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #FFFF00;
+     }
+.tinywhite  {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #FFFFFF;
+     }
+.tinyred {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #CC0000;
+     }
+.tinydarkred {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #990000;
+     }
+.tinyblack {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+       color:  #000000;
+     }
+
+.tinyredbold {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: bold;
+       color:  #CC0000;
+     }
+.tinytextbold {
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: bold;
+     }
+
+.spacertiny {
+       font-size:   1px;
+     }
+
+.mspace {
+       font-family: Arial, Helvetica;
+       font-size:   8px;
+       font-weight: normal;
+     }
+
+.spacer {
+       font-family: Arial, Helvetica;
+       font-size:   6px;
+       font-weight: normal;
+     }
+
+.mspacer {
+       font-family: Arial, Helvetica;
+       font-size:   1px;
+       font-weight: normal;
+     }
+
+.spacer0 {
+       font-family: Arial, Helvetica;
+       font-size:   3px;
+       font-weight: normal;
+     }
+
+.spacer1{
+       font-family: Arial, Helvetica;
+       font-size:   8px;
+       font-weight: normal;
+     }
+
+.spacer2{
+       font-family: Arial, Helvetica;
+       font-size:   10px;
+       font-weight: normal;
+     }
+
+.spacer3{
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: normal;
+     }
+
+.spacer4{
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: normal;
+     }
+
+.spacer5{
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: normal;
+     }
+
+.bigbutton
+     {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   11px;
+     }
+
+.button
+     {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   10px;
+     }
+
+.smallbutton
+     {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   9px;
+     }
+
+.tinybutton
+     {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   8px;
+     }
+
+.biggraybutton
+     {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   11px;
+       color:  #969696;
+     }
+
+.graybutton
+     {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   10px;
+       color:  #969696;
+     }
+
+.smallgraybutton
+     {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   9px;
+       color:  #969696;
+     }
+
+.tinygraybutton
+     {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:   8px;
+       color:  #969696;
+     }
+
+.required
+     {
+       font-family: Arial, Helvetica;
+       font-size:   16px;
+       font-weight: bold;
+       color:  #CC0000;
+     }
+
+.error
+     {
+       font-family: Arial, Helvetica;
+       font-size:   12px;
+       font-weight: bold;
+       color:  #AA0000;
+     }
+
+.tinymono {
+       font-family: Courier;
+       font-size:   10px;
+       font-weight: normal;
+     }
+
+
+.smallmono {
+       font-family: Courier;
+       font-size:   12px;
+       font-weight: normal;
+     }
+
+.smallmonobold {
+       font-family: Courier;
+       font-size:   12px;
+       font-weight: bold;
+     }
+
+.normalmono {
+       font-family: Courier;
+       font-size:   14px;
+       font-weight: normal;
+     }
+
+.normalmonobold {
+       font-family: Courier;
+       font-size:   14px;
+       font-weight: bold;
+     }
+
+.category {
+       font-family: Arial, Helvetica;
+       font-size:   14px;
+       font-weight: bold;
+       color:  #FFFFFF;
+     }
+
+
+/*------ Core Colors ------*/
+.red {
+  color: #CC0000;
+}
+.darkred {
+  color: #990000;
+}
+.blue {
+  color: #0000DD;
+}
+.darkblue {
+  color: #0000AA;
+}
+.black {
+  color: #000000;
+}
+.defaultcolor {
+  color: #2C3D4E;
+}
+
+
+/*---------- Bold/Normal ----------*/
+.bold {
+  font-weight: bold;
+}
+.normal {
+  font-weight: normal;
+}
+
+
+/*--------- Core Fonts --------*/
+.arial {
+  font-family: Arial;
+}
+.tahoma {
+  font-family: Tahoma,Verdana,Arial;
+}
+.mono {
+  font-family: Courier;
+}
+
+
+/*-------- Core Sizes ----------*/
+.size1 {
+  font-size: 1px;
+}
+.size2 {
+  font-size: 2px;
+}
+.size3 {
+  font-size: 3px;
+}
+.size4 {
+  font-size: 4px;
+}
+.size5 {
+  font-size: 5px;
+}
+.size6 {
+  font-size: 6px;
+}
+.size7 {
+  font-size: 7px;
+}
+.size8 {
+  font-size: 8px;
+}
+.size9 {
+  font-size: 9px;
+}
+.size10 {
+  font-size: 10px;
+}
+.size11 {
+  font-size: 11px;
+}
+.size12 {
+  font-size: 12px;
+}
+.size13 {
+  font-size: 13px;
+}
+.size14 {
+  font-size: 14px;
+}
+.size15 {
+  font-size: 15px;
+}
+.size16 {
+  font-size: 16px;
+}
+.size17 {
+  font-size: 17px;
+}
+.size18 {
+  font-size: 18px;
+}
+.size19 {
+  font-size: 19px;
+}
+.size20 {
+  font-size: 20px;
+}
+

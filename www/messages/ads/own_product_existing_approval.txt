@@ -1,0 +1,36 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Your ad placement has been approved %firstname%,
+MESSAGE
+Yay %firstname%,
+
+Your request to have your product listed inside PUSHY!'s illustrious list of Affiliate
+Offers has been approved. What's so great about this? Well, every cotton pickin
+PUSHY! member on the planet has the opportunity to select your product from the
+list and advertise it as their own throughout his Network.
+
+
+      Product Name: %product_name%
+
+
+All I can say is, YEE HAW!
+
+Well, actually, I have a little bit more to say. Make sure you maintain your affiliate signup
+URL. Every member who selects your product in the "Affiliate Offers" list on MY Ads
+tab will be asked for their affiliate URL advertising your product. If they don't have one,
+they will be given your affiliate signup page to become an affiliate.
+
+If, for any reason you change your affiliate signup URL, or you close your affiliate
+program, you need to let us know immediately. Fair enough?
+
+Super deal, %firstname%. If you ever have any questions, need any help, just let us know.
+Remember, there's a whole truck load of answers over on the FAQ under the Support
+tab. Or, just submit us your question. Now, let's go Get PUSHY!
+
+     http://pushyads.com
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com

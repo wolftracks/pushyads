@@ -1,0 +1,78 @@
+# Min (0-59) hour (0-23) day (1-31) month (1-12) - - day of week (0-6) 0=sun
+#
+# NOTE: TIMES ARE MST (2 hours)
+#
+MAILTO=tim@webtribune.com
+TZ=America/MST7MDT
+
+
+# ---- Database AND Site Backups ------------------
+10 3 * * * /dat/backup/programs/backup
+# --------------------------------------------
+
+# ---- Remove Web Logs Weekly ------------------
+# 20 3 * * sun rm /www/logs/pushyads/*
+# --------------------------------------------
+
+# ---- ADMIN NOTICES ---------------
+00 0,1,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * * /usr/local/bin/php -q  /home/pushyads/www/cron/misc/admin_notices.php
+
+
+# ---- Member Registry --------------------------------------
+02 0 * * * /usr/local/bin/php -q   /home/pushyads/www/cron/tracker/member_registry.php
+
+# ---- TRACKER PRUNING ---------------
+# --- Daily
+04 0 * * * /usr/local/bin/php -q   /home/pushyads/www/cron/tracker/prune.php daily
+# --- Weekly
+#  06 0 * * sun /usr/local/bin/php -q /home/pushyads/www/cron/tracker/prune.php weekly
+# --- Monthly
+#  08 0 1 * * /usr/local/bin/php -q   /home/pushyads/www/cron/tracker/prune.php monthly
+
+
+
+
+
+
+# ---- Member Credit Tally ------ Must Run Once Weekly Early Sunday
+# --- Weekly
+07 0 * * sun /usr/local/bin/php -q /home/pushyads/www/cron/credits/weekly_credit_tally.php
+
+
+# --- SAMPLE - Batch Order Processor --- PARCEL WORK Across a Period of Time using LIMIT (THE LASTEST EXECUTION MUST BE LIMIT=0)    -----------
+# 15 1,2,3,4 * * * /usr/local/bin/php -q /home/pushyads/www/cron/orders/batch_order_processor.php  LIMIT=8
+# 30 4 * * * /usr/local/bin/php -q /home/pushyads/www/cron/orders/batch_order_processor.php  LIMIT=0
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+
+# ---- Batch Order  Processor -- Must Run Nightly after Midnight  - THIS IS THE LATEST (or ONLY) Execution
+30 4 * * * /usr/local/bin/php -q /home/pushyads/www/cron/orders/batch_order_processor.php  LIMIT=0
+
+
+# ---- Earnings -- DAILY -------------------------------------------------------------------
+30 3 * * * /usr/local/bin/php -q /home/pushyads/www/cron/earnings/daily_earnings.php
+
+# ---- Earnings -- SEMI-MONTHLY PayStub --------------------------------------------------------------
+15 4 1  * * /usr/local/bin/php -q /home/pushyads/www/cron/earnings/semi_monthly_earnings.php
+15 4 16 * * /usr/local/bin/php -q /home/pushyads/www/cron/earnings/semi_monthly_earnings.php
+
+
+
+#==================================================
+
+# ---- Miscellaneous -- MUST RUN DAILY  ------------------------------------------------------------
+# ---- GetResponse - Synchronization ----- MUST RUN AHEAD OF THE ADMIN DAILY TASKS --------
+#--- RETIRED --- 30 1 * * * /usr/local/bin/php -q /home/pushyads/www/cron/misc/getresponse_sync.php
+00 2 * * * /usr/local/bin/php -q /home/pushyads/www/cron/misc/admin_daily.php
+
+# ---- Miscellaneous -- MUST RUN WEEKLY (Sunday AM) ------------------------------------------------
+05 2 * * sun /usr/local/bin/php -q /home/pushyads/www/cron/misc/admin_weekly.php
+
+# ---- Miscellaneous -- MUST RUN SEMI-MONTHLY ------------------------------------------------------
+10 2  1 * * /usr/local/bin/php -q /home/pushyads/www/cron/misc/admin_semimonthly.php
+10 2 16 * * /usr/local/bin/php -q /home/pushyads/www/cron/misc/admin_semimonthly.php
+
+# ---- Miscellaneous -- MUST RUN MONTHLY  ----------------------------------------------------------
+15 2  1 * * /usr/local/bin/php -q /home/pushyads/www/cron/misc/admin_monthly.php
+
+# ---- Miscellaneous -- MUST RUN ANNUALLY ----------------------------------------------------------
+20 2  1 1 * /usr/local/bin/php -q /home/pushyads/www/cron/misc/admin_annual.php

@@ -1,0 +1,52 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Welcome %firstname%
+MESSAGE
+Hi %firstname%,
+
+PUSHY! is ecstatic that you decided to join his very exclusive and ummm, well, his
+"pushy" Network. Yep, everyone here loves PUSHY! and the way he gets so many
+people to take action (which is referred to as conversions). Yep, and he's the king
+of conversion.
+
+OK, enough about PUSHY! Let's talk about YOU.  First of all, here is your signin
+information.  You will want to save this somewhere so you can refer to it later:
+
+     ------------------------------------------------
+     Signin ID (Email):  %signin_id%
+     Signin Password  :  %password%
+     Registration Date:  %submit_date%
+     Your PushyAds Affiliate URL:  %pushy_affiliate_url%
+     ------------------------------------------------
+
+OK, Now let's talk about what YOU need to do in order to get the most out of
+Pushy's Network...
+
+First, you MUST understand something from the get go, %firstname%! PUSHY!'s 
+Network of websites is NOT just another typical, run-of-the mill, me-too, kind of 
+"traffic generation" system. 
+
+If it doesn't generate any more than a yawn from you, while you spend no more 
+than 10 minutes to check it out, then you are shooting yourself in the foot. This 
+is REAL software, that generates REAL traffic, in amounts that will soon astound 
+you. But you MUST spend the time necessary to...
+
+     * Understand it, 
+     * Use it, and 
+     * Create a Network
+
+If you are at all interested in generating more traffic, revenues, and having more 
+fun than a barrel of monkeys doing it, then high tail it into the member's backoffice
+now, using your signin information above. Instructions are waiting for you.
+
+Oh, and before you forget, send your friends and associates to your PUSHY! 
+affiliate URL before someone else does. That's part of building your network, 
+which is going to kickstart the stampede of traffic you are about to get.
+
+Here's to Gettin PUSHY! %firstname%!
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com

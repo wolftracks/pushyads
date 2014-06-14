@@ -1,0 +1,21 @@
+To use GetResponse API 2.x with PHP you need JSONRPCPHP library installed.
+
+LIBRARY SOURCE
+
+    http://jsonrpcphp.org/
+
+INSTALLATION
+
+    1. visit http://jsonrpcphp.org/
+    2. from Download page get JSON-RCP_PHP_light.zip file
+    3. extract jsonrpcphp/includes/jsonRPCClient.php to your project main directory
+
+USAGE
+
+    Remeber to put
+
+        require_once 'jsonRPCClient.php';
+
+    in your script headers.
+
+

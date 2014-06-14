@@ -1,0 +1,51 @@
+--------------------------------------------------------
+DateTime: 2009-12-20 23:21
+REFERER: test/pushy/index4.php
+REFERER_DOMAIN: test
+REFERER_PAGE:   /pushy/index4.php
+REMOTE_ADDR:    127.0.0.1
+-------DEBUG-------
+:WidgetKey: 798364e5acded3d5bdb1e7a3592f8937
+:WidgetDomain: webtribune.com
+-------DEBUG-------
+:WidgetKey: 2ff0bf884d5f568610bbc0a66551fc5d
+:WidgetDomain: pushyads.com
+:WidgetOwner: pushy
+:referer_page: /1342-7zpn
+:temp_aff_id: 1342-7zpn
+-------DEBUG-------
+:WidgetKey: 2ff0bf884d5f568610bbc0a66551fc5d
+:WidgetDomain: pushyads.com
+:WidgetOwner: 1342-7zpn
+:referer_page: /1342-7zpn
+:temp_aff_id: 1342-7zpn
+-------DEBUG-------
+:WidgetKey: 2ff0bf884d5f568610bbc0a66551fc5d
+:WidgetDomain: pushyads.com
+:WidgetOwner: g1341xr
+:referer_page: /1342-7zpn
+:temp_aff_id: 1342-7zpn
+-------DEBUG-------
+:WidgetKey: 2ff0bf884d5f568610bbc0a66551fc5d
+:WidgetDomain: pushyads.com
+:WidgetOwner: g1341xr
+:referer_page: /1342-7zpn
+:temp_aff_id: 1342-7zpn
+-------DEBUG-------
+:WidgetKey: 2ff0bf884d5f568610bbc0a66551fc5d
+:WidgetDomain: pushyads.com
+:WidgetOwner: g1341xr
+:referer_page: /1342-7zpn
+:temp_aff_id: 1342-7zpn
+-------DEBUG-------
+:WidgetKey: 2ff0bf884d5f568610bbc0a66551fc5d
+:WidgetDomain: pushyads.com
+:WidgetOwner: g1341xr
+:referer_page: /1342-7zpn
+:temp_aff_id: 1342-7zpn
+-------DEBUG-------
+:WidgetKey: 2ff0bf884d5f568610bbc0a66551fc5d
+:WidgetDomain: pushyads.com
+:WidgetOwner: g1341xr
+:referer_page: /1342-7zpn
+:temp_aff_id: 1342-7zpn

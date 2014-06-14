@@ -1,0 +1,37 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Important reminder, %firstname%
+MESSAGE
+Hi %firstname%,
+
+Just another reminder to complete your registration at http://pushyads.com. Remember?
+You asked for more information on the new PUSHY Technology.
+
+UNFORTUNATELY, you didn't complete your registration process. I sent you an email
+with the subject heading  a couple days ago that said,
+
+     "%firstname%  Confirm your subscription"
+
+Inside was a confirmation link you need to click on, which will bring you to the Next
+Step in the registration process, before we show you how to generate a lot of viral
+traffic to your website.
+
+If you didn't get that email, go ahead and go back to http://pushyads.com and scroll
+to the bottom of the page and fill out the form again. Look for another email with the
+Subject heading above, then click on the confirmation link.
+
+See you inside %firstname%. I'm looking forward to getting you the information.
+
+All the best,
+
+Mark
+PUSHY!'s right hand man,
+PushyAds.com
+
+
+
+To unsubscribe from this notice, click this link:
+  http://pushyads.com/new_registration_unsubscribe.php?mid=%mid%
+
+
+

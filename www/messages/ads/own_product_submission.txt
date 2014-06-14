@@ -1,0 +1,27 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Confirming your ad submission %firstname%
+MESSAGE
+Re: Your ad %firstname%,
+
+This is to confirm your submission of the following ad to run on the PUSHY! Network. 
+And just so you know, PUSHY! actually does have his team of "real people" review 
+each and every ad ;-)
+
+     Product Name: %product_name%
+     Submission Date: %submit_date%
+
+After reviewing your ad to make sure it passes PUSHY!'s picky but practical list of 
+guidelines for his vast Network of websites, he'll have one of his trained staff send 
+you an email notification. 
+
+     http://pushyads.com
+
+PUSHY! is excited to start sending traffic to your ad, which will begin shortly. Oh, and 
+he's going to do his best to "Get PUSHY!" for you ;-)
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com

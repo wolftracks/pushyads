@@ -1,0 +1,417 @@
+<!-------------------------------- Tool Tips ------------------------------->
+
+<!-------------------------------- REMOVE -------------------------------->
+
+<div ID="HELP-MYADS-REMOVE" style="display: none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Remove This Ad</div>
+            <div>
+
+              <p class="tooltip-paragraph">You may remove an ad from your list at any time.
+                After removing an ad, you will be able to submit a product within <b>My Own Product</b> selection, or add an <b>Affiliate Offer</b> 
+                in the drop down list to replace it.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- EDIT -------------------------------->
+
+<div ID="HELP-MYADS-EDIT" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Edit This Ad</div>
+            <div>
+
+              <p class="tooltip-paragraph">You may make modifications to your ad. 
+
+              <p class="tooltip-paragraph"><b>Affiliate Offer</b> Ad: You can select a different product at any time without approval. Your previous ad 
+                will be taken out of <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> rotation. Your new product ad will enter 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> scrolling ads as soon as possible. 
+
+              <p class="tooltip-paragraph"><b>My Own Product</b> Ad: Any changes to Product Name, Title, or Description, will require approval. The 
+                previous version of your ad will continue running in the <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> Network 
+                until your changes have been approved (within 24 hrs).
+
+              <p class="tooltip-paragraph">You can update your Categories or Product Image without approval or delay.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- AFFILIATE OFFERS & OWN PRODUCTS -------------------------------->
+
+<div ID="HELP-MYADS-101" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Your Own or Affiliate Offers</div>
+            <div>
+
+              <p class="tooltip-paragraph">All <b>Affiliate Offers</b> or <b>Your Own Product</b> ads must link prospects to the landing page
+               of your product, service, offer, or opportunity. When prospects click on your link, they will be redirected to your sales page. 
+
+              <p class="tooltip-paragraph">If you don't have a product, service, or opportunity for 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> to advertise for you, browse through the <b>Affiliate Offers</b> list.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- PRODUCT TITLE -------------------------------->
+
+<div ID="HELP-MYADS-102" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Product Title</div>
+            <div>
+
+              <p class="tooltip-paragraph">This is the title of your ad that describes your product, service, blog, or opportunity that 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> will advertise for you.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- AFFILIATE URL -------------------------------->
+
+<div ID="HELP-MYADS-103" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Affiliate Sales URL</div>
+            <div>
+
+              <p class="tooltip-paragraph">This is the website address of the sales page you want your prospects to land on when clicking on your ad. 
+              <p class="tooltip-paragraph"><b>IMPORTANT:</b> In order to track all the traffic & sales coming from 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">, it is highly recommended that you use a tracking URL, or have 
+                some means of identifying where your sales are coming from.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- PRODUCT DESCRIPTION -------------------------------->
+
+<div ID="HELP-MYADS-104" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Product Description</div>
+            <div>
+
+              <p class="tooltip-paragraph">Describe the features and benefits of your product: 
+              <p class="tooltip-paragraph" style="padding-left:10px"><b>PRO & ELITE members:</b> <br>3 line ad, 60-70 characters, & product image
+              <p class="tooltip-paragraph" style="padding-left:10px"><b>VIP members:</b> <br>2 line ad, 35-45 characters. 
+              <p class="tooltip-paragraph">Makes sure you check your ad for those pesky misspelled words.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- PRODUCT CATEGORY -------------------------------->
+
+<div ID="HELP-MYADS-105" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Product Category</div>
+            <div>
+
+              <p class="tooltip-paragraph">Choose 1-7 categories that best match your product. This is a very important element of your ad, as it 
+               is used to match the audience who are most likely to take advantage of your offer. You can always come back and edit these to 
+               fine tune your ad campaign 
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- PRODUCT IMAGE -------------------------------->
+
+<div ID="HELP-MYADS-106" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Product Image</div>
+            <div>
+
+              <p class="tooltip-paragraph">Your product image size must be between: 
+              <p class="tooltip-paragraph" style="padding-left:10px"><b>50px-800px wide</b>
+              <p class="tooltip-paragraph" style="padding-left:10px"><b>70px-1200px high</b>
+              <p class="tooltip-paragraph"><b>NOTE:</b> Best results will be achieved by uploading an image that has a 74% width to height ratio. 
+                Please see FAQ (Website tab) for more information.
+              <p class="tooltip-paragraph">Upload your image from within a folder on your computer by clicking on the "<b>Browse</b>" button. 
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- PRODUCT NAME -------------------------------->
+
+<div ID="HELP-MYADS-107" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Product Name</div>
+            <div>
+
+              <p class="tooltip-paragraph">This is the name of your product, blog, service, or opportunity. It is distinctly different than the Title of your ad.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- MY PENDING ADS -------------------------------->
+
+<div ID="HELP-MYADS-PENDING" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Pending Ads</div>
+            <div>
+
+              <p class="tooltip-paragraph">When submitting a product ad, using <b>My Own Product/Service</b> submission form, 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> will need to review it to make sure it is properly 
+                 constructed before he can push it through his network of websites. 
+
+              <p class="tooltip-paragraph">Now hold onto your britches! It takes him less than 24 hours, and you will receive an email from him, once he has. 
+                Until then, your ad will appear in Pending status.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- MY APPROVED ADS -------------------------------->
+
+<div ID="HELP-MYADS-APPROVED" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">My Approved Ads</div>
+            <div>
+
+              <p class="tooltip-paragraph">Once <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> approves your ad, it will 
+                appear on this list. You can edit or remove your ad, or depending on your membership level, you can tell 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> where, and how many places you want your ad shown. 
+
+              <p class="tooltip-paragraph">Simply check the box under the "<b>Product Ad Placement</b>" section where you want your product ad to be displayed by 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- XPL-PRODUCT -------------------------------->
+
+<div ID="HELP-MYADS-XPL-PRODUCT" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Affiliate Offer Removal</div>
+            <div>
+
+              <p class="tooltip-paragraph">Products are added to <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">'s 
+                list of products found in the above drop down list by ELITE members who have affiliate products, such as the one you selected. Sometimes, 
+                these ELITE members will either downgrade their accounts or remove their products.
+ 
+              <p class="tooltip-paragraph">This doesn't necessarily mean the product has been taken off the market. It just means that it is no longer available 
+                on <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> 's <b>Affiliate Offer</b> list. 
+
+              <p class="tooltip-paragraph">Don't worry though! It will have no effect on you continuing to promote this product on the network. <b>BE WARNED</b>, 
+                however! if you select a different product, in place of this product, you will not be able to find it again on the <b>Affiliate Offer</b> list. 
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- NO-IMAGE -------------------------------->
+
+<div ID="HELP-MYADS-NO-IMAGE" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">No Image</div>
+            <div>
+
+              <p class="tooltip-paragraph">As a <b>VIP</b>, your ad will not be accompanied by a product image (darn it). If you want a product image with your ad, 
+                along with a bunch of other benefits, including more traffic and exposure for your product, click on the white "<b>Upgrade</b>" link at the top right 
+                corner of this web page. <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> promises you'll be glad you did! 
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+
+<!-------------------------------- UPGRADE -------------------------------->
+
+<div ID="HELP-MYADS-NO-UPGRADE" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Upgrade</div>
+            <div>
+
+              <p class="tooltip-paragraph">Well, what are you waiting for? Upgrade your account so you can start getting an avalanche of traffic to your website. 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> guarantees it!
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>

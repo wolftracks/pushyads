@@ -1,0 +1,89 @@
+mysql> SELECT widget_key, COUNT(*) from tracker_widget_category JOIN member using(member_id) GROUP by widget_key;
++---------------------------------------------------+----------+
+| widget_key                                        | COUNT(*) |
++---------------------------------------------------+----------+
+| 1c781c13d734aded0673e1adf142679f@shp123           |        2 |
+| 29c6c527301b61068c1aa591bc50ea86@webtribune_site  |        2 |
+| 2ff0bf884d5f568610bbc0a66551fc5d@pushy_default    |       10 |
+| 52c33fccfc7bbf2b7dbfc887d84f27b3@jbbblog          |        1 |
+| 68e7d2b4117e94b5326d86dccc8a2fa6@pushytrack1      |        2 |
+| 7b749c99ad4a75d90ec3eb65f08f40c3@your_tracking_id |        2 |
+| b209ded37e42db80a9cb486a0ca15dd8@webbizdailypay   |        1 |
+| d152fc492b96f3da7d0cd529e127a1b4@aboutthecompany  |        2 |
+| d9235fde9aa45e4e241df5b9fd9c8cdb@your_tracking_id |        2 |
+| f2ff5b7d91ba1bac47dc7aa75b15d752@webbizhome       |        1 |
++---------------------------------------------------+----------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT widget_key, COUNT(*) from tracker_widget_category JOIN member using(member_id) WHERE member.refid='cfv1221s' GROUP by widget_key;
++-------------------------------------------------+----------+
+| widget_key                                      | COUNT(*) |
++-------------------------------------------------+----------+
+| 52c33fccfc7bbf2b7dbfc887d84f27b3@jbbblog        |        1 |
+| 68e7d2b4117e94b5326d86dccc8a2fa6@pushytrack1    |        1 |
+| b209ded37e42db80a9cb486a0ca15dd8@webbizdailypay |        1 |
+| f2ff5b7d91ba1bac47dc7aa75b15d752@webbizhome     |        1 |
++-------------------------------------------------+----------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT widget_key, member_id, COUNT(*) from tracker_widget_category JOIN member using(member_id) WHERE member.refid='cfv1221s' GROUP by widget_key, member_id;
++-------------------------------------------------+-----------+----------+
+| widget_key                                      | member_id | COUNT(*) |
++-------------------------------------------------+-----------+----------+
+| 52c33fccfc7bbf2b7dbfc887d84f27b3@jbbblog        | hkd1225   |        1 |
+| 68e7d2b4117e94b5326d86dccc8a2fa6@pushytrack1    | gcw1222p  |        1 |
+| b209ded37e42db80a9cb486a0ca15dd8@webbizdailypay | hkd1225   |        1 |
+| f2ff5b7d91ba1bac47dc7aa75b15d752@webbizhome     | hkd1225   |        1 |
++-------------------------------------------------+-----------+----------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT widget_key, member_id, COUNT(*) from tracker_widget_category JOIN member using(member_id) GROUP by widget_key, member_id;
++---------------------------------------------------+-----------+----------+
+| widget_key                                        | member_id | COUNT(*) |
++---------------------------------------------------+-----------+----------+
+| 1c781c13d734aded0673e1adf142679f@shp123           | cfv1221s  |        2 |
+| 29c6c527301b61068c1aa591bc50ea86@webtribune_site  | paw1200   |        2 |
+| 2ff0bf884d5f568610bbc0a66551fc5d@pushy_default    | cfv1221s  |        2 |
+| 2ff0bf884d5f568610bbc0a66551fc5d@pushy_default    | hfe1201w  |        2 |
+| 2ff0bf884d5f568610bbc0a66551fc5d@pushy_default    | paw1200   |        2 |
+| 2ff0bf884d5f568610bbc0a66551fc5d@pushy_default    | pushy     |        2 |
+| 2ff0bf884d5f568610bbc0a66551fc5d@pushy_default    | y1230vt   |        2 |
+| 52c33fccfc7bbf2b7dbfc887d84f27b3@jbbblog          | hkd1225   |        1 |
+| 68e7d2b4117e94b5326d86dccc8a2fa6@pushytrack1      | cfv1221s  |        1 |
+| 68e7d2b4117e94b5326d86dccc8a2fa6@pushytrack1      | gcw1222p  |        1 |
+| 7b749c99ad4a75d90ec3eb65f08f40c3@your_tracking_id | cfv1221s  |        2 |
+| b209ded37e42db80a9cb486a0ca15dd8@webbizdailypay   | hkd1225   |        1 |
+| d152fc492b96f3da7d0cd529e127a1b4@aboutthecompany  | paw1200   |        2 |
+| d9235fde9aa45e4e241df5b9fd9c8cdb@your_tracking_id | y1230vt   |        2 |
+| f2ff5b7d91ba1bac47dc7aa75b15d752@webbizhome       | hkd1225   |        1 |
++---------------------------------------------------+-----------+----------+
+15 rows in set (0.00 sec)
+
+mysql>
+mysql> SELECT widget_key, member_id, COUNT(*) from tracker_widget_category JOIN member using(member_id) WHERE member_id='cfv1221s' GROUP by widget_key, member_id;
++---------------------------------------------------+-----------+----------+
+| widget_key                                        | member_id | COUNT(*) |
++---------------------------------------------------+-----------+----------+
+| 1c781c13d734aded0673e1adf142679f@shp123           | cfv1221s  |        2 |
+| 2ff0bf884d5f568610bbc0a66551fc5d@pushy_default    | cfv1221s  |        2 |
+| 68e7d2b4117e94b5326d86dccc8a2fa6@pushytrack1      | cfv1221s  |        1 |
+| 7b749c99ad4a75d90ec3eb65f08f40c3@your_tracking_id | cfv1221s  |        2 |
++---------------------------------------------------+-----------+----------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT widget_key, member_id, COUNT(*) from tracker_widget_category JOIN member using(member_id) WHERE member_id='cfv1221s' OR member.refid='cfv1221s' GROUP by widget_key, member_id;
++---------------------------------------------------+-----------+----------+
+| widget_key                                        | member_id | COUNT(*) |
++---------------------------------------------------+-----------+----------+
+| 1c781c13d734aded0673e1adf142679f@shp123           | cfv1221s  |        2 |
+| 2ff0bf884d5f568610bbc0a66551fc5d@pushy_default    | cfv1221s  |        2 |
+| 52c33fccfc7bbf2b7dbfc887d84f27b3@jbbblog          | hkd1225   |        1 |
+| 68e7d2b4117e94b5326d86dccc8a2fa6@pushytrack1      | cfv1221s  |        1 |
+| 68e7d2b4117e94b5326d86dccc8a2fa6@pushytrack1      | gcw1222p  |        1 |
+| 7b749c99ad4a75d90ec3eb65f08f40c3@your_tracking_id | cfv1221s  |        2 |
+| b209ded37e42db80a9cb486a0ca15dd8@webbizdailypay   | hkd1225   |        1 |
+| f2ff5b7d91ba1bac47dc7aa75b15d752@webbizhome       | hkd1225   |        1 |
++---------------------------------------------------+-----------+----------+
+8 rows in set (0.00 sec)
+
+mysql>

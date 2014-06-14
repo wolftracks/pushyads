@@ -1,0 +1,119 @@
+<table align=center width=100% border=0 cellspacing=0 cellpadding=0 style="border: 2px dashed #FFCC00; padding: 20px;" bgcolor=#FFF8DE>
+  <tr>
+    <td>
+
+      <div align=center><span class="red bold size22 tahoma">Awesome <?php echo $firstname?>! Let's Go Get</span>
+        <img src="http://pds1106.s3.amazonaws.com/images/pushy18.png" style="vertical-align: -1px">&#8482
+      </div>
+
+      <p class=largetext>
+        <a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/int/awards_all.flv') title="Video Introduction">
+        <img src="http://pds1106.s3.amazonaws.com/images/v_icon_login.png" width=130 style="float: left; margin: 0 20px 20px 0;"></a>
+
+        So here's the deal! As a <b>VIP</b>, we've given you just enough power and functionality to be dangerous. Really! I'm not kidding! I'm not talking about dangerous in a way
+        that will hurt you. I'm just talking about you having more power than you're used to. Go ahead and watch the video and see what I mean. </p>
+
+      <p align=center class="red text" style="margin-top: 30px"><i><b>Pssssst! HINT! HINT!</b> The <b>Money</b> is in the "<b>My Ads</b>" and "<b>PUSHY</b>" Tabs!</i>
+
+    </td>
+  </tr>
+</table>
+<div align=center><img src="http://pds1106.s3.amazonaws.com/images/shadow.gif" width=600 height=31></div>
+
+
+
+<p align=center style="margin-top: 15px; color: #F09000" class="Impact size30">Scroll down to grab your goodies, <?php echo $firstname?>!
+  <!--input type=button style="width: 190px; height: 40px; vertical-align: middle; margin-left: 20px" class="tahoma size22 bold" value="Goodies Button" onClick=javascript:generic_toggle('GOODIES') -->
+</p>
+
+
+     <blockquote>
+
+        <span class=text><b>IMPORTANT:</b></span> <i>Because we are in Pre-launch, we are still forming joint ventures with prominent Internet marketers who have large & valuable products,
+          which we are adding as bonuses to your membership. We will be adding these products within the next 30 days or sooner.
+
+          <p>Your patience will be rewarded with hundreds of dollars worth of products and services every online business can profit from. We will announce when they are ready soon.</i>
+
+     </blockquote>
+
+
+<table id="GOODIES" style="display: " align=center width=100% class=largetext border=0 cellspacing=0 cellpadding=0>
+
+  <tr height=20><td colspan=2 background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV VIP PRODUCT #1 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://u2pro.bryxen7.hop.clickbank.net" target="_blank"><img src="http://pds1106.s3.amazonaws.com/downloads/article-submit.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Article Submitter</span>
+
+      <p>Download software and start submitting your articles to 85 directories minutes from now. Click on "Article Directory" in Menu on website for FREE version.
+       <a href="http://u2pro.bryxen7.hop.clickbank.net" target="_blank">more info</a>
+
+      <p><a href="http://u2pro.bryxen7.hop.clickbank.net" target="_blank"><img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV VIP PRODUCT #2 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://u2pro.bryxen5.hop.clickbank.net" target="_blank"><img src="http://pds1106.s3.amazonaws.com/downloads/directory-submit.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Directory Submitter</span>
+
+      <p>Download software and start submitting your website to high traffic directories. This will increase your backlinks, Google page rank, and search engine rankings for your websites.
+       <a href="http://u2pro.bryxen5.hop.clickbank.net" target="_blank">more info</a>
+
+      <p><a href="http://u2pro.bryxen5.hop.clickbank.net" target="_blank"><img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV VIP PRODUCT #3 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/article-directories.zip" target="DOWNLOAD_CENTER"><img src="http://pds1106.s3.amazonaws.com/downloads/article-list.gif" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">212 Article Directories</span>
+
+      <p>Download this list of 212 article directories, listing Google page rank (PR), and Alexa ranking. The higher the ranking, the better your site will rank in search engines.
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/article-directories.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-bottom: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+
+</table>
+
+<center><div align=left style="max-width: 710px; margin: 20px 0; padding: 20px; border: 2px solid #FACDCD; background-color: #FAEDED; line-height: 22px;" class="verdana size16">
+
+  <img src="http://pds1106.s3.amazonaws.com/downloads/video-course.jpg" style="float:left; margin: 0 15px 15px 0">
+  <div align=center class="size18 bold" style="margin-bottom:20px"><a href=javascript:membership_plan()>Upgrade Your Membership</a>...</div>
+
+  ...and get "<b>Your Video Course</b>, A Blueprint To Building Your Own Online Business That Will Beat Any Recession", by Ben Hulme (includes "<b>Guide to Article Marketing</b>").
+  Learn how to create articles that rank your websites high in search engines among a ton of other successful gems. In addition to all your other bonuses and member benefits, this
+  video course includes:
+
+    <blockquote>
+    <ul>
+      <li>2 PDF ebooks (on Article & Internet Marketing)
+      <li>10 training videos (over 3 1/2 hours)
+      <li>10 MP3 training audios
+      <li>6 sets of professional graphics and photos
+      <li>Professionally designed html website
+      <li>Professional sales letter for your website
+      <li>Full International Master Resell Rights on all the above
+      </li>
+    </ul>
+    </blockquote>
+
+    <b>All this has a REAL VALUE worth $197.00 (plus $225 in other bonuses)</b>
+
+    <p><a href=javascript:membership_plan()><b>Upgrade</b></a> your membership and get this valuable guide, plus all the training videos, as well as the other bonuses and benefits included
+    in your <b>PRO</b> or <b>ELITE</b> membership <a href=javascript:membership_plan()><b>right now</b></a>.
+
+</div></center>

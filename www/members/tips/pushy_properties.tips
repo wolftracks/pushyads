@@ -1,0 +1,373 @@
+
+<!------------------------------------ PUSHY!'s NICKNAME ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-NICKNAME" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title"><img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px">'s Nickname</div>
+            <div>
+
+              <p class="tooltip-paragraph">Each <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> you configure needs to be identified separately from the other. So give him
+               a name that is associated with the blog, offer, website, page, or business you are creating him for. That way you can 
+               remember where you placed him when coming back to this section to edit or remove him.
+
+              <p class="tooltip-paragraph">The nickname may contain alphabetic characters (A-Z,a-z), numberic characters (0-9) and spaces only.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ WEBSITE DOMAIN ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-DOMAIN" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Website Domain</div>
+            <div>
+
+              <p class="tooltip-paragraph">This is the Domain name of the server you want to Get 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> on. Only the last 2 parts of the domain name are required (mywebsite.com)
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ AUDIENCE INTEREST ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-CATEGORIES" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Audience Interest</div>
+            <div>
+
+              <p class="tooltip-paragraph"><img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> 
+                will display ads matching the interests of your website audience. Choose ONE or TWO categories matching the theme and content 
+                of your website, and which best describe the interests of your website visitors.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ CONFIGURE SIZE ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-SIZE" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title"><img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px">'s Size</div>
+            <div>
+
+              <p class="tooltip-paragraph">Size DOES matter! Measured in pixels, this is the size 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> will appear on your web page. You can place 
+                him in a stationary (<b>Static</b>) spot, or you may want him to <b>Hover</b>.
+
+              <p class="tooltip-paragraph">In either case, we suggest paying close attention to the size of the scrolling ads to make sure they are being
+                displayed large enough so <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> can get the results you expect.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ CONFIGURE POSTURE ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-POSTURE" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title"><img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px">'s Posture</div>
+            <div>
+
+              <p class="tooltip-paragraph">Yep, <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> can just sit still on 
+                your web page (<b>Static</b>), or he can follow your visitors wherever they go (<b>Hover</b>). 
+
+              <p class="tooltip-paragraph">Choose <b>Static</b> if you want <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> 
+                to be fixed in a specific location on your website.
+
+              <p class="tooltip-paragraph">Choose <b>Hover</b> if you want <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> 
+                to be fixed on one of four corners of your visitor's monitor. No matter where they scroll, he will hover in plain view.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ CONFIGURE HOME ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-HOME" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title"><img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px">'s Home</div>
+            <div>
+
+              <p class="tooltip-paragraph">Select one of 4 corners on your monitor where 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px">'s Home will be. This is where he will hover and glide as your 
+                visitors scroll up and down on your web page.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ CONFIGURE MOTION ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-MOTION" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title"><img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px">'s Motions</div>
+            <div>
+
+              <p class="tooltip-paragraph"><img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> can <b>Bounce</b> or 
+                <b>Float</b> across your monitor, and soon perform any number of other acrobatics before landing in his resting place (home) on your web page.
+
+              <p class="tooltip-paragraph">He will begin is travel across your monitor, based on where you have defined his home location,
+                which is where you have placed the line of code we give you.
+
+              <p class="tooltip-paragraph"><b>Bounce:</b> <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> will appear on 
+                the opposite side of your monitor from where home is located, then bounce on the top and bottom of your monitor 3 times before landing home, 
+                where he will transition into his advertising position.
+
+              <p class="tooltip-paragraph"><b>Float:</b> <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> will appear on the 
+                opposite side of your monitor from where home is located, then float across the monitor towards home, where he will transition into his advertising 
+                position.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+
+<!------------------------------------ CONFIGURE TRANSITION ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-TRANSITION" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title"><img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px">'s Transitions</div>
+            <div>
+
+              <p class="tooltip-paragraph"><img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> can make different transitions 
+                just before he starts scrolling ads. If you have selected a Motion for <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px">, 
+                the transition will occur after his audacious entrance across your monitor and afer he reaches his home location. If you have not selected a Motion for 
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px">, he will transition into his home location as soon as your web 
+                page loads.
+
+              <p class="tooltip-paragraph"><b>None:</b> <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> won't make any 
+                of his magical transitions
+
+              <p class="tooltip-paragraph"><b>Zoom:</b> <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> will zoom into 
+                his full size from a small dot just before he begins scrolling ads.
+
+              <p class="tooltip-paragraph"><b>Morph:</b> <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> starts as a round 
+                yellow ball, grows antennae, then tranforms into a TV monitor, all before your eyes.
+
+              <p class="tooltip-paragraph"><b>Fade:</b> <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> slowly (or quickly) 
+                fades into view, as he silently begins to perform his duties (scrolling ads)..
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ CONFIGURE SPEED ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-SPEED" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title"><img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px">'s Speed</div>
+            <div>
+
+              <p class="tooltip-paragraph"><img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> can <b>Bounce</b> or <b>Float</b> as fast or 
+                slow as you want him to. This adjustment will determine the speed at which he travels across your monitor before resting in his home position.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ CONFIGURE WIGGLE ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-WIGGLE" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Make <img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px"> Wiggle</div>
+            <div>
+
+              <p class="tooltip-paragraph">After resting in his Home position, <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> 
+                will wiggle every once in awhile to get the attention of your visitors. His wiggle is subtle, but effective in drawing your visitor's eye to the scrolling 
+                ads, while in his Home position.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ CONFIGURE DELAY ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-DELAY" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Delay <img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px"></div>
+            <div>
+
+              <p class="tooltip-paragraph">If you have a lot of animation, dynamic features, or video on your web page, which would compete for page 
+                load time, you can Delay <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> audacious entrance for up to 10 seconds.
+
+              <p class="tooltip-paragraph">This feature is also useful if you want to capture your visitors attention up to 10 seconds after your page loads (a nice subtle 
+                attention grabber). He'll Get <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> in a way that'll captivate your visitors.
+
+              <p class="tooltip-paragraph"><b>NOTE:</b> This feature is not activated in PREVIEW mode.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!------------------------------------ CONFIGURE PAUSE ------------------------------------>
+
+<div ID="HELP-PUSHY-PROPERTIES-PAUSE" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Pause <img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px"></div>
+            <div>
+
+              <p class="tooltip-paragraph">After <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -2px"> first enters the screen, he can 
+                Pause for a moment, as he taps his toe, and moves his head back and forth during the <b>Bounce</b> Motion, or in his <b>Float</b> Motion, simply wait a moment 
+                before traveling across the screen.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>

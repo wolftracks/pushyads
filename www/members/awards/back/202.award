@@ -1,0 +1,314 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="shortcut icon" href="http://pds1106.s3.amazonaws.com/images/favicon.ico" />
+<LINK type=text/css rel=stylesheet href="http://pushyads.com/local-css/styles.css">
+<LINK type=text/css rel=stylesheet href="http://pushyads.com/local-js/modal/subModal.css">
+</head>
+
+
+
+<table align=center width=100% border=0 cellspacing=0 cellpadding=0 style="border: 2px dashed #FFCC00; padding: 20px;" bgcolor=#FFF8DE>
+  <tr>
+    <td>
+
+      <div align=center><span class="red bold size22 tahoma">Awesome <?php echo $firstname?>! Let's Go Get
+        <img src="http://pds1106.s3.amazonaws.com/images/pushy18.png" style="vertical-align: -1px"></span>&#8482
+      </div>
+
+      <p class=largetext>
+        <a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/int/awards_all.flv') title="Video Introduction">
+        <img src="http://pds1106.s3.amazonaws.com/images/v_icon_login.png" width=130 style="float: left; margin: 0 20px 20px 0;"></a>
+
+        So here's the deal! As a <b>PRO</b>, we've given you enough power and functionality to get really dangerous ...&
+        <img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px"> too. I'm not kidding! Not dangerous in a way that will hurt you. It's just
+        that you now have more power than you're used to. Go ahead and watch the video and see what I mean. </p>
+
+      <p align=center class="red text" style="margin-top: 30px"><i><b>Pssssst! HINT! HINT!</b> The <b>Money</b> is in the "<b>My Ads</b>" and "<b>PUSHY</b>" Tabs!</i>
+
+    </td>
+  </tr>
+</table>
+<div align=center><img src="http://pds1106.s3.amazonaws.com/images/shadow.gif" width=600 height=31></div>
+
+
+
+
+<p align=center style="margin-top: 15px; color: #F09000" class="Impact size30">Scroll down to grab your goodies, <?php echo $firstname?>!
+  <!--input type=button style="width: 190px; height: 40px; vertical-align: middle; margin-left: 20px" class="tahoma size22 bold" value="Goodies Button" onClick=javascript:generic_toggle('GOODIES') -->
+</p>
+
+
+     <blockquote>
+
+        <span class=text><b>IMPORTANT:</b></span> <i>Keep your eyes open for new products. We'll be adding a couple each month</i>
+
+     </blockquote>
+
+
+<table id="GOODIES" style="display: " align=center width=100% class=largetext border=0 cellspacing=0 cellpadding=0>
+
+
+  <tr height=20><td colspan=2 background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV VIP PRODUCT #1 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://u2pro.bryxen7.hop.clickbank.net" target="_blank"><img src="http://pds1106.s3.amazonaws.com/images/article-submit.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Article Submitter</span>
+
+      <p>Download software and start submitting your articles to 85 directories minutes from now. Click on "Article Directory" in Menu on website for FREE version.
+       <a href="http://u2pro.bryxen7.hop.clickbank.net" target="_blank">more info</a>
+
+      <p><a href="http://u2pro.bryxen7.hop.clickbank.net" target="_blank"><img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV VIP PRODUCT #2 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://u2pro.bryxen5.hop.clickbank.net" target="_blank"><img src="http://pds1106.s3.amazonaws.com/images/directory-submit.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Directory Submitter</span>
+
+      <p>Download software and start submitting your website to high traffic directories. This will increase your backlinks, Google page rank, and search engine rankings for your websites.
+       <a href="http://u2pro.bryxen5.hop.clickbank.net" target="_blank">more info</a>
+
+      <p><a href="http://u2pro.bryxen5.hop.clickbank.net" target="_blank"><img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV VIP PRODUCT #3 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/article-directories.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/article-list.gif" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">212 Article Directories</span>
+
+      <p>Download this list of 212 article directories, listing Google page rank (PR), and Alexa ranking. The higher the ranking, the better your site will rank in search engines.
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/article-directories.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ MRR VIDEOS ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td colspan=2 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px; border-right: 1px solid #C7C7C7;">
+
+      <div align=center style="margin-bottom: 25px;"><img src="http://pds1106.s3.amazonaws.com/images/yvc_260.jpg" title="Your Video Course - A BluePrint for Online Success"></div>
+
+      <table align=center width=100% border=0 cellspacing=0 cellpadding=0>
+        <tr height=55>
+          <td colspan=6 align=center valign=top style="padding-right: 20px">
+            <span class="bold Verdana size18 darkred">Your Video Course, a BluePrint for Online Success
+              <br><i class=size12 align=center>(with Master Resale Rights)</i></span>
+
+            <p class=size14 align=left style="margin-bottom: 30px">Just click on a title to start watching the videos. Make sure you watch them in sequence, and have a pen and paper to
+              take notes. You are about to learn essentially everything you need to know to get an online business set up and making money. Over 3 1/2 hours of training.
+          </td>
+        </tr>
+
+        <tr height=75>
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50 valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc1.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #1:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc1.flv') title="Play Video">
+            <span class=size14>Getting Started - Domain Names and Hosting</span></span></a></td>
+
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50  valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc2.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #2:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc2.flv') title="Play Video">
+            <span class=size14>What Software to Build Your Website in</span></span></a></td>
+        </tr>
+
+        <tr height=75>
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50 valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc3.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #3:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc3.flv') title="Play Video">
+            <span class=size14>How to Build Your Website From Scratch</span></span></a></td>
+
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50 valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc4.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #4:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc4.flv') title="Play Video">
+            <span class=size14>Putting Content and Products to Your Website</span></span></a></td>
+        </tr>
+
+        <tr height=75>
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50 valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc5.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #5:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc5.flv') title="Play Video">
+            <span class=size14>How to Create Your Very Own Video for Free</span></span></a></td>
+
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50 valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc6.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #6:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc6.flv') title="Play Video">
+            <span class=size14>How to Put Your Video to Online Video Websites</span></span></a></td>
+        </tr>
+
+        <tr height=75>
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50 valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc7.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #7:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc7.flv') title="Play Video">
+            <span class=size14>How to Accept Payment Online</span></span></a></td>
+
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50 valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc8.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #8:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc8.flv') title="Play Video">
+            <span class=size14>How to Publish Your Website to the Internet</span></span></a></td>
+        </tr>
+
+        <tr height=55>
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50 valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc9.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #9:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc9.flv') title="Play Video">
+            <span class=size14>How to use Clickbank</span></span></a></td>
+
+          <td width=30 valign=top>&nbsp;</td>
+
+          <td width=50 valign=top><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc10.flv') title="Play Video">
+            <img src="http://pds1106.s3.amazonaws.com/images/video2.png"></a></td>
+          <td width=280 valign=top style="padding-right: 20px"><span class="bold Verdana size16 darkred">Video #10:
+            <br><a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/ext/yvc10.flv') title="Play Video">
+            <span class=size14>How to use Facebook to its Full Potential</span></span></a></td>
+        </tr>
+
+        <tr height=90>
+          <td colspan=6 align=center valign=middle padding-right: 20px">
+
+            <table width=88% align=center border=0 cellspacing=0 cellpadding=0>
+              <tr>
+                <td width=11%><a href="http://pds1106.s3.amazonaws.com/downloads/yvc.zip" target="DOWNLOAD_CENTER">
+                    <img src="http://pds1106.s3.amazonaws.com/images/winzip_50.jpg"></a>
+                </td>
+                <td width=89%>
+                    <span class="Verdana size14"><a href="http://pds1106.s3.amazonaws.com/downloads/yvc.zip" target="DOWNLOAD_CENTER"><b>Download</b></a>
+                    Entire "<b>Your Video Course</b>" MRR Package <br><span class="size12 black"> (10 videos, 10 MP3s, 2 PDFs, Reseller Site, Sales Letters, etc (220MB Big File)</span></span>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV PRO PRODUCT #3 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/guide_to_article_marketing.pdf" target="_blank">
+        <img src="http://pds1106.s3.amazonaws.com/images/guide-to-article-marketing.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Guide to Article Marketing
+        <i class=size12>Master Resale Rights</i></span>
+
+      <p>How to maximize your exposure, and make huge profits using article marketing. includes 4 "must haves" and tips to getting your articles read.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/guide_to_article_marketing.pdf" target="_blank">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV PRO PRODUCT #4 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/guide_to_internet_marketing.pdf" target="_blank">
+        <img src="http://pds1106.s3.amazonaws.com/images/guide-to-internet-marketing.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Guide to Internet Marketing
+        <i class=size12>Master Resale Rights</i></span>
+
+      <p>Who, where, what, and how to sell online. Essentially all you need to know about setting up a profitable Internet Marketing business that makes you money.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/guide_to_internet_marketing.pdf" target="_blank">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+
+
+
+
+
+
+
+
+<!------------------------ JV PRO PRODUCT #1 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/bum_marketing_magic.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/bum-marketing-magic.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Bum Marketing Magic
+        <i class=size12>(with PLR rights)</i></span>
+
+      <p>Start making money from scratch using the "Bum Marketing Method" (a dummy proof variation of article marketing) to sell your products through increased traffic.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/bum_marketing_magic.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV PRO PRODUCT #2 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/pagegenerator.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/pagegenerator.gif" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">8 Minute Lead Capture Page Generator</span>
+
+      <p>Simple, fill-in-the-blanks template that creates a lead capture page in html. Just upload to your server and start capturing names and email addresses.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/pagegenerator.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20>
+    <td colspan=2 style="border-right: 1px solid #C7C7C7; border-bottom: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+
+</table>

@@ -1,0 +1,28 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Your widget configuration %firstname%
+MESSAGE
+Way to get PUSHY! %firstname%,
+
+You just configured a new PUSHY! widget in your backoffice. So as a courtesy, we're
+sending you the snippets of code you'll want to put on your website.
+
+-----------------------
+ Instructions
+-----------------------
+
+%code%
+
+-----------------------
+
+What a super fantastic way to add up the Credits for all the traffic you're going to get
+to your PUSHY! widgets. Not to mention how much your website visitors are going to
+fall madly in love you with you, even more so than they already are.
+
+Here's to Getting PUSHY!
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com

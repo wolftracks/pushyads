@@ -1,0 +1,7 @@
+AuthUserFile   /password
+AuthName       "Access Restricted"
+AuthType       Basic
+
+<Limit GET POST PUT>
+require valid-user
+</Limit>

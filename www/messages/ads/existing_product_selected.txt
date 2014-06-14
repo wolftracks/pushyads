@@ -1,0 +1,29 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Confirming your ad selection %firstname%
+MESSAGE
+Great choice %firstname%!
+
+Just confirming your product selection to run on the PUSHY! Network If there is 
+anything incorrect below, please go inside your PUSHY! backoffice under MY ADS 
+tab, and make the necessary updates.
+
+     Product Name: %product_name%
+     Your Affiliate URL: %product_aff_url%     
+     Submission Date: %submit_date%
+
+Also, make sure "Your Affiliate URL" is your correct affiliate website address for the 
+product above. If you are not an affiliate for this product, please go back and click 
+on the EDIT button next to the Product Name inside the MY ADS tab, and apply for 
+an affiliate URL, by clicking on the button provided.
+
+     http://pushyads.com
+
+PUSHY! is excited to start sending traffic to your ad, which will begin shortly. Oh, 
+and he's going to do his best to "Get PUSHY!" for you ;-)
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com

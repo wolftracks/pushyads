@@ -1,0 +1,33 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Your ad placement %firstname%, 
+MESSAGE
+About your ad placement %firstname%,
+
+PUSHY! just wanted to let you know that your request to have your product listed 
+inside his illustrious list of Affiliate Offers has been received. 
+
+     Product Name: %product_name%
+     Affiliate Signup URL: %aff_signup_url%     
+     Submission Date: %submit_date%
+
+PUSHY! actually has real live people looking at ads, just to make sure you don't end up 
+shooting yourself in the foot by a wrong URL, or something else. It usually doesn't take 
+them more than 24 hours, and in most cases, less than that if it's during business hours.
+
+So hold onto your britches. Someone will notify you one way or the other. If you are 
+approved, you can jump and shout. Cuz your product will be seen by every single 
+PUSHY! member on the planet, who goes into MY ADS and looks at the list. Yee Haw!
+
+OK, I've already said too much. Let someone know if you need any other help, or, hey, 
+better yet, check out the FAQ under the Support tab in your backoffice.
+
+     http://pushyads.com
+
+Here's to Gettin PUSHY! %firstname%.
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com

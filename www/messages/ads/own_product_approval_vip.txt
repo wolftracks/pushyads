@@ -1,0 +1,45 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Yay %firstname%, your ad was approved
+MESSAGE
+Great ad %firstname%,
+
+At least PUSHY! thinks so. He just approved your ad listed below.
+
+     Product Name: %product_name%
+     Submission Date: %submit_date%
+
+It will begin to run on the PUSHY! Network very soon, so get ready for some traffic.
+
+You can go into your PUSHY! backoffice under MY ADS at any time to make changes
+to your ad by clicking on the EDIT icon to the right of your product ad name. Updates
+to the following will require PUSHY!'s appoval again, but your ad will continue to run
+in the Network. If changes are approved, then they will take effect immediately.
+
+     Product Name
+     Product Title
+     Product Description
+
+Updates to the following parts of your ad will NOT require approval:
+
+     Categories
+     Product Sales URL
+
+If you want to upload more ads, remember, as an ELITE member, you can submit 4
+ads, along with a product image for each. So, if you've run out of ads to run on the
+Network, either remove an ad, or upgrade your account (by clicking on that white
+"upgrade" link at the top right hand corner of your backoffice)
+
+OK, I better stop, or this is going to turn into a book, and PUSHY! might get mad at
+me for talking too much. If you have any more questions, take a look at the FAQ by
+clicking on the Support tab inside your backoffice.
+
+     http://pushyads.com
+
+Here's to Gettin PUSHY! ;-)
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com

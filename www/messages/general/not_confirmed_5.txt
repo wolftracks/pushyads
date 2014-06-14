@@ -1,0 +1,38 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Did you forget, %firstname%
+MESSAGE
+Hi %firstname%,
+
+Did you forget there was a couple more steps in the signup process? You signed up
+several days ago to get more information about the new PUSHY Technology at
+http://pushyads.com
+
+Remember? This is the stuff that will generate viral targeted traffic, and referral income
+for you.
+
+The best thing to do at this point is to just go back to
+
+     http://pushyads.com
+
+Then scroll to the bottom of the page and fill out the form again.
+
+It will take you through a couple more steps that will get you in the back office where
+you can set up multiple widgets to start generating traffic for your websites, and referral
+income.
+
+See you inside %firstname%. I'm looking forward to getting you the information.
+
+All the best,
+
+Mark
+PUSHY!'s right hand man,
+PushyAds.com
+
+
+
+To unsubscribe from this notice, click this link:
+  http://pushyads.com/new_registration_unsubscribe.php?mid=%mid%
+
+
+

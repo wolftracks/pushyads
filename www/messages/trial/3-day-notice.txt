@@ -1,0 +1,34 @@
+FROMNAME=PushyAds Administration
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=3 day notice %firstname%
+MESSAGE
+Hi %firstname%,
+
+You're just about out of time. There's only 3 more days left on your VIP 
+PUSHY membership before it expires. If it does, your ad will disappear.
+
+As a PRO or ELITE member, you will get so much more exposure with your 
+ad, and the additional bonuses and training are worth more than a year's 
+membership. 
+
+For only $47 or $97 p/mo, you get an additional $422 or $1,271 worth in 
+bonuses with your PRO, or ELITE membership. Just LOGIN to your backoffice 
+and click on MY STUFF
+
+        http://pushyads.com
+
+Look inside "Introduction & Goodies" and scroll to the bottom and look 
+at the long list of valuable products & services you'll get, in addition to 
+the huge exposure you'll get as a PRO or ELITE member.
+
+To upgrade your membership, just just click on the UPGRADE link at the 
+top right corner in your backoffice.
+
+See you inside %firstname%
+
+All the best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com
+

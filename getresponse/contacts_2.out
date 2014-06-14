@@ -1,0 +1,359 @@
+Array
+(
+    [nHHZw] => Array
+        (
+            [email] => brntbush@yahoo.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 15:02:49
+            [name] => Brent Bush
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nHUVd] => Array
+        (
+            [email] => andreap@rightfromtheheart.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 12:33:17
+            [name] => Andrea Pettit
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nH1bi] => Array
+        (
+            [email] => webmaster@getwitit.net
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 13:24:48
+            [name] => Thaddeus Hairston
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nYXEM] => Array
+        (
+            [email] => blinkent@look.ca
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-20 13:59:56
+            [name] => Mark Petty
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nddCJ] => Array
+        (
+            [email] => dianek57@gmail.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-24 11:14:30
+            [name] => Diane Kleinsasser
+            [origin] => www
+            [cycle_day] => 2
+        )
+
+    [nhsCR] => Array
+        (
+            [email] => twitter@gilbertmania.com
+            [campaign] => md1
+            [ip] => 
+            [created_on] => 2009-11-18 14:51:23
+            [name] => You Betcha
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [ndc0m] => Array
+        (
+            [email] => babs.blevins@gmail.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-23 12:56:06
+            [name] => Barbara Blevins
+            [origin] => www
+            [cycle_day] => 2
+        )
+
+    [nYhEl] => Array
+        (
+            [email] => steve@stevewardco.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-21 08:45:51
+            [name] => Steve Ward
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nYTMn] => Array
+        (
+            [email] => adaem@aol.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 20:56:14
+            [name] => Larry Miller
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nHAUt] => Array
+        (
+            [email] => sbrown7557@aol.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 13:50:10
+            [name] => Susie Brown
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nhsCb] => Array
+        (
+            [email] => mark@pushyads.com
+            [campaign] => md1
+            [ip] => 
+            [created_on] => 2009-11-18 14:51:23
+            [name] => Mark Gilbert
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nH9n2] => Array
+        (
+            [email] => david@dhennessypublications.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 05:15:53
+            [name] => David Hennessy
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nhkO2] => Array
+        (
+            [email] => mark@pushyads.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-18 15:03:02
+            [name] => Mark Gilbert
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nhsCY] => Array
+        (
+            [email] => mark@thepowergroup.com
+            [campaign] => md1
+            [ip] => 
+            [created_on] => 2009-11-18 14:51:23
+            [name] => Mark Gilbert
+            [origin] => email
+            [cycle_day] => 
+        )
+
+    [ndGZ3] => Array
+        (
+            [email] => kostrye@aol.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-23 20:33:17
+            [name] => Ken Ostrye
+            [origin] => www
+            [cycle_day] => 2
+        )
+
+    [nRizb] => Array
+        (
+            [email] => admin@u2project.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-24 23:43:14
+            [name] => Mark Gilbert
+            [origin] => www
+            [cycle_day] => 0
+        )
+
+    [nhUmT] => Array
+        (
+            [email] => mark@gilbertmania.com
+            [campaign] => 73q
+            [ip] => 192.220.81.147
+            [created_on] => 2009-11-18 12:20:21
+            [name] => Mark Gilbert
+            [origin] => email
+            [cycle_day] => 
+        )
+
+    [nhUYl] => Array
+        (
+            [email] => twitter@gilbertmania.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-18 12:24:23
+            [name] => You Betcha
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nvESG] => Array
+        (
+            [email] => t_e_a_m@autoprospector.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-17 16:10:22
+            [name] => Ap Team
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nR8k6] => Array
+        (
+            [email] => goodemailme@aol.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-24 15:46:48
+            [name] => Calee Smith
+            [origin] => www
+            [cycle_day] => 2
+        )
+
+    [nYKPL] => Array
+        (
+            [email] => tom@tombauman.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 23:28:04
+            [name] => Tom Bauman
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [pseFx] => Array
+        (
+            [email] => wolfy@webtribune.com
+            [campaign] => md1
+            [ip] => 71.70.248.120
+            [created_on] => 2009-09-17 21:19:18
+            [name] => Kathy Wolf
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nbDg4] => Array
+        (
+            [email] => mikaylaro@gmail.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-23 00:30:04
+            [name] => Mikayla Martinsen
+            [origin] => www
+            [cycle_day] => 2
+        )
+
+    [ndo6R] => Array
+        (
+            [email] => marktrofimov@live.co.uk
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-23 13:54:45
+            [name] => Mark Trofimov
+            [origin] => www
+            [cycle_day] => 2
+        )
+
+    [nhsCd] => Array
+        (
+            [email] => mark@gilbertmania.com
+            [campaign] => md1
+            [ip] => 
+            [created_on] => 2009-11-18 14:51:23
+            [name] => Mark Gilbert
+            [origin] => email
+            [cycle_day] => 
+        )
+
+    [nYn9b] => Array
+        (
+            [email] => bcrain007@gmail.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 20:41:24
+            [name] => Brian Crain
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nYnJQ] => Array
+        (
+            [email] => rumrunner40@sympatico.ca
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 20:34:27
+            [name] => Mike Lapenna
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [psJ1O] => Array
+        (
+            [email] => ditto@webtribune.com
+            [campaign] => 73q
+            [ip] => 71.70.248.120
+            [created_on] => 2009-08-25 13:49:08
+            [name] => Tim Wolf
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nHsXf] => Array
+        (
+            [email] => john@ptmx.net
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-19 17:45:37
+            [name] => John Dillman
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nhEtR] => Array
+        (
+            [email] => digg@gilbertmania.com
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-18 15:11:16
+            [name] => Digg Dog
+            [origin] => www
+            [cycle_day] => 
+        )
+
+    [nhuFP] => Array
+        (
+            [email] => mark@thepowergroup.com
+            [campaign] => 73q
+            [ip] => 161.58.222.123
+            [created_on] => 2009-11-18 00:26:33
+            [name] => Mark Gilbert
+            [origin] => email
+            [cycle_day] => 
+        )
+
+    [ndr7o] => Array
+        (
+            [email] => iainforrest@vodafone.co.nz
+            [campaign] => 73q
+            [ip] => 198.171.234.5
+            [created_on] => 2009-11-23 15:04:27
+            [name] => Iain Forrest
+            [origin] => www
+            [cycle_day] => 2
+        )
+
+)
+
+Warning: fopen(http://api2.getresponse.com): failed to open stream: HTTP request failed! HTTP/1.1 500 Params incorrect: Element 'clicks': Element content is not allowed, because the type definition is simple.
+ in C:\xampp\php\includes\jsonRPCClient.php on line 132
+Unable to connect to http://api2.getresponse.com

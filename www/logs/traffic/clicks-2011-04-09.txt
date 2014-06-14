@@ -1,0 +1,11 @@
+2011-04-09,12:52,127.0.0.1,tracker_pushy_ads,awm1316e,,1372,
+2011-04-09,12:52,127.0.0.1,tracker_ad_category,awm1316e,,1372,114
+2011-04-09,12:52,127.0.0.1,tracker_ad_category,awm1316e,,1372,124
+2011-04-09,12:52,127.0.0.1,tracker_ad_category,awm1316e,,1372,137
+2011-04-09,12:52,127.0.0.1,tracker_pushy_ads,sbv1424d,,1319,
+2011-04-09,12:52,127.0.0.1,tracker_ad_category,sbv1424d,,1319,116
+2011-04-09,12:52,127.0.0.1,tracker_ad_category,sbv1424d,,1319,118
+2011-04-09,12:52,127.0.0.1,tracker_ad_category,sbv1424d,,1319,119
+2011-04-09,12:52,127.0.0.1,tracker_ad_category,sbv1424d,,1319,124
+2011-04-09,12:52,127.0.0.1,tracker_ad_category,sbv1424d,,1319,130
+2011-04-09,12:52,127.0.0.1,tracker_ad_category,sbv1424d,,1319,137

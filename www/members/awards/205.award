@@ -1,0 +1,163 @@
+
+<p align=center style="margin-top: 15px; color: #F09000" class="Impact size30">Scroll down to grab more goodies, <?php echo $firstname?>!
+  <!--input type=button style="width: 190px; height: 40px; vertical-align: middle; margin-left: 20px" class="tahoma size22 bold" value="Goodies Button" onClick=javascript:generic_toggle('GOODIES') -->
+</p>
+
+
+
+     <blockquote>
+
+        <span class=text><b>IMPORTANT:</b></span> <i>Keep your eyes open for new products. We'll be adding a couple each month</i>
+
+     </blockquote>
+
+
+<table id="GOODIES" style="display: " align=center width=100% class=largetext border=0 cellspacing=0 cellpadding=0>
+
+  <tr height=20><td colspan=2 background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV ELITE PRODUCT #1 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://viral-traffic-4u.com/aff/1262" target="_blank">
+        <img src="http://pds1106.s3.amazonaws.com/images/viral-traffic-4u.jpg" height=170></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Viral Traffic 4U
+        <i class=size12>(Lifetime Platinum Membership)</i></span>
+
+      <p>Signup for your free <b>Viral Traffic 4U</b> lifetime Platinum membership and increase the amount of viral traffic you generate to your
+        <img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px"></span>&#8482 affiliate site.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://viral-traffic-4u.com/aff/1262" target="_blank">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV ELITE PRODUCT #2 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/web_audio_plus.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/web-audio-plus.gif" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Web Audio Plus
+        <i class=size12>(with Master Resale Rights)</i></span>
+
+      <p>Add streaming audio to your website without the hassle of monthly fees. Easy to use and install audio buttons and recordings, using your own personal touch.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/web_audio_plus.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV ELITE PRODUCT #3 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/blogbuzz.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/blogbuzz.gif" height=170></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Blog Buzz
+        <i class=size12>(with Master Resale Rights)</i></span>
+
+      <p>Blog finding software helps build backlinks on blogs with high PR and Alexa ranking. Help boost your link building & SEO efforts instantly in any niche.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/blogbuzz.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV ELITE PRODUCT #4 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/plr_voodoo.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/plr-voodoo.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">PLR Voodoo
+        <i class=size12>(with Master Resale Rights)</i></span>
+
+      <p>Learn everything you need to know about Private Label Rights, and how they can make a newbie look like an Internet Marketing guru with very little effort.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/plr_voodoo.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV ELITE PRODUCT #5 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/simple_online_business.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/simple-online-business.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Simple Online Business
+        <i class=size12>(with Master Resale Rights)</i></span>
+
+      <p>A valuable guide to setting up an Internet business, with 92 pages chock full of priceless tips and resources. Worth a month's membership all by itself.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/simple_online_business.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV ELITE PRODUCT #6 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/traffic20.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/traffic20.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Traffic 2.0</span>
+
+      <p>Drive traffic to your website, using next generation techniques. Full of resources, links, illustrations, and Web 2.0 properties that bring eyeballs to your website.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/traffic20.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV ELITE PRODUCT #7 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/triple_your_conversions.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/triple-your-conversions.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Triple Your Conversions
+        <i class=size12>(with PLR rights)</i></span>
+
+      <p>28 ways to skyrocket signups and sales conversions almost overnight. Secret persuasion techniques that will triple your signups, subscriptions, and orders.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/triple_your_conversions.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+<!------------------------ JV ELITE PRODUCT #8 ------------------------->
+  <tr height=33><td colspan=2 style="border-right: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/topbar2.png>&nbsp;</td></tr>
+
+  <tr>
+    <td width=180 valign=top style="border-left: 1px solid #C7C7C7; padding-left: 20px">
+      <a href="http://pds1106.s3.amazonaws.com/downloads/tube_traffic_tactics.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/tube-traffic-tactics.jpg" height=150></a></td>
+    <td width=530 valign=top style="border-right: 1px solid #C7C7C7; padding-right: 20px"><span class="bold Verdana size18 darkred">Tube Traffic Tactics</span>
+
+      <p>Learn a host of techniques for harnessing a piece of Youtube's 75 million visitors a month. You'll be amazed at the simplicity and speed that even newbies can perform.
+       <!----- a href="javascript:void(0)">more info</a ----->
+
+      <p><a href="http://pds1106.s3.amazonaws.com/downloads/tube_traffic_tactics.zip" target="DOWNLOAD_CENTER">
+        <img src="http://pds1106.s3.amazonaws.com/images/download-now_150w.png"></a></td>
+  </tr>
+
+  <tr height=20>
+    <td colspan=2 style="border-right: 1px solid #C7C7C7; border-bottom: 1px solid #C7C7C7; border-left: 1px solid #C7C7C7" background=http://pds1106.s3.amazonaws.com/images/gradient-gray.gif>&nbsp;</td></tr>
+
+</table>
+

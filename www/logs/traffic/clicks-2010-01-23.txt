@@ -1,0 +1,13 @@
+2010-01-23,01:25,83.163.33.156,tracker_pushy_widget,a1312hf,d4d2a17fceefadf98cbf66272d7a13ab@traffic,,
+2010-01-23,01:25,83.163.33.156,tracker_widget_category,a1312hf,d4d2a17fceefadf98cbf66272d7a13ab@traffic,,101
+2010-01-23,08:30,117.200.73.160,tracker_pushy_ads,g1341xr,,1288,
+2010-01-23,08:30,117.200.73.160,tracker_ad_category,g1341xr,,1288,101
+2010-01-23,08:30,117.200.73.160,tracker_ad_category,g1341xr,,1288,108
+2010-01-23,08:30,117.200.73.160,tracker_ad_category,g1341xr,,1288,130
+2010-01-23,08:30,117.200.73.160,tracker_ad_category,g1341xr,,1288,138
+2010-01-23,08:30,117.200.73.160,tracker_ad_category,g1341xr,,1288,139
+2010-01-23,08:30,117.200.73.160,tracker_ad_category,g1341xr,,1288,145
+2010-01-23,22:15,98.246.161.80,tracker_elite_bar,awm1316e,,1278,
+2010-01-23,22:15,98.246.161.80,tracker_elite_bar,g1341xr,,1288,
+2010-01-23,23:40,72.181.194.29,tracker_pushy_ads,awm1316e,,1278,
+2010-01-23,23:40,72.181.194.29,tracker_ad_category,awm1316e,,1278,108

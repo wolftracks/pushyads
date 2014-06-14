@@ -1,0 +1,48 @@
+
+<table align=center width=100% border=0 cellspacing=0 cellpadding=0 style="border: 2px solid #D3E2F2; padding: 20px; " bgcolor=#F5FAFF>
+  <tr>
+    <td>
+
+      <div align=center style="padding-top: 8px"><span class="red bold size20 tahoma">You got BIG
+        <img src="http://pds1106.s3.amazonaws.com/images/pushy18.png" style="vertical-align: -1px"></span>&#8482 <span class="red bold size22 tahoma">power
+        now <?php echo $firstname?></span>
+      </div>
+
+      <div align=center style="float:right; margin-top: -49px;">
+        <input type=button style="width: 80px;" class="arial size12" value="open/close" onClick=javascript:generic_toggle('ELITE')>
+      </div>
+
+      <div id="ELITE">
+      <p class=largetext>
+        <a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/int/awards_pro_elite.flv') title="Watch ELITE Upgrade Introduction">
+        <img src="http://pds1106.s3.amazonaws.com/images/v_icon_upgrade.png" width=130 style="float: left; margin: 0 20px 20px 0;"></a>
+
+        So with all your super sophisitcation and savvy smarts as an <b>ELITE</b> member, I'm sure you're straining at the bit and raring to go. So let's get
+        started. After watching this video for ELITE members, make sure you understand all the advantages you have over all other members by
+        <a href="javascript:openPopup('/members/popup.php?tp=pop-compare&sid=<?php echo $sid?>&mid=<?php echo $mid?>',630,700,true)">clicking here</a>. Hover over
+        all the question marks for more information on each benefit.
+
+      <p class=largetext>Here are some things you want to do in order to increase the value of your <b>ELITE</b> membership:</p>
+
+        <ul class=text style="line-height: 18px">
+          <li style="padding-bottom: 12px">Go into <b>My Ads</b> and submit all 4 ads for your products, service, blog or opportunity, and make sure your Product Ad Placements
+            are selected for the Network.... oh, and then get ready for all the traffic to your website.
+
+          <li style="padding-bottom: 12px">Help your direct referrals <b>Get</b>
+            <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">&#8482 on their website (the more widgets your referrals
+            have on their websites, the more traffic you will get, earning you Credits, which means more <b>Viral Traffic</b> for your ads)</li>
+
+          <li style="padding-bottom: 12px">Recruit more members (remember, you qualify for the <b>INFINITY</b> bonus now, and this is.... well, it's HUGE. Like, it could even
+            turn into a your retirement, or maybe that yacht you've had your eyes on :)&nbsp; OK, all kidding aside... it's <b>BIG</b>!</li>
+
+          <li style="padding-bottom: 12px">Remember, <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">'s <b>Viral Traffic</b> secret
+            starts with getting him on as many web pages on as many websites as you can - click on the <b>PUSHY</b> tab above to get the unstoppable surge of traffic moving.
+
+          <li>Watch the <b>Taining Videos</b> by clicking on the button above. Ya, I know, you've already watched 'em. Well, do it again! Repetition if the mother of all learning :)
+        </ul>
+      </div>
+
+    </td>
+  </tr>
+</table>
+

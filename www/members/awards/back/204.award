@@ -1,0 +1,47 @@
+
+<table align=center width=100% border=0 cellspacing=0 cellpadding=0 style="border: 2px solid #D0EDCC; padding: 20px;" bgcolor=#F9FFF7>
+  <tr>
+    <td>
+
+      <div align=center style="padding-top: 8px"><span class="red bold size20 tahoma">You just got more </span>
+        <img src="http://pds1106.s3.amazonaws.com/images/pushy18.png" style="vertical-align: -1px">&#8482 <span class="red bold size22 tahoma">power
+        <?php echo $firstname?></span>
+      </div>
+
+      <div align=center style="float:right; margin-top: -49px;">
+        <input type=button style="width: 80px;" class="arial size12" value="open/close" onClick=javascript:generic_toggle('PRO')>
+      </div>
+
+      <div id="PRO">
+      <p class=largetext>
+        <a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/int/awards_pro_elite.flv') title="Watch PRO Upgrade Introduction"">
+        <img src="http://pds1106.s3.amazonaws.com/images/v_icon_upgrade.png" width=130 style="float: left; margin: 0 20px 20px 0;"></a>
+
+        OK, so I know you're anxious to use all your extra horse power as a <b>PRO!</b> And believe me, you have more bang for your buck than a team
+        of wild horses! So make sure you understand all the advantages you have over being just a VIP member, by
+        <a href="javascript:openPopup('/members/popup.php?tp=pop-compare&sid=<?php echo $sid?>&mid=<?php echo $mid?>',630,700,true)">clicking here</a> ...and be
+        sure to hover over all the question marks.
+
+      <p class=largetext>Here are some things you want to do in order to increase the value of your <b>PRO</b> membership:</p>
+
+        <ul class=text style="line-height: 18px">
+          <li style="padding-bottom: 12px">Encourage your direct referrals to <b>Get</b>
+            <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">&#8482 on their website (remember, the more widgets your referrals
+            have on their websites, the more traffic you will get to your ad, which will earn you more Credits, which means more <b>Viral Traffic</b> for you)</li>
+
+          <li style="padding-bottom: 12px">Recruit more members (you'll earn almost twice as much as you did as a <b>VIP</b></li>
+
+          <li style="padding-bottom: 12px">Make sure you check your ad, and product image, to insure it is updated with the strongest pulling title, description, and image
+            (<b>My Ads</b> tab above). If you had a <b>VIP</b> ad, you need to resubmit a new one with an image, as a <b>PRO</b> member.</li>
+
+          <li><b>Get</b> <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">&#8482 on as many web pages on as many websites
+            as you can ...<img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">'s <b>Viral Traffic</b> secret - click on the <b>PUSHY</b>
+            tab above to take advantage of it.
+        </ul>
+      </div>
+
+    </td>
+  </tr>
+</table>
+
+

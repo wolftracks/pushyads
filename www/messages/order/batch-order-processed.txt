@@ -1,0 +1,43 @@
+FROMNAME=PushyAds Administration
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Receipt for your Monthly PUSHY Membership %firstname%
+MESSAGE
+Hi %firstname%,
+
+Thank you for renewing your PushyAds membership. Here's your receipt, 
+which you can also see inside your PUSHY! backoffice under your Status 
+Report.
+
+Make a note that your credit card statement will show the charge from: 
+
+     AutoProspector 
+
+-------------------------------------------------
+DATE             : %date%
+TIME             : %time%
+PRODUCT          : %product%
+INVOICE          : %invoice%
+PURCHASE AMOUNT  : $ %amount%
+-------------------------------------------------
+
+Please save this email, for future reference!
+
+To upgrade or downgrade your membership, simply signin to  your backoffice 
+at:
+
+        http://pushyads.com
+
+Click on the "Upgrade" link on the top right hand corner of the page after 
+logging in.
+
+To find out how to get the most out of your PushyAds membership, watch 
+the training videos, under the MY STUFF tab inside your PUSHY backoffice.
+
+Here's to gettin PUSHY!
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+
+PushyAds.com

@@ -1,0 +1,58 @@
+FROMNAME=PushyAds Administration
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Failed Subscription Renewal - Your Immediate Attention Required
+MESSAGE
+Hi %firstname%,
+
+Our attempt to Chrarge Your MONTHLY Subscription Renewal Fee,
+due on %due_date%, has FAILED for the following reason.
+
+-----------------------------------------------------------------------
+DATE             : %date%
+TIME             : %time%
+PRODUCT          : %product%
+CREDIT CARD      : %ccard%
+CARD EXPIRATION  : %ccexp%
+PURCHASE AMOUNT  : $ %amount%
+-----------------------------------------------------------------------
+REASON FOR FAILURE:
+  %reason%
+-----------------------------------------------------------------------
+
+If you need to update your credit card number or card expiration date,
+please do the following:
+
+     1. Sign in to your back office at http://pushyads.com
+     2. Click on the REPORTS tab
+     3. Click the STATUS tab on the REPORTS page.
+     4. Make sure your Credit Card Information is entered correctly in
+        the Section titled: Purchase Information
+
+We will retry this charge for up to a total of 5 days.
+
+Our final attempt will occur on %last_attempt%.
+
+But here's the REALLY BAD NEWS %firstname%!
+
+After the 5th attempt to charge your credit card, if it is unsuccessful,
+your account will be downgraded to VIP and your ad privileges will be
+lost.
+
+WORSE THAN THAT, the system will delete all of your ads. So when you
+upgrade later, you'll need to set them up all over again. Additionally,
+all the viral activity you laid the foundation for will be lost.
+
+So, it's extremely important that you do whatever you need to do in
+order to resolve the matter with your bank as soon as you can.
+
+     http://pushyads.com
+
+Please handle this matter as quickly as possible, %firstname%, so we
+can make sure that your account and your business activities resume
+without interruption.
+
+Please let us know if you have any questions or concerns.
+
+Best Regards,
+PushyAds Administration
+

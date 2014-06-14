@@ -1,0 +1,62 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Generator" content="Kate, the KDE Advanced Text Editor" />
+<title>php_get_contact.php</title>
+</head>
+<body>
+<pre>
+<span style="font-weight: bold;color: #000000;">&lt;?php</span>
+
+<span style="font-style: italic;color: #808080;"># JSON-RPC module is required</span>
+<span style="font-style: italic;color: #808080;"># check 'Getting started with PHP' page in API documentation</span>
+<span style="color: #a1a100;">require_once</span><span style="color: #000000;"> </span><span style="color: #dd0000;">'jsonRPCClient.php'</span><span style="color: #000000;">;</span>
+
+<span style="font-style: italic;color: #808080;"># your API key</span>
+<span style="font-style: italic;color: #808080;"># check 'How to get API key' page in API documentation</span>
+<span style="color: #5555ff;">$api_key</span><span style="color: #000000;"> = </span><span style="color: #dd0000;">'ENTER_YOUR_API_KEY_HERE'</span><span style="color: #000000;">;</span>
+
+<span style="font-style: italic;color: #808080;"># API 2.x URL</span>
+<span style="color: #5555ff;">$api_url</span><span style="color: #000000;"> = </span><span style="color: #dd0000;">'http://api2.getresponse.com'</span><span style="color: #000000;">;</span>
+
+<span style="font-style: italic;color: #808080;"># initialize JSON-RPC client</span>
+<span style="color: #5555ff;">$client</span><span style="color: #000000;"> = </span><span style="font-weight: bold;color: #000000;">new</span><span style="color: #000000;"> jsonRPCClient(</span><span style="color: #5555ff;">$api_url</span><span style="color: #000000;">);</span>
+
+<span style="color: #5555ff;">$result</span><span style="color: #000000;"> = </span><span style="font-weight: bold;color: #000000;">NULL</span><span style="color: #000000;">;</span>
+
+<span style="font-weight: bold;color: #000000;">try</span><span style="color: #000000;"> {</span>
+<span style="color: #000000;">    </span><span style="font-style: italic;color: #808080;"># call method 'get_contact' and get result</span>
+<span style="color: #000000;">    </span><span style="color: #5555ff;">$conditions</span><span style="color: #000000;"> = </span><span style="color: #000080;">Array</span><span style="color: #000000;">(</span>
+<span style="color: #000000;">        </span><span style="color: #dd0000;">'contact'</span><span style="color: #000000;"> =&gt; </span><span style="color: #dd0000;">'b92ef'</span>
+<span style="color: #000000;">    );</span>
+<span style="color: #000000;">    </span><span style="color: #5555ff;">$result</span><span style="color: #000000;"> = </span><span style="color: #5555ff;">$client</span><span style="color: #000000;">-&gt;get_contact(</span><span style="color: #5555ff;">$api_key</span><span style="color: #000000;">, </span><span style="color: #5555ff;">$conditions</span><span style="color: #000000;">);</span>
+<span style="color: #000000;">}</span>
+<span style="font-weight: bold;color: #000000;">catch</span><span style="color: #000000;"> (Exception </span><span style="color: #5555ff;">$e</span><span style="color: #000000;">) {</span>
+<span style="color: #000000;">    </span><span style="font-style: italic;color: #808080;"># check for communication and response errors</span>
+<span style="color: #000000;">    </span><span style="font-style: italic;color: #808080;"># implement handling if needed</span>
+<span style="color: #000000;">    </span><span style="color: #000080;">die</span><span style="color: #000000;">(</span><span style="color: #5555ff;">$e</span><span style="color: #000000;">-&gt;getMessage());</span>
+<span style="color: #000000;">}</span>
+
+<span style="font-style: italic;color: #808080;"># display result</span>
+<span style="font-style: italic;color: #808080;">#</span>
+<span style="font-style: italic;color: #808080;">#     Array</span>
+<span style="font-style: italic;color: #808080;">#     (</span>
+<span style="font-style: italic;color: #808080;">#         [b92ef] =&gt; Array</span>
+<span style="font-style: italic;color: #808080;">#             (</span>
+<span style="font-style: italic;color: #808080;">#                 [email] =&gt; sample1@emailadddress.com</span>
+<span style="font-style: italic;color: #808080;">#                 [campaign] =&gt; 7CT</span>
+<span style="font-style: italic;color: #808080;">#                 [ip] =&gt; 1.1.1.1</span>
+<span style="font-style: italic;color: #808080;">#                 [created_on] =&gt; 2009-01-01 00:00:00</span>
+<span style="font-style: italic;color: #808080;">#                 [name] =&gt; Sample Name</span>
+<span style="font-style: italic;color: #808080;">#                 [origin] =&gt; panel</span>
+<span style="font-style: italic;color: #808080;">#                 [cycle_day] =&gt; 2</span>
+<span style="font-style: italic;color: #808080;">#             )</span>
+<span style="font-style: italic;color: #808080;">#</span>
+<span style="font-style: italic;color: #808080;">#     )</span>
+<span style="font-style: italic;color: #808080;">#</span>
+<span style="color: #000080;">print_r</span><span style="color: #000000;">(</span><span style="color: #5555ff;">$result</span><span style="color: #000000;">);</span>
+
+<span style="font-weight: bold;color: #000000;">?&gt;</span></pre></body>
+</html>

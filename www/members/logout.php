@@ -1,0 +1,3 @@
+<?php
+  closeSession($db,$sid);
+?>

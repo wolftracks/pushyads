@@ -1,0 +1,1381 @@
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO,MYSQL323' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+DROP TABLE IF EXISTS activity;
+CREATE TABLE activity (
+  `date` varchar(10) default '',
+  visits int(11) NOT NULL default '0',
+  signups int(11) NOT NULL default '0',
+  neworders_pro int(11) NOT NULL default '0',
+  upgrades_pro int(11) NOT NULL default '0',
+  renewals_pro int(11) NOT NULL default '0',
+  neworders_elite int(11) NOT NULL default '0',
+  upgrades_elite int(11) NOT NULL default '0',
+  renewals_elite int(11) NOT NULL default '0'
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS ads;
+CREATE TABLE ads (
+  ad_id bigint(20) NOT NULL auto_increment,
+  date_created varchar(10) default '',
+  last_modified varchar(10) default '',
+  member_id varchar(20) default '',
+  pushy_network int(11) NOT NULL default '0',
+  elite_bar int(11) NOT NULL default '0',
+  elite_pool int(11) NOT NULL default '0',
+  product_list int(11) NOT NULL default '0',
+  reseller_listing int(11) NOT NULL default '0',
+  product_id bigint(20) NOT NULL default '0',
+  product_url varchar(64) default '',
+  affiliate_signup_url varchar(64) default '',
+  lastview_pushy bigint(20) NOT NULL default '0',
+  lastview_elitebar bigint(20) NOT NULL default '0',
+  existing_products_requested int(11) NOT NULL default '0',
+  UNIQUE KEY ad_id (ad_id)
+) TYPE=MyISAM AUTO_INCREMENT=1274;
+
+INSERT INTO ads VALUES (1242,'2009-11-19','2009-11-19','wef1232b',1,1,1,0,1,1222,'http://bigdogleads.apr52.com','',1262418266249704,1262502744158139,0);
+INSERT INTO ads VALUES (1213,'2009-11-12','2009-11-12','hfe1201w',0,0,0,0,0,1213,'http://pushyads.com/123','http://pushyads.com/',1258071276211839,1258657465322889,1);
+INSERT INTO ads VALUES (1252,'2009-11-20','2009-11-20','frg1223',0,0,0,0,1,1211,'http://www.affiliatemoney.ws/go/imking/get_tt','',0,1258757366791699,0);
+INSERT INTO ads VALUES (1215,'2009-11-12','2009-11-12','hfe1201w',1,1,1,0,0,1215,'http://pushyads.com/1202-m1dm','',1261890838173261,1262502864152968,0);
+INSERT INTO ads VALUES (1217,'2009-11-15','2009-11-15','hdn1208',0,0,0,0,0,1217,'http://cbs.com','http://autoprospector.com',0,0,1);
+INSERT INTO ads VALUES (1253,'2009-11-20','2009-11-20','frg1223',1,0,1,1,0,1238,'http://www.affiliatemoney.ws/go/imking/get_tt','http://www.affiliatemoney.ws/affiliates.php',1262418959735825,1262502744158139,1);
+INSERT INTO ads VALUES (1223,'2009-11-16','2009-11-19','hdn1208',1,1,1,1,0,1222,'http://pushy.apr52.com','http://pushy.apr52.com/affiliates',1262418959712341,1262502624159899,1);
+INSERT INTO ads VALUES (1221,'2009-11-15','2009-11-15','hdn1208',0,0,0,0,0,1221,'http://abc.com','http://cbs.com',0,0,1);
+INSERT INTO ads VALUES (1227,'2009-11-17','2009-11-17','mbr1217',0,0,0,0,0,1224,'http://google.com','http://autoprospector.com/service',0,0,1);
+INSERT INTO ads VALUES (1229,'2009-11-17','2009-11-17','mbr1217',0,0,0,0,0,1226,'http://cnn.com','',0,0,0);
+INSERT INTO ads VALUES (1230,'2009-11-17','2009-11-17','mbr1217',0,0,0,0,1,1214,'http://msn.com','',0,0,0);
+INSERT INTO ads VALUES (1256,'2009-11-21','2009-11-21','wef1232b',0,0,0,0,1,1211,'http://pushyads.com/1233-','',0,0,0);
+INSERT INTO ads VALUES (1232,'2009-11-19','2009-11-19','gcw1222p',1,0,0,0,0,1228,'http://www.andreapettit.net','',0,0,0);
+INSERT INTO ads VALUES (1233,'2009-11-19','2009-11-19','gcw1222p',0,1,1,0,0,1229,'http://www.rightfromtheheart.biz','',1262418959733306,1262502864156018,0);
+INSERT INTO ads VALUES (1234,'2009-11-19','2009-11-19','hkd1225',0,1,0,0,0,1230,'http://webbizmarket.com/blogomator','',1259425143013572,1259447063117758,0);
+INSERT INTO ads VALUES (1235,'2009-11-19','2009-11-19','x1229pd',1,0,0,0,1,1222,'http://zappacosta.apr52.com/affiliate','',0,0,0);
+INSERT INTO ads VALUES (1251,'2009-11-20','2009-11-20','frg1223',0,1,0,0,1,1222,'http://getwitit.apr52.com','',0,1258756103010220,0);
+INSERT INTO ads VALUES (1236,'2009-11-19','2009-11-19','x1229pd',0,0,0,0,0,1231,'http://www.tvi10kexplosion.com','',0,0,0);
+INSERT INTO ads VALUES (1237,'2009-11-19','2009-11-19','x1229pd',0,0,1,0,1,1223,'http://zappacosta.apr52.com','',1261890838130692,1262502744158139,0);
+INSERT INTO ads VALUES (1238,'2009-11-19','2009-11-19','x1229pd',0,0,0,0,0,1232,'http://www.recessionproofwealth.us','',0,0,0);
+INSERT INTO ads VALUES (1239,'2009-11-19','2009-11-19','dht1227c',0,0,0,0,1,1222,'http://watchdogleads.apr52.com/affiliates','',0,1258703640710060,0);
+INSERT INTO ads VALUES (1240,'2009-11-19','2009-11-19','dht1227c',0,0,0,0,1,1223,'http://watchdogleads.apr52.com','',0,1258704900906200,0);
+INSERT INTO ads VALUES (1244,'2009-11-20','2009-11-20','dht1227c',0,0,0,0,1,1211,'http://pushyads.com/1228-m9nj','',0,1258760084466864,0);
+INSERT INTO ads VALUES (1245,'2009-11-20','2009-11-20','d1233cw',1,1,0,0,1,1222,'http://markpetty.apr52.com','',0,0,0);
+INSERT INTO ads VALUES (1246,'2009-11-20','2009-11-20','d1233cw',0,0,0,0,0,1234,'http://www.millioncashplan.com','',0,0,0);
+INSERT INTO ads VALUES (1247,'2009-11-20','2009-11-20','d1233cw',0,0,0,0,0,1235,'http://www.realcashfreedom.com','',0,0,0);
+INSERT INTO ads VALUES (1248,'2009-11-20','2009-11-20','d1233cw',0,0,1,0,1,1211,'http://pushyads.com/1234-','',1261688445917450,1261740558356143,0);
+INSERT INTO ads VALUES (1249,'2009-11-20','2009-11-20','dht1227c',1,0,1,0,0,1236,'http://budurl.com/freegift1','',1262418959723829,1262502864156018,0);
+INSERT INTO ads VALUES (1250,'2009-11-20','2009-11-25','cfv1221s',0,0,0,1,0,1237,'http://networkernet.com','http://pushyads.com/1222-48hv',0,0,1);
+INSERT INTO ads VALUES (1255,'2009-11-20','2009-11-23','cfv1221s',0,1,0,0,1,1238,'http://pushyads.com/1222-48hv','',0,1262393959227251,0);
+INSERT INTO ads VALUES (1257,'2009-11-21','2009-11-21','djf1224',1,0,1,0,1,1211,'http://mymonavie.com/susiebrown','',1262418604625515,1262502864156018,0);
+INSERT INTO ads VALUES (1258,'2009-11-21','2009-11-21','hkd1225',1,0,0,0,1,1211,'http://pushyads.com/1226-tf2s','',0,0,0);
+INSERT INTO ads VALUES (1260,'2009-11-23','2009-11-23','cfv1221s',0,0,1,0,1,1222,'http://pushyads.com/1222-48hv','',1262328734416358,1262502864156018,0);
+INSERT INTO ads VALUES (1261,'2009-11-23','2009-11-25','cfv1221s',1,0,0,0,1,1223,'http://networkernet.com','',0,0,0);
+INSERT INTO ads VALUES (1262,'2009-11-23','2009-11-23','hkd1225',0,0,1,0,0,1242,'http://webbizmarket.com/dailypay.htm','',1262418266271458,1262502744158139,0);
+INSERT INTO ads VALUES (1263,'2009-11-23','2009-11-23','d1240wy',0,0,0,0,0,1243,'http://www.12secondcommute.com/rep/recommends.html','',0,0,0);
+INSERT INTO ads VALUES (1264,'2009-11-23','2009-11-23','d1240wy',1,0,0,0,1,1211,'http://pushyads.com/1241-','',0,0,0);
+INSERT INTO ads VALUES (1265,'2009-11-24','2009-11-24','fbt1241d',0,0,0,0,1,1223,'http://www.doitnow4freedom.com','',0,0,0);
+INSERT INTO ads VALUES (1266,'2009-11-24','2009-11-24','fbt1241d',1,0,0,0,1,1222,'http://www.doitnow4freedom.com','',1259615477687354,1259622205823337,0);
+INSERT INTO ads VALUES (1267,'2009-11-24','2009-11-24','fbt1241d',0,1,0,0,1,1211,'http://www.doitnow4freedom.com','',0,0,0);
+INSERT INTO ads VALUES (1268,'2009-11-25','2009-11-25','fbt1241d',0,0,1,0,1,1238,'http://pushyads.com/1242-','',1262418604629238,1262502864156018,0);
+INSERT INTO ads VALUES (1269,'2009-11-26','2009-11-26','wce1245k',1,0,0,0,0,1244,'http://www.buildwealthonlinenow.com','',0,0,0);
+INSERT INTO ads VALUES (1270,'2009-11-26','2009-11-26','wce1245k',0,0,0,0,0,1246,'http://www.markep.futureawakenings.com','',0,0,0);
+INSERT INTO ads VALUES (1272,'2010-01-03','2010-01-03','epr1277',1,0,0,0,1,1222,'http://pushads.com','',0,0,0);
+INSERT INTO ads VALUES (1273,'2010-01-03','2010-01-03','epr1277',0,0,0,0,0,1249,'http://google.com','',0,0,0);
+DROP TABLE IF EXISTS credit_map;
+CREATE TABLE credit_map (
+  member_id varchar(20) default '',
+  credits_allocated int(11) NOT NULL default '0',
+  credits_awarded int(11) NOT NULL default '0',
+  last_awarded bigint(20) NOT NULL default '0'
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS earnings_daily;
+CREATE TABLE earnings_daily (
+  member_id varchar(20) NOT NULL default '',
+  yymmdd varchar(10) NOT NULL default '',
+  sales_pro int(11) NOT NULL default '0',
+  earnings_pro decimal(14,2) NOT NULL default '0.00',
+  sales_elite int(11) NOT NULL default '0',
+  earnings_elite decimal(14,2) NOT NULL default '0.00',
+  bonus_count int(11) NOT NULL default '0',
+  bonus_amount decimal(14,2) NOT NULL default '0.00',
+  returns_count int(11) NOT NULL default '0',
+  returns_amount decimal(14,2) NOT NULL default '0.00'
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS earnings_semi_monthly;
+CREATE TABLE earnings_semi_monthly (
+  member_id varchar(20) NOT NULL default '',
+  yymmdd varchar(10) NOT NULL default '',
+  sales_pro int(11) NOT NULL default '0',
+  earnings_pro decimal(14,2) NOT NULL default '0.00',
+  sales_elite int(11) NOT NULL default '0',
+  earnings_elite decimal(14,2) NOT NULL default '0.00',
+  bonus_count int(11) NOT NULL default '0',
+  bonus_amount decimal(14,2) NOT NULL default '0.00',
+  returns_count int(11) NOT NULL default '0',
+  returns_amount decimal(14,2) NOT NULL default '0.00'
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS member;
+CREATE TABLE member (
+  member_id varchar(20) NOT NULL default '',
+  lft int(11) default '0',
+  rgt int(11) default '0',
+  user_level int(11) default '0',
+  system int(11) NOT NULL default '0',
+  refid varchar(20) default '',
+  affiliate_id varchar(20) NOT NULL default '',
+  `password` varchar(20) default '',
+  firstname varchar(30) default '',
+  lastname varchar(30) default '',
+  email varchar(60) default '',
+  member_disabled int(11) NOT NULL default '0',
+  email_disabled int(11) default '0',
+  confirmed int(11) NOT NULL default '0',
+  registered int(11) NOT NULL default '0',
+  lastaccess int(11) NOT NULL default '0',
+  date_registered varchar(10) default '',
+  date_lastaccess varchar(10) default '',
+  company_name varchar(30) default '',
+  address1 varchar(30) default '',
+  address2 varchar(30) default '',
+  city varchar(30) default '',
+  state varchar(25) default '',
+  country char(30) default 'USA',
+  zip varchar(10) default '',
+  phone varchar(25) default '',
+  phone_ext varchar(6) default '',
+  payable_to varchar(40) default '',
+  taxid varchar(16) default '',
+  paypal_email varchar(60) default '',
+  currency varchar(3) NOT NULL default 'USD',
+  website varchar(100) default '',
+  user_ip varchar(20) NOT NULL default '',
+  record_id bigint(20) NOT NULL auto_increment,
+  ts_current_level int(11) NOT NULL default '0',
+  cc_holdername varchar(30) NOT NULL default '',
+  cc_number varchar(18) NOT NULL default '',
+  cc_expmmyyyy varchar(7) NOT NULL default '',
+  cc_address varchar(30) NOT NULL default '',
+  cc_zip varchar(12) NOT NULL default '',
+  cc_cvv2 varchar(5) NOT NULL default '',
+  paypal_profile_id varchar(20) NOT NULL default '',
+  last_payment_date varchar(10) NOT NULL default '',
+  next_payment_due varchar(10) NOT NULL default '',
+  current_level_date varchar(10) NOT NULL default '',
+  anniversary_target varchar(10) NOT NULL default '',
+  awards varchar(256) NOT NULL default '',
+  current_year_personal_domains bigint(20) NOT NULL default '0',
+  current_year_referral_domains bigint(20) NOT NULL default '0',
+  current_year_personal_traffic bigint(20) NOT NULL default '0',
+  current_year_referral_traffic bigint(20) NOT NULL default '0',
+  current_year_memberships_vip bigint(20) NOT NULL default '0',
+  current_year_memberships_pro bigint(20) NOT NULL default '0',
+  current_year_memberships_elite bigint(20) NOT NULL default '0',
+  prior_week_total_credits bigint(20) NOT NULL default '0',
+  prior_week_start_date varchar(10) NOT NULL default '',
+  free_trial int(11) NOT NULL default '0',
+  getresponse_id varchar(10) NOT NULL default '',
+  getresponse_created varchar(10) NOT NULL default '',
+  getresponse_campaign varchar(10) NOT NULL default '',
+  charter_elite_expiration varchar(10) NOT NULL default '',
+  PRIMARY KEY  (member_id),
+  UNIQUE KEY record_id (record_id),
+  UNIQUE KEY email (email)
+) TYPE=MyISAM AUTO_INCREMENT=1300;
+
+INSERT INTO member VALUES ('pushy',0,131,2,1,'SYSTEM','pushy','tjw998468','Pushy','Ads','noreply@pushyads.com',0,0,1240000000,1249170505,1261342099,'2009-10-01','2009-12-20','','','','','','','','','','','','','','','',1200,0,'Pushy Ads','5104863275748366','07-2010','','','372','','','','','','',0,0,0,0,0,0,0,20,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('paw1200',1,12,2,0,'pushy','1201-x1rr','tjw998468','Tim','Wolf','tim@webtribune.com',0,0,1250000000,1257876107,1262288967,'2009-11-10','2009-12-31','Wolftracks','','','','','United States','','','','','','','USD','','127.0.0.1',1201,0,'Tim Wolf','5555555555554444','12-2012','123 Maple','27526','234','','2009-12-10','2010-01-10','2009-11-10','2010-01-10','~103~',0,0,0,0,0,0,0,40,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('wef1232b',94,95,2,0,'cfv1221s','1233-vkpr','surfer7','Tom','Bauman','tom@tombauman.com',0,0,1250000000,1258691627,1259827442,'2009-11-19','2009-12-03','Pure Source Solutions','601 Mar Vista Drive','','Los Osos','California','United States','93402','805-797-4755','','','','','USD','','71.95.140.91',1233,0,'Tom Bauman','5555555555554444','01-2010','601 Mar Vista Drive','93402','555','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nYKPL','2009-11-19','md1','');
+INSERT INTO member VALUES ('y1230vt',121,122,2,0,'pushy','1231-593m','mobileads987','Larry','Miller','adaem@aol.com',0,0,1250000000,1258682893,1262248209,'2009-11-19','2009-12-31','','3928 N. Rosebud Dr.','SE-4','Grand Rapids','MI','United States','49512','616-682-0268','','Ellen Miller','377-48-3196','larryhmiller@comcast.net','USD','','24.11.169.138',1231,0,'Larry Miller','5555555555554444','01-2013','3928 N.Rosebud Dr. SE-4','49512','577','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'TPRr0','2009-12-31','Jjt','');
+INSERT INTO member VALUES ('d1233cw',71,72,0,0,'gcw1222p','1234-svrp','34219865','Mark','Petty','blinkent@look.ca',0,0,1250000000,1258744545,1258827866,'2009-11-20','2009-11-21','','POB 116','','Zephyr','Ontario','Canada','L0E1T0','800-807-5969','','MARK PETTY','999999999','markjam@look.ca','USD','','216.66.135.62',1234,0,'Mark Petty','5555555555554444','11-2009','POB 116','L0E1T0','111','','2009-11-20','','2009-11-20','2009-12-20','~103~',0,0,0,0,0,0,0,0,'2009-12-13',0,'TPgII','2009-12-30','Jjt','');
+INSERT INTO member VALUES ('ahb1234',123,124,2,0,'pushy','1235-ts5r','1val4mis','Steve','Ward','steve@stevewardco.com',0,0,1250000000,1258811275,1258937428,'2009-11-21','2009-11-22','','2721 Central Ave','','Memphis','TN','United States','38111','901-878-9273','','Steve Ward','570864194','accounting@stevewardco.com','USD','','75.65.7.75',1235,0,'Steve Ward','5555555555554444','12-2009','2721 Central Ave','38111','999','','2009-12-21','2010-01-21','2009-11-21','2010-01-21','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nYhEl','2009-11-21','md1','');
+INSERT INTO member VALUES ('cfv1221s',61,120,2,0,'pushy','1222-48hv','pushy1234','David','Hennessy','david@dhennessypublications.com',0,0,1250000000,1258626223,1262291419,'2009-11-19','2009-12-31','','','','','','United States','','','','','','david@dhennessypublications.com','USD','','60.226.32.172',1222,0,'David Hennessy','5555555555554444','12-2009','13 Orient Road, Yeronga Queens','4104','123','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,2,'2009-12-20',0,'nH9n2','2009-11-19','md1','');
+INSERT INTO member VALUES ('gcw1222p',62,89,2,0,'cfv1221s','1223-vdkw','aliera04','Andrea','Pettit','andreap@rightfromtheheart.com',0,0,1250000000,1258652194,1258816821,'2009-11-19','2009-11-21','','','','','','USA','','','','','','','USD','','174.16.68.68',1223,0,'Andrea Pettit','5555555555554444','11-2010','1591 Holly St','80220','178','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nHUVd','2009-11-19','md1','');
+INSERT INTO member VALUES ('frg1223',63,64,2,0,'gcw1222p','1224-2wst','y24uwv6udjhpgje6japm','Thaddeus','Hairston','webmaster@getwitit.net',0,0,1250000000,1258655293,1258755630,'2009-11-19','2009-11-20','','','','','','USA','','','','','','','USD','','75.75.45.207',1224,0,'Thaddeus Hairston','5555555555554444','12-2012','P.O. Box 490','24054','555','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nH1bi','2009-11-19','md1','');
+INSERT INTO member VALUES ('djf1224',65,66,2,0,'gcw1222p','1225-7pfx','saklook3','Susie','Brown','sbrown7557@aol.com',0,0,1250000000,1258657087,1258828441,'2009-11-19','2009-11-21','','','','','','USA','','','','','','','USD','','64.12.117.12',1225,0,'Susie Brown','5555555555554444','12-2009','P.O.  Box  436805','60643','307','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'TPdBP','2009-12-31','Jjt','');
+INSERT INTO member VALUES ('hkd1225',90,91,2,0,'cfv1221s','1226-tf2s','agent107107','Brent','Bush','brntbush@yahoo.com',0,0,1250000000,1258661504,1260228494,'2009-11-19','2009-12-07','','','','','','USA','','','','','','','USD','','67.223.213.155',1226,0,'Brent Bush','5555555555554444','12-2010','26695 jingo rd.','66053','165','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nHHZw','2009-11-19','md1','');
+INSERT INTO member VALUES ('dht1227c',67,68,2,0,'gcw1222p','1228-m9nj','contractor007','Brian','Crain','bcrain007@gmail.com',0,0,1250000000,1258681509,1259004100,'2009-11-19','2009-11-23','','','','','','USA','','','','','','','USD','','71.204.177.232',1228,0,'Brian Crain','5555555555554444','01-2012','961 Rhodes Ct.','94523','1234','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nYn9b','2009-11-19','md1','');
+INSERT INTO member VALUES ('pnd1236',73,74,2,0,'gcw1222p','1237-m4ps','bl3ssings','Mikayla','Martinsen','mikaylaro@gmail.com',0,0,1250000000,1258954356,1258954359,'2009-11-22','2009-11-22','','','','','','USA','','','','','','','USD','','68.7.27.194',1237,0,'Mikayla Martinsen','5555555555554444','11-2012','2514 Jamacha Rd Ste 502 PMB 14','92019','555','','2009-12-22','2010-01-22','2009-11-22','2010-01-22','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nbDg4','2009-11-23','md1','');
+INSERT INTO member VALUES ('mjb1239n',79,80,0,0,'gcw1222p','1240-brtw','redefine80','Iain','Forrest','iainforrest@vodafone.co.nz',0,0,1250000000,1259007029,1259007032,'2009-11-23','2009-11-23','','','','','','USA','','','','','','','USD','','118.92.102.20',1240,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',0,'ndr7o','2009-11-23','73q','');
+INSERT INTO member VALUES ('d1240wy',81,82,2,0,'gcw1222p','1241-mgt3','thejerk08','Ken','Ostrye','kostrye@aol.com',0,0,1250000000,1259027455,1259125096,'2009-11-23','2009-11-24','','','','','','USA','','','','','','','USD','','70.41.25.26',1241,0,'Ken Ostrye','5555555555554444','12-2012','555 High Country Road','36054','069','','2009-12-23','2010-01-23','2009-11-23','2010-01-23','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'ndGZ3','2009-11-23','md1','');
+INSERT INTO member VALUES ('fbt1241d',83,84,2,0,'gcw1222p','1242-w5tp','gdklein777','Diane','Kleinsasser','dianek57@gmail.com',0,0,1250000000,1259079905,1259622169,'2009-11-24','2009-11-30','','411 59 street NE','','Calgary','Alberta','Canada','t2a 4a8','','','Diane Kleinsasser','','dianekleinsasser@yahoo.com','USD','','70.75.83.24',1242,0,'Diane Kleinsasser','5555555555554444','11-2011','411 59 street  NE','T2A 4A8','021','','2009-12-24','2010-01-24','2009-11-24','2010-01-24','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'Tufz2','2009-12-31','Jjt','');
+INSERT INTO member VALUES ('r1243ya',20,21,2,0,'hfe1201w','1244-s73p','tjw998468','Mark','Gilbert','admin@u2project.com',0,0,1250000000,1259126276,1259368232,'2009-11-24','2009-11-27','','','','','','USA','','','','','','','USD','','216.228.181.27',1244,0,'Mark Gilbert','5555555555554444','03-2010','123 ford st','123454','123','','2009-12-24','2010-01-24','2009-11-24','2010-01-24','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nRizb','2009-11-24','md1','');
+INSERT INTO member VALUES ('wce1245k',85,86,2,0,'gcw1222p','1246-zzg6','trekky11','Mark','Powell','markep66@aol.com',0,0,1259277191,1259277357,1259286394,'2009-11-26','2009-11-26','','','','','','USA','','','','','','','USD','','64.12.117.12',1246,0,'Mark Powell','5555555555554444','12-2009','2907 Wendell Dr','61109','000','','2009-12-29','2010-01-26','2009-11-26','2010-01-26','~103~',0,0,0,0,0,0,0,0,'2009-12-13',0,'nE1G8','2009-11-26','md1','');
+INSERT INTO member VALUES ('s1246vn',20,25,1,0,'hfe1201w','1247-st1z','tjw998468','Easy','Duzzit','mark@u2project.com',0,0,1259353488,1259353733,1259364971,'2009-11-27','2009-11-27','','','','','','USA','','','','','','','USD','','216.228.181.27',1247,0,'Easy Duzzit','5555555555554444','03-2011','123 Too Easy Street','123456','123','','2009-12-29','2010-01-27','2009-11-27','2010-01-27','~101~104~',0,0,0,0,0,0,0,0,'2009-12-13',0,'TV0bG','2009-11-27','md1','');
+DROP TABLE IF EXISTS paypal_recurring_billing;
+CREATE TABLE paypal_recurring_billing (
+  snapshot_id bigint(20) NOT NULL default '0',
+  member_id varchar(20) NOT NULL default '',
+  profile_id varchar(20) NOT NULL default '',
+  profile_status int(11) NOT NULL default '0',
+  cc_number varchar(20) NOT NULL default '',
+  cc_expires varchar(10) NOT NULL default '',
+  cc_amount decimal(14,2) NOT NULL default '0.00',
+  frequency varchar(10) NOT NULL default '',
+  date_start varchar(20) NOT NULL default '',
+  date_created varchar(20) NOT NULL default '',
+  currency_symbol varchar(10) NOT NULL default ''
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS paypal_snapshots;
+CREATE TABLE paypal_snapshots (
+  snapshot_id bigint(20) NOT NULL default '0',
+  snapshot_timestamp int(11) NOT NULL default '0',
+  snapshot_date varchar(10) NOT NULL default '',
+  snapshot_time varchar(10) NOT NULL default '',
+  UNIQUE KEY snapshot_id (snapshot_id)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS product;
+CREATE TABLE product (
+  product_id bigint(20) NOT NULL auto_increment,
+  product_owner varchar(20) default '',
+  org_product_owner varchar(20) default '',
+  product_approved int(11) NOT NULL default '0',
+  product_submit_date varchar(10) NOT NULL default '',
+  media_type int(11) NOT NULL default '0',
+  media_format varchar(6) NOT NULL default '',
+  media_width int(11) NOT NULL default '0',
+  media_height int(11) NOT NULL default '0',
+  media_size int(11) NOT NULL default '0',
+  media_original_width int(11) NOT NULL default '0',
+  media_original_height int(11) NOT NULL default '0',
+  media_server int(11) NOT NULL default '0',
+  media_file varchar(32) default '',
+  product_name varchar(32) default '',
+  product_title varchar(64) default '',
+  product_categories varchar(256) default '',
+  product_description varchar(512) default '',
+  UNIQUE KEY product_id (product_id)
+) TYPE=MyISAM AUTO_INCREMENT=1250;
+
+INSERT INTO product VALUES (1224,'mbr1217','mbr1217',0,'2009-11-17',1,'jpg',93,165,5885,120,212,0,'1224.jpg','Product 1','Product 1','~112~113~117~119~123~127~128~','Product 1 Product 1 Product 1 Product 1');
+INSERT INTO product VALUES (1223,'paw1200','paw1200',0,'2009-11-17',1,'gif',120,140,14624,124,145,0,'1223.gif','Quality Leads','Affiliates Wanted','~103~104~107~108~109~114~113~','88% of profit with recurring earnings in HUGE market');
+INSERT INTO product VALUES (1207,'paw1200','paw1200',0,'2009-11-10',1,'jpg',120,125,4017,120,125,0,'1207.jpg','Tim Two','Tim Two','~101~103~108~110~112~130~138~','Tim Two Tim Two Tim Two Tim Two Tim Two');
+INSERT INTO product VALUES (1209,'paw1200','paw1200',0,'2009-11-10',1,'jpg',107,165,7119,120,185,0,'1209.jpg','Tim Four','Tim Four','~145~','Tim Four Tim Four Tim Four Tim Four Tim Four');
+INSERT INTO product VALUES (1234,'d1233cw','d1233cw',0,'2009-11-20',1,'jpg',120,82,5983,724,497,0,'1234.jpg','Million Cash Plan','Cash Coach','~108~','1 on 1 personal mentoring to earn $5,000+ weekly');
+INSERT INTO product VALUES (1211,'pushy','pushy',0,'2009-11-11',1,'jpg',119,165,6198,367,511,0,'1211.jpg','Pushy! Ads','Free Product Ad','~108~121~124~','Get your Product ad placed on a big network of widgets for FREE');
+INSERT INTO product VALUES (1213,'hfe1201w','hfe1201w',0,'2009-11-12',1,'jpg',120,149,6775,368,456,0,'1213.jpg','This Is The One','This Is The One','~104~110~','This is the one you want to promote to everyone online. Seriously!');
+INSERT INTO product VALUES (1214,'pushy','pushy',0,'2009-11-12',1,'jpg',120,154,4403,150,193,0,'1214.jpg','Something Big','Something Big','~130~','is coming to town and you need to be ready with both feet planted');
+INSERT INTO product VALUES (1215,'hfe1201w','hfe1201w',0,'2009-11-12',1,'png',120,154,22772,299,384,0,'1215.png','Pushyads','I Love Pushy!','~101~108~130~139~145~','PUSHY! is the best advertising idea I\'ve seen in ages');
+INSERT INTO product VALUES (1238,'frg1223','frg1223',0,'2009-11-20',1,'jpg',120,123,4669,181,186,0,'1238.jpg','Traffic Tactics','Convert Sales','~145~','Increase website or blog traffic with these techniques.');
+INSERT INTO product VALUES (1217,'hdn1208','hdn1208',0,'2009-11-15',1,'jpg',120,148,7576,386,476,0,'1217.jpg','Oh Boy!','Oh Boy Oh Boy!','~122~123~124~','Somethin is about to happen that you and everyone you know is going');
+INSERT INTO product VALUES (1244,'wce1245k','wce1245k',0,'2009-11-26',1,'jpg',120,148,5701,569,700,0,'1244.jpg','Home Business P Time','Top Home Biz','~108~118~','6Figure Income, Parttime, No Selling, Recession proof, Anywhere');
+INSERT INTO product VALUES (1242,'hkd1225','hkd1225',0,'2009-11-23',1,'jpg',119,165,5171,180,250,0,'1242.jpg','Ez Wealth','I\'ll Pay Your Way In','~108~','into level #1. You get paid 100% directly!');
+INSERT INTO product VALUES (1222,'hdn1208','hdn1208',0,'2009-11-16',1,'gif',103,107,12030,103,107,0,'1222.gif','Autoprospector','Autoprospector','~104~','Real time lead gen for highly qualified bizopp seekers');
+INSERT INTO product VALUES (1221,'hdn1208','hdn1208',0,'2009-11-15',1,'jpg',120,118,5535,420,413,0,'1221.jpg','Somethin Special','Somethin Big','~102~105~','If you are ready, you are about to see something really big');
+INSERT INTO product VALUES (1226,'mbr1217','mbr1217',0,'2009-11-17',1,'jpg',120,107,4489,120,107,0,'1226.jpg','Product 3','Product 3','~107~108~109~114~115~122~124~','Product 3 Product 3 Product 3 Product 3 Product 3');
+INSERT INTO product VALUES (1243,'d1240wy','d1240wy',0,'2009-11-23',1,'gif',119,100,10325,336,280,0,'1243.gif','12 Second Commute','Tool And Opportunity','~130~145~','If you\'re tired of empty promises ...');
+INSERT INTO product VALUES (1228,'gcw1222p','gcw1222p',0,'2009-11-19',1,'jpg',75,108,3684,75,108,0,'1228.jpg','Renegade University','Renegade University','~116~137~','Training for anyone in Network and Internet Marketing');
+INSERT INTO product VALUES (1229,'gcw1222p','gcw1222p',0,'2009-11-19',1,'jpg',85,127,2225,85,127,0,'1229.jpg','Lifepath Unlimited','Lifepath Unlimited','~108~137~','Personal Development and Home Based Business Opportunity - Transform');
+INSERT INTO product VALUES (1230,'hkd1225','hkd1225',0,'2009-11-19',1,'jpg',120,120,5672,150,150,0,'1230.jpg','Blogomator','Auto Blogging','~101~108~130~145~','Post to all of your blogs on auto pilot! Free Articles');
+INSERT INTO product VALUES (1231,'x1229pd','x1229pd',0,'2009-11-19',1,'gif',120,90,20412,120,90,0,'1231.gif','Tvi Explosion','Too Crazy For You','~108~','YOUR Life is about to Change! This will blow YOUR Mind!');
+INSERT INTO product VALUES (1232,'x1229pd','x1229pd',0,'2009-11-19',1,'jpg',120,90,3336,330,247,0,'1232.jpg','Magneticmoneymiracle','What Recession','~108~','My Wife almost died... when $13,500 rolled up to the front door!');
+INSERT INTO product VALUES (1235,'d1233cw','d1233cw',0,'2009-11-20',1,'gif',120,76,39346,248,157,0,'1235.gif','Real Cash Freedom','Cash Freedom','~108~','5-STAR international program is enjoying its best year yet!');
+INSERT INTO product VALUES (1236,'dht1227c','dht1227c',0,'2009-11-20',1,'jpg',120,120,3894,160,160,0,'1236.jpg','Ultimate Four','Ultimate License','~108~','Lead capture page, hosting, maint & autoresponder');
+INSERT INTO product VALUES (1237,'cfv1221s','cfv1221s',0,'2009-11-20',1,'gif',120,50,3355,192,80,0,'1237.gif','Tvi Expresss','Tvi Express','~130~141~','$250 into $10K in 6 weeks! Rely on your team, join the best.');
+INSERT INTO product VALUES (1246,'wce1245k','wce1245k',0,'2009-11-26',1,'jpg',120,148,5701,569,700,0,'1246.jpg','Awakening-the Movie','Time Freedom','~137~','Stop simply existing, Find direction here, Start flourishing.');
+INSERT INTO product VALUES (1249,'epr1277','epr1277',0,'2010-01-03',1,'gif',83,165,19704,83,165,0,'1249.gif','452345','54325 2435 234','~104~','435 4235 243 5234 5243 5243');
+DROP TABLE IF EXISTS product_pending;
+CREATE TABLE product_pending (
+  disposition int(11) NOT NULL default '0',
+  existing_products_requested int(11) NOT NULL default '0',
+  replaces_product_id bigint(20) NOT NULL default '0',
+  ts_submitted int(11) NOT NULL default '0',
+  product_owner varchar(20) default '',
+  product_name varchar(32) default '',
+  product_title varchar(64) default '',
+  product_categories varchar(256) default '',
+  product_description varchar(512) default ''
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS receipts;
+CREATE TABLE receipts (
+  txtype int(11) default '0',
+  src int(11) NOT NULL default '0',
+  receiptid varchar(48) NOT NULL default '',
+  refid varchar(20) NOT NULL default '',
+  ts_order int(11) NOT NULL default '0',
+  yymmdd varchar(10) default NULL,
+  yymm varchar(7) default NULL,
+  member_id varchar(20) default NULL,
+  firstname varchar(30) default NULL,
+  lastname varchar(30) default NULL,
+  ipaddr varchar(20) default NULL,
+  user_level int(11) NOT NULL default '0',
+  amount decimal(14,2) NOT NULL default '0.00',
+  paymentmethod varchar(20) default NULL,
+  authorizationcode varchar(32) default NULL,
+  `transaction` varchar(30) default NULL,
+  order_type varchar(40) default '',
+  product_title varchar(40) default '',
+  product_description varchar(40) default '',
+  is_prorated int(11) NOT NULL default '0',
+  orig_transaction varchar(30) NOT NULL default '',
+  orig_receiptid varchar(48) NOT NULL default '',
+  orig_yymmdd varchar(10) NOT NULL default '',
+  ref_commission_amount decimal(14,2) NOT NULL default '0.00'
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS resources;
+CREATE TABLE resources (
+  resource_id bigint(20) NOT NULL auto_increment,
+  date_created varchar(10) default '',
+  member_id varchar(20) default '',
+  resource_code int(11) NOT NULL default '0',
+  resource_link varchar(64) NOT NULL default '',
+  UNIQUE KEY resource_id (resource_id)
+) TYPE=MyISAM AUTO_INCREMENT=1200;
+
+DROP TABLE IF EXISTS service;
+CREATE TABLE service (
+  service_id varchar(20) NOT NULL default '',
+  seq int(11) NOT NULL default '0',
+  date_received varchar(10) NOT NULL default '',
+  ts_request int(11) default '0',
+  ts_response int(11) default '0',
+  member_id varchar(20) NOT NULL default '',
+  firstname varchar(30) NOT NULL default '',
+  lastname varchar(30) NOT NULL default '',
+  email varchar(45) NOT NULL default '',
+  `subject` varchar(80) NOT NULL default '',
+  request text NOT NULL,
+  responder varchar(16) NOT NULL default '',
+  response text NOT NULL,
+  assignee varchar(16) default '',
+  seen int(11) NOT NULL default '0',
+  UNIQUE KEY service_key (service_id,seq)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS session;
+CREATE TABLE `session` (
+  session_id varchar(32) default '',
+  member_id varchar(20) default '',
+  expires int(11) default '0',
+  is_admin int(11) default '0',
+  UNIQUE KEY session_id (session_id)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_ad_category;
+CREATE TABLE tracker_ad_category (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_affiliate_page;
+CREATE TABLE tracker_affiliate_page (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_elite_bar;
+CREATE TABLE tracker_elite_bar (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_keys;
+CREATE TABLE tracker_keys (
+  created bigint(20) NOT NULL default '0',
+  date_created varchar(10) NOT NULL default '',
+  keydata varchar(128) NOT NULL default '',
+  UNIQUE KEY date_created (date_created,keydata)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_pushy_ads;
+CREATE TABLE tracker_pushy_ads (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_pushy_ads_mysites;
+CREATE TABLE tracker_pushy_ads_mysites (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_pushy_ads_referrals;
+CREATE TABLE tracker_pushy_ads_referrals (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_pushy_widget;
+CREATE TABLE tracker_pushy_widget (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_widget_category;
+CREATE TABLE tracker_widget_category (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS userlevel_change_requests;
+CREATE TABLE userlevel_change_requests (
+  member_id varchar(20) NOT NULL default '',
+  target_level int(11) NOT NULL default '0',
+  request_date varchar(10) NOT NULL default '',
+  target_date varchar(10) NOT NULL default ''
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS widget;
+CREATE TABLE widget (
+  widget_key varchar(64) NOT NULL default '',
+  enabled int(11) NOT NULL default '0',
+  member_id varchar(20) NOT NULL default '',
+  _pushy_scroller_ varchar(48) NOT NULL default '',
+  refid varchar(20) default '',
+  widget_name varchar(32) NOT NULL default '',
+  domain varchar(64) NOT NULL default '',
+  widget_id int(11) NOT NULL default '0',
+  widget_categories varchar(256) NOT NULL default '',
+  width int(11) NOT NULL default '0',
+  height int(11) NOT NULL default '0',
+  posture int(11) NOT NULL default '0',
+  motion int(11) NOT NULL default '0',
+  transition int(11) NOT NULL default '0',
+  origin int(11) NOT NULL default '0',
+  speed int(11) NOT NULL default '0',
+  wiggle int(11) NOT NULL default '0',
+  delay int(11) NOT NULL default '0',
+  pause int(11) NOT NULL default '0',
+  style int(11) NOT NULL default '0',
+  date_created varchar(10) NOT NULL default '',
+  date_last_modified varchar(10) NOT NULL default '',
+  date_first_access varchar(10) NOT NULL default '',
+  date_last_access varchar(10) NOT NULL default '',
+  weekly_access_count bigint(20) NOT NULL default '0',
+  total_access_count bigint(20) NOT NULL default '0',
+  UNIQUE KEY widget_key (widget_key)
+) TYPE=MyISAM;
+
+INSERT INTO widget VALUES ('2ff0bf884d5f568610bbc0a66551fc5d',1,'pushy','','SYSTEM','PushyAds','pushyads.com',0,'~101~130~',270,333,0,1,1,0,0,1,2,3,0,'2009-11-10','2009-11-18','2009-11-10','2010-01-03',1137,1137);
+INSERT INTO widget VALUES ('29c6c527301b61068c1aa591bc50ea86',1,'paw1200','','pushy','Tims Website','webtribune.com',0,'~111~145~',360,445,1,0,0,0,0,1,2,0,0,'2009-11-10','2009-12-09','2009-11-18','2009-12-20',61,61);
+INSERT INTO widget VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633',1,'pushy','_pushy_registration_.php','SYSTEM','Registration','pushyads.com',0,'~101~',180,222,1,0,0,3,0,1,0,0,0,'2009-11-10','2009-11-10','2009-11-10','2009-12-27',222,222);
+INSERT INTO widget VALUES ('2b1bc75a43876e01ebd8cccaec871e76',1,'gcw1222p','','cfv1221s','andrea','rightfromtheheart.com',0,'~108~137~',180,222,0,2,3,0,0,1,0,0,0,'2009-11-19','2009-11-19','2009-11-19','2009-11-21',10,10);
+INSERT INTO widget VALUES ('b14470a0a77a8bf9791ceea98f5753a9',1,'hkd1225','','cfv1221s','webbiz','webbizmarket.com',0,'~101~130~',250,309,0,1,2,0,0,1,0,0,0,'2009-11-19','2009-11-21','2009-11-19','2009-11-24',28,28);
+INSERT INTO widget VALUES ('d6039d38b64468137c88515bca933362',1,'dht1227c','','gcw1222p','watchdog','ebiz4today.com',0,'~108~',360,445,1,0,1,2,0,1,0,0,0,'2009-11-19','2009-11-19','','',0,0);
+INSERT INTO widget VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3',1,'hkd1225','','cfv1221s','jbb','joinbrentbush.com',0,'~130~',240,296,1,0,1,1,0,1,2,0,0,'2009-11-20','2009-11-24','2009-11-20','2009-12-28',115,115);
+INSERT INTO widget VALUES ('c5bbbf0764e773a184eaa053c9371108',1,'cfv1221s','','pushy','DHPushy','networkernet.com',0,'~138~145~',200,247,1,0,2,0,0,1,0,0,0,'2009-11-20','2009-11-23','2009-11-20','2009-11-23',62,62);
+INSERT INTO widget VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb',1,'y1230vt','','pushy','Mobi','mobibizclub.com',0,'~108~130~',210,259,0,1,1,0,0,1,0,0,0,'2009-11-20','2009-11-20','2009-11-25','2009-12-31',74,74);
+INSERT INTO widget VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3',1,'cfv1221s','','pushy','DHPushy2','networkernet.com',0,'~137~147~',350,432,0,0,0,0,0,0,0,0,0,'2009-11-20','2009-11-23','2009-11-20','2009-12-21',104,104);
+INSERT INTO widget VALUES ('da34be221190cf41a952aec8d956889c',1,'frg1223','','gcw1222p','getwitit','getwit-it.com',0,'~108~',320,395,1,0,2,2,0,1,2,0,0,'2009-11-20','2009-11-20','2009-11-20','2009-11-20',2,2);
+INSERT INTO widget VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6',1,'gcw1222p','','cfv1221s','hover','rightfromtheheart.com',0,'~108~',180,222,1,0,2,3,0,1,0,0,0,'2009-11-21','2009-11-21','2009-11-22','2009-12-31',45,45);
+INSERT INTO widget VALUES ('d3819b7da9e13887655e580e73c8b40f',1,'d1233cw','','gcw1222p','magnetic','millioncashplan.com',0,'~108~120~',230,284,0,2,2,0,0,1,0,0,0,'2009-11-21','2009-11-21','','',0,0);
+INSERT INTO widget VALUES ('f4d3c6d845d883ec45374f8e0b28606b',1,'wef1232b','','cfv1221s','Bob','puresourcefineart.com',0,'~103~',280,346,0,1,1,0,0,1,0,0,0,'2009-11-21','2009-11-27','2009-11-21','2009-11-27',19,19);
+INSERT INTO widget VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752',1,'hkd1225','','cfv1221s','webbiz home','webbizmarket.com',0,'~130~',280,346,0,1,2,0,0,1,0,3,0,'2009-11-21','2009-11-22','2009-11-21','2009-12-31',118,118);
+INSERT INTO widget VALUES ('bd2737d38810269baa848da7aa3d8337',1,'mjb1239n','','gcw1222p','THBT','thehomebusinesstutor.com',0,'~108~130~',180,222,0,2,2,0,0,1,0,0,0,'2009-11-23','2009-11-23','2009-11-23','2009-12-03',150,150);
+INSERT INTO widget VALUES ('1c781c13d734aded0673e1adf142679f',1,'cfv1221s','','pushy','Pushy3','networkernet.com',0,'~103~107~',330,407,0,2,1,0,0,1,0,0,0,'2009-11-23','2009-11-23','2009-11-23','2009-12-28',176,176);
+INSERT INTO widget VALUES ('b209ded37e42db80a9cb486a0ca15dd8',1,'hkd1225','','cfv1221s','webbizdailypay','webbizmarket.com',0,'~108~',240,296,0,1,1,0,0,1,3,3,0,'2009-11-23','2009-11-23','2009-11-23','2009-12-28',50,50);
+INSERT INTO widget VALUES ('9a4f1fed4af718d9c2c48d3afb0dc0f5',1,'r1243ya','','hfe1201w','u2project','u2project.com',0,'~101~108~',210,259,1,0,1,1,0,1,0,0,0,'2009-11-24','2009-11-24','','',0,0);
+INSERT INTO widget VALUES ('abc4c5b21c30148d56af9e8a1108ff1b',1,'fbt1241d','','gcw1222p','plexy','doitnow4freedom.com',0,'~108~',200,247,1,0,3,3,0,1,4,0,0,'2009-11-25','2009-11-25','','',0,0);
+INSERT INTO widget VALUES ('bf5ed4e04ef5e1f034e248e9b4aab34b',1,'r1243ya','','hfe1201w','u2project2','u2project.com',0,'~101~108~',210,259,0,1,1,0,1,0,0,0,0,'2009-11-27','2009-11-27','','',0,0);
+INSERT INTO widget VALUES ('49f912ddd8b70c8b2fe46aa0152b5c0e',1,'r1243ya','','hfe1201w','autoprospector','autoprospector.com',0,'~101~108~',210,259,1,0,1,2,0,1,0,0,0,'2009-11-27','2009-11-27','','',0,0);
+INSERT INTO widget VALUES ('d152fc492b96f3da7d0cd529e127a1b4',1,'paw1200','','pushy','GangBusters','webtribune.com',0,'~106~109~',240,296,0,1,2,0,0,1,0,2,0,'2009-12-20','2009-12-20','2009-12-20','2009-12-20',6,6);
+DROP TABLE IF EXISTS widget_tracker;
+CREATE TABLE widget_tracker (
+  widget_key varchar(64) NOT NULL default '',
+  yymm varchar(7) NOT NULL default '',
+  d01 int(11) NOT NULL default '0',
+  d02 int(11) NOT NULL default '0',
+  d03 int(11) NOT NULL default '0',
+  d04 int(11) NOT NULL default '0',
+  d05 int(11) NOT NULL default '0',
+  d06 int(11) NOT NULL default '0',
+  d07 int(11) NOT NULL default '0',
+  d08 int(11) NOT NULL default '0',
+  d09 int(11) NOT NULL default '0',
+  d10 int(11) NOT NULL default '0',
+  d11 int(11) NOT NULL default '0',
+  d12 int(11) NOT NULL default '0',
+  d13 int(11) NOT NULL default '0',
+  d14 int(11) NOT NULL default '0',
+  d15 int(11) NOT NULL default '0',
+  d16 int(11) NOT NULL default '0',
+  d17 int(11) NOT NULL default '0',
+  d18 int(11) NOT NULL default '0',
+  d19 int(11) NOT NULL default '0',
+  d20 int(11) NOT NULL default '0',
+  d21 int(11) NOT NULL default '0',
+  d22 int(11) NOT NULL default '0',
+  d23 int(11) NOT NULL default '0',
+  d24 int(11) NOT NULL default '0',
+  d25 int(11) NOT NULL default '0',
+  d26 int(11) NOT NULL default '0',
+  d27 int(11) NOT NULL default '0',
+  d28 int(11) NOT NULL default '0',
+  d29 int(11) NOT NULL default '0',
+  d30 int(11) NOT NULL default '0',
+  d31 int(11) NOT NULL default '0',
+  UNIQUE KEY widget_key (widget_key)
+) TYPE=MyISAM;
+
+INSERT INTO widget_tracker VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','2009-11',0,0,0,0,0,0,0,0,0,50,51,35,39,5,19,8,12,14,115,44,44,18,62,26,23,33,29,15,11,16,0);
+INSERT INTO widget_tracker VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','2009-11',0,0,0,0,0,0,0,0,0,12,3,3,25,8,6,0,6,9,13,3,3,1,7,7,0,2,3,3,0,0,0);
+INSERT INTO widget_tracker VALUES ('29c6c527301b61068c1aa591bc50ea86','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,1,2,0,3,0,0,0,0,0,1,0,0);
+INSERT INTO widget_tracker VALUES ('2b1bc75a43876e01ebd8cccaec871e76','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3,1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('b14470a0a77a8bf9791ceea98f5753a9','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,2,15,5,0,1,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,0,21,37,18,1,2,0,1,0,0);
+INSERT INTO widget_tracker VALUES ('c5bbbf0764e773a184eaa053c9371108','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,1,2,40,0,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,64,15,2,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('da34be221190cf41a952aec8d956889c','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('f4d3c6d845d883ec45374f8e0b28606b','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,0,4,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,9,4,0,10,1,5,2,7,0,0);
+INSERT INTO widget_tracker VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,2,1,2,0,0,1,0);
+INSERT INTO widget_tracker VALUES ('bd2737d38810269baa848da7aa3d8337','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,55,24,22,20,0,10,6,0);
+INSERT INTO widget_tracker VALUES ('1c781c13d734aded0673e1adf142679f','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,30,4,0,2,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('b209ded37e42db80a9cb486a0ca15dd8','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,5,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,14,1,1,6,0);
+INSERT INTO widget_tracker VALUES ('d152fc492b96f3da7d0cd529e127a1b4','2009-12',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0);
+DROP TABLE IF EXISTS widget_visitor;
+CREATE TABLE widget_visitor (
+  widget_key varchar(64) NOT NULL default '',
+  ipaddr varchar(16) NOT NULL default '',
+  yymmdd varchar(10) NOT NULL default '',
+  `timestamp` int(11) NOT NULL default '0',
+  impressions int(11) NOT NULL default '0',
+  UNIQUE KEY widget_visit (widget_key,ipaddr)
+) TYPE=MyISAM;
+
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','127.0.0.1','2009-11-10',1262502136,30);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.70.248.120','2009-11-10',1262326320,441);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','208.100.133.76','2009-11-10',1258738332,175);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','71.70.248.120','2009-11-10',1261962388,37);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','208.100.133.76','2009-11-10',1258615287,60);
+INSERT INTO widget_visitor VALUES ('29c6c527301b61068c1aa591bc50ea86','71.70.248.120','2009-11-18',1261369882,59);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','60.226.32.172','2009-11-19',1261382955,18);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','60.226.32.172','2009-11-19',1258625746,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','174.16.68.68','2009-11-19',1258807317,5);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','174.16.68.68','2009-11-19',1258651985,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','75.75.45.207','2009-11-19',1258755556,2);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','75.75.45.207','2009-11-19',1258655078,1);
+INSERT INTO widget_visitor VALUES ('2b1bc75a43876e01ebd8cccaec871e76','174.16.68.68','2009-11-19',1258804187,7);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','64.12.116.203','2009-11-19',1262243535,3);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','64.12.116.67','2009-11-19',1258656547,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','67.223.213.155','2009-11-19',1260228435,28);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','67.223.213.155','2009-11-19',1258660948,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','68.171.234.25','2009-11-19',1258663645,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','75.204.241.112','2009-11-19',1258671151,2);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','75.204.241.112','2009-11-19',1258670732,1);
+INSERT INTO widget_visitor VALUES ('b14470a0a77a8bf9791ceea98f5753a9','67.223.213.155','2009-11-19',1259065465,28);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.204.177.232','2009-11-19',1258948333,29);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','71.204.177.232','2009-11-19',1258681254,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','69.157.122.4','2009-11-19',1258682807,2);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','69.157.122.4','2009-11-19',1258680843,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','24.11.169.138','2009-11-19',1262248176,13);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','24.11.169.138','2009-11-19',1258682168,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.95.140.91','2009-11-19',1259827397,17);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','71.95.140.91','2009-11-19',1258691276,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','77.70.117.10','2009-11-20',1258709685,1);
+INSERT INTO widget_visitor VALUES ('2b1bc75a43876e01ebd8cccaec871e76','24.99.109.61','2009-11-20',1258730462,1);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','67.223.213.155','2009-11-20',1259162608,76);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','216.66.135.62','2009-11-20',1258826910,6);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','216.66.135.62','2009-11-20',1258744256,3);
+INSERT INTO widget_visitor VALUES ('2b1bc75a43876e01ebd8cccaec871e76','75.34.253.9','2009-11-20',1258744785,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','118.93.20.213','2009-11-20',1258746214,1);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','60.226.32.172','2009-11-20',1259015882,47);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','71.70.248.120','2009-11-20',1259014843,2);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','60.226.32.172','2009-11-20',1261184429,64);
+INSERT INTO widget_visitor VALUES ('da34be221190cf41a952aec8d956889c','75.75.45.207','2009-11-20',1258759177,2);
+INSERT INTO widget_visitor VALUES ('2b1bc75a43876e01ebd8cccaec871e76','98.242.108.245','2009-11-20',1258776068,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','75.65.7.75','2009-11-21',1258937404,15);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','75.65.7.75','2009-11-21',1258811132,1);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','71.95.140.91','2009-11-21',1259011150,3);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','205.188.116.77','2009-11-21',1258831445,2);
+INSERT INTO widget_visitor VALUES ('f4d3c6d845d883ec45374f8e0b28606b','71.95.140.91','2009-11-21',1259360180,19);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','67.223.213.155','2009-11-21',1260368818,23);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','220.255.7.118','2009-11-21',1258859835,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','216.228.181.27','2009-11-22',1259876078,131);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','77.31.46.70','2009-11-22',1258930513,2);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','216.228.181.27','2009-11-22',1259014298,6);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','216.228.181.27','2009-11-22',1259348629,4);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','68.7.27.194','2009-11-22',1259091691,6);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','68.7.27.194','2009-11-22',1258954198,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','92.24.63.212','2009-11-23',1258998736,1);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','92.24.63.212','2009-11-23',1258998811,1);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','92.24.63.212','2009-11-23',1258999002,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','84.69.165.124','2009-11-23',1259235300,3);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','84.69.165.124','2009-11-23',1259262069,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.212.242.167','2009-11-23',1259002750,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','118.92.102.20','2009-11-23',1259006180,1);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','118.92.102.20','2009-11-23',1259006987,3);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.92.102.20','2009-11-23',1259009794,9);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','118.92.102.20','2009-11-23',1259010360,3);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','71.95.140.91','2009-11-23',1259011150,3);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','60.226.32.172','2009-11-23',1259012221,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','68.104.186.63','2009-11-23',1259012262,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','76.179.18.141','2009-11-23',1259012979,1);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','216.228.181.27','2009-11-23',1259772228,5);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','71.70.248.120','2009-11-23',1261433971,22);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','71.70.248.120','2009-11-23',1262033884,76);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','67.223.213.155','2009-11-23',1259065531,9);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','60.226.32.172','2009-11-23',1261468430,73);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','70.41.25.26','2009-11-23',1259124877,8);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','70.41.25.26','2009-11-23',1259026380,1);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','216.228.181.27','2009-11-23',1259858595,10);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','71.70.248.120','2009-11-23',1261986856,26);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','216.228.181.27','2009-11-23',1259803279,7);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','71.70.248.120','2009-11-24',1261985899,20);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','70.75.83.24','2009-11-24',1259622148,11);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','70.75.83.24','2009-11-24',1259079240,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','207.200.116.71','2009-11-24',1259095095,1);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','207.200.116.13','2009-11-24',1259095601,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.10.84','2009-11-24',1259099593,6);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.9.247','2009-11-24',1259130031,49);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','216.228.181.27','2009-11-24',1259425621,11);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.14.39','2009-11-25',1259146390,21);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','71.70.248.120','2009-11-25',1259533591,16);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','71.70.248.120','2009-11-25',1259384338,4);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','71.70.248.120','2009-11-25',1259384383,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','71.70.248.120','2009-11-25',1262033870,3);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','190.84.42.71','2009-11-25',1259199184,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.179.50.124','2009-11-26',1259225684,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','59.154.42.131','2009-11-26',1259490769,10);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.71.125','2009-11-26',1259270327,12);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','24.215.21.37','2009-11-26',1259271324,1);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','64.12.116.141','2009-11-26',1259277193,1);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','124.157.148.167','2009-11-26',1259290338,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.64.134','2009-11-26',1259298678,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','124.182.98.221','2009-11-27',1259309599,14);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.79.43','2009-11-27',1259307952,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','115.109.153.17','2009-11-27',1259309228,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','216.228.181.27','2009-11-27',1259803109,4);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','216.228.181.27','2009-11-27',1259803388,8);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','216.228.181.27','2009-11-27',1259365051,3);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','75.177.5.223','2009-11-27',1262206365,29);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','216.228.181.27','2009-11-27',1259391099,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','206.80.1.253','2009-11-28',1259453410,2);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','112.110.181.75','2009-11-28',1259465288,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','78.137.163.133','2009-11-29',1261156959,4);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','68.197.216.100','2009-11-29',1260377502,3);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','24.11.169.138','2009-11-29',1262206520,33);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.92.103.134','2009-11-29',1259551580,9);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','216.66.130.216','2009-11-30',1259608578,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.92.125.54','2009-11-30',1259624598,6);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','64.203.211.61','2009-11-30',1259624432,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','96.254.185.107','2009-12-01',1259692892,1);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','207.66.210.230','2009-12-01',1259699540,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','72.23.118.93','2009-12-01',1259713230,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.92.119.227','2009-12-01',1259722401,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','98.238.214.110','2009-12-01',1259728691,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.75.182.168','2009-12-02',1259762078,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','68.17.10.130','2009-12-02',1259764971,1);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','71.34.80.114','2009-12-02',1259772919,2);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','71.34.80.114','2009-12-02',1259772919,2);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.0.49','2009-12-03',1259872889,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','208.100.133.146','2009-12-04',1262328722,172);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','80.184.46.205','2009-12-04',1259953617,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','71.173.195.93','2009-12-04',1259958820,2);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','208.100.133.146','2009-12-04',1261423927,83);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','75.154.224.113','2009-12-04',1259976353,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','66.235.124.132','2009-12-05',1261565299,4);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','208.100.133.146','2009-12-05',1262018217,4);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','206.53.153.101','2009-12-06',1260099736,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','98.88.103.229','2009-12-06',1260114589,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','168.103.230.58','2009-12-06',1260151385,4);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','168.103.230.58','2009-12-06',1260151101,4);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','222.73.220.112','2009-12-07',1260207214,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','204.8.228.54','2009-12-07',1260225053,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','68.19.48.45','2009-12-07',1260244049,2);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','190.213.62.180','2009-12-08',1260280113,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.246.172.48','2009-12-08',1260281603,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','24.170.159.167','2009-12-08',1260291972,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','174.129.183.171','2009-12-08',1260302559,2);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','174.129.53.21','2009-12-08',1260312709,2);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','174.129.121.132','2009-12-08',1260321868,2);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','75.101.173.198','2009-12-09',1260345401,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','24.73.88.226','2009-12-09',1260367913,1);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','208.100.133.146','2009-12-09',1261955065,14);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','208.100.133.146','2009-12-09',1261425854,8);
+INSERT INTO widget_visitor VALUES ('29c6c527301b61068c1aa591bc50ea86','208.100.133.146','2009-12-09',1260407973,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','69.21.116.54','2009-12-10',1260469306,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','68.218.192.214','2009-12-10',1260486311,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','148.78.32.110','2009-12-10',1260491036,2);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','72.199.165.119','2009-12-10',1260507266,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','71.58.1.136','2009-12-11',1260538292,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','173.131.44.135','2009-12-12',1260625020,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.160.105.40','2009-12-12',1260653843,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.190.144.165','2009-12-12',1260679443,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','24.17.225.71','2009-12-13',1260750994,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','98.238.126.75','2009-12-14',1260828018,1);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','97.95.73.32','2009-12-14',1260848294,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.176.30.67','2009-12-15',1260873849,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','218.111.6.190','2009-12-15',1260936332,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.238.159.5','2009-12-16',1260983717,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.176.133.75','2009-12-16',1261021410,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','209.85.73.26','2009-12-16',1261023912,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.190.192.230','2009-12-17',1261072783,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','120.28.64.77','2009-12-17',1261117024,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','66.239.211.34','2009-12-18',1261170827,1);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','60.226.32.172','2009-12-18',1261184758,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','67.246.174.245','2009-12-20',1261349945,1);
+INSERT INTO widget_visitor VALUES ('d152fc492b96f3da7d0cd529e127a1b4','71.70.248.120','2009-12-20',1261369906,6);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','208.100.133.146','2009-12-21',1261508436,13);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','76.93.32.252','2009-12-21',1261444757,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','166.214.108.118','2009-12-21',1261459532,1);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','111.93.133.4','2009-12-22',1261476604,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','216.16.44.79','2009-12-22',1261486727,1);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','74.215.57.171','2009-12-22',1261491543,7);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.244.50.108','2009-12-22',1261530850,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','69.231.153.106','2009-12-23',1261552496,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','68.219.69.71','2009-12-23',1261576405,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','66.177.245.5','2009-12-23',1261592887,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','174.51.177.53','2009-12-23',1261605081,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.34.80.188','2009-12-23',1261625073,4);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','24.178.98.249','2009-12-24',1261653960,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','72.145.100.243','2009-12-24',1261680974,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','98.245.149.181','2009-12-25',1261783847,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','24.183.205.86','2009-12-25',1261788168,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','89.34.98.21','2009-12-26',1261825214,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.237.53.121','2009-12-26',1261844694,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','70.31.6.55','2009-12-26',1261864028,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','41.213.126.12','2009-12-27',1261922214,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','174.124.85.122','2009-12-27',1261967064,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.243.106.39','2009-12-28',1262012590,1);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','201.216.245.25','2009-12-28',1262023073,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','98.192.10.66','2009-12-28',1262048402,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','79.68.67.88','2009-12-29',1262078239,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','190.75.164.209','2009-12-29',1262106561,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','71.8.195.152','2009-12-30',1262191741,1);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','99.145.84.211','2009-12-30',1262213919,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','196.25.253.13','2009-12-31',1262253133,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','67.191.183.246','2009-12-31',1262311115,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','97.93.204.130','2009-12-31',1262312063,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','75.159.61.96','2009-12-31',1262312091,1);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','75.52.242.78','2009-12-31',1262322931,1);
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+

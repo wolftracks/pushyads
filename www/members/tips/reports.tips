@@ -1,0 +1,178 @@
+<!-------------------------------- POTENTIAL -------------------------------->
+
+<div ID="HELP-REPORTS-POTENTIAL" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Total Ad Exposure</div>
+            <div>
+
+              <p class="tooltip-paragraph">Your ad exposure is directly related to your membership level, which determines your level of access to the entire
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> Network.
+
+              <p class="tooltip-paragraph"><b>VIP</b> member's ad exposure encompasses their Personal Network of direct referrals, plus members referred to
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> by their referrals, shown in the colored shaded area below.
+
+              <p class="tooltip-paragraph"><b>PRO</b> member's ad exposure is comprised of both the <b>VIP</b> & <b>PRO</b> shaded areas, representing members who they
+                personally referred, as well as members referred by others in their Personal Network, 5 levels deep.
+
+              <p class="tooltip-paragraph"><b>ELITE</b> member's ad exposure is comprised of 5 Network levels, just like the <b>PRO</b> member, only they have access to
+                <b>Infinite</b> levels beyond, because of the <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> viral "Ad Pools"
+                they have access to.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- CREDIT ACTIVITY -------------------------------->
+
+<div ID="HELP-REPORTS-CREDIT" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Credit Activity</div>
+            <div>
+
+              <p class="tooltip-paragraph"><img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> rewards you with credits that convert into
+                traffic for each type of <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> activity you engage in.
+
+              <p class="tooltip-paragraph">The amount of credit for a single act is listed next to the activity below.
+
+              <p class="tooltip-paragraph"><b>PUSHY Installations</b>
+                <ul style="padding-left: 18px; margin-left: 0px; font: 12px arial; color:#000000">
+                  <li>40: Personal Domains</li>
+                  <li>20: Referral Domains</li>
+                </ul>
+
+              <p class="tooltip-paragraph"><b>Membership Referrals</b>
+                <ul style="padding-left: 18px; margin-left: 0px; font: 12px arial; color:#000000">
+                  <li>2: VIP</li>
+                  <li>4: PRO</li>
+                  <li>8: ELITE</li>
+                </ul>
+
+              <p class="tooltip-paragraph"><b>PUSHY Traffic Volume</b>
+                <ul style="padding-left: 18px; margin-left: 0px; font: 12px arial; color:#000000">
+                  <li>2: Personal Website Hits</li>
+                  <li>1: Referral Websites Hits</li>
+                </ul>
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- AFFILIATE OFFERS - REFERRALS -------------------------------->
+
+<div ID="HELP-REPORTS-OFFERS" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">Affiliate Offers Report</div>
+            <div>
+
+              <p class="tooltip-paragraph">This shows you how many <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">
+                members have selected one or more of your Affiliate Offers to display throughout the Network.
+
+              <p class="tooltip-paragraph">This count will only show those members who have selected your product(s) from the "Affiliate Offers" drop down list  when adding
+                an offer in their MY ADS tab.
+
+              <p class="tooltip-paragraph">If you have other affiliate offers you advertise through your own website, it's possible that you many have other
+                <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> members who are displaying your product(s) through the
+                Network by adding them as their Own Product in MY ADS.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+<!-------------------------------- MY PUSHY AFFILIATE PAGE ------------------->
+
+<div ID="HELP-REPORTS-MYPUSHY-AFFILIATE-PAGE" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">PushyAds.com</div>
+            <div>
+
+              <p class="tooltip-paragraph">This section refers to your PushyAds.com Affiliate Page activity.
+
+              <p class="tooltip-paragraph"><b>PushyAds.com</b> reports the number of unique hits on your PushyAds affiliate website.
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+
+
+<!-------------------------------- MY PUSHY WIDGETS -------------------------->
+
+<div ID="HELP-REPORTS-MYPUSHY" style="display:none; position: absolute;">
+  <table border=0 cellspacing=0 cellpadding=0>
+    <tr height=100%>
+      <td valign=top  class="tooltip-tp_img"></td>
+    </tr>
+    <tr height=100%>
+      <td valign=top  class="tooltip-md_img">
+        <div class="tooltip-container">
+
+          <div class="tooltip-title">My <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px">'s</div>
+            <div>
+
+              <p class="tooltip-paragraph">This section shows you the <img src="http://pds1106.s3.amazonaws.com/images/pushy12.png" style="vertical-align: -1px"> <b>Widgets</b> you have configured
+                and installed on your website domains, reference by the "Nickname" you gave them, and any tracking IDs
+
+              <p class="tooltip-paragraph">Any widgets referenced with "your_tracking_id" have not been updated with a specific tracking ID by you. For more information, see
+                video instruction under the <b>PUSHY</b> tab
+
+            <div>
+         </div>
+       </td>
+     </tr>
+     <tr height=100%>
+       <td valign=top class="tooltip-bt_img"></td>
+    </tr>
+  </table>
+</div>
+

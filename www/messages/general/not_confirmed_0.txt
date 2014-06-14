@@ -1,0 +1,35 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Thanks a ton, %firstname%
+MESSAGE
+Hi %firstname%,
+
+Thanks so much for taking the plunge and signing up for a PUSHY membership.
+Now lets get you signed up on the site and signed into your back office.
+
+You will be receiving a separate email with the Subject:
+
+     "%firstname%, Confirm your subscription"
+
+Make sure you open it and click on the confirmation link inside. Once you do, you will
+be taken to the Next Step in the PUSHY registration process.
+
+You MUST click on the link in that email, or you won't be able to complete your
+registration or gain access to the amazing PUSHY Technology. Go ahead and find the
+email, open it, and click on the link.
+
+See you inside %firstname%. I hope you're as excited as I am!
+
+All the best,
+
+Mark
+PUSHY!'s right hand man,
+PushyAds.com
+
+
+
+To unsubscribe from this notice, click this link:
+  http://pushyads.com/new_registration_unsubscribe.php?mid=%mid%
+
+
+

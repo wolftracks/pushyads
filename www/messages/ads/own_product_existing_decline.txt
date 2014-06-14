@@ -1,0 +1,29 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=So sorry %firstname%
+MESSAGE
+So sorry %firstname%,
+
+But PUSHY! had to decline your request to have your product ad placed in his
+Affiliate Offer list.
+
+     Product Name: %product_name%
+
+Hey, I'm just the messenger so don't get mad at me. The following reason was given
+for the decline:
+
+      %reason%
+
+Is it possible that you might have a different product, service, blog, or opportunity that
+might work within this list? Go ahead and submit it and let's find out.
+
+If you have questions, please take a look at our FAQ, matching the related issues.
+Otherwise, submit a question in our Support page.
+
+     http://pushyads.com
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com

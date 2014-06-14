@@ -1,0 +1,15 @@
+--------------------------------------------------------
+DateTime:       2010-02-01 21:57
+REFERER:        pushyads.local/
+REFERER_URL:    http://pushyads.local
+REFERER_DOMAIN: pushyads.local
+REFERER_PAGE:   
+REMOTE_ADDR:    127.0.0.1
+-------DEBUG-------
+:WidgetKey: 2ff0bf884d5f568610bbc0a66551fc5d
+:WidgetDomain: pushyads.com
+--------------------------------------------------------
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+

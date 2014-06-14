@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+<LINK type=text/css rel=stylesheet href="styles.css">
+<script type="text/javascript" src="jsutils.js"></script>
+<script type="text/javascript">
+
+function moveIt(deltaX,deltaY,count,cb)
+ {
+   if (count >= 0)
+     {
+       if (dd.elements.SHELL.x < 0 || dd.elements.SHELL.x >= (dd.getWndW() + dd.getScrollX() - dd.elements.SHELL.w - 4))
+         deltaX = -deltaX;
+       if (dd.elements.SHELL.y < 0 || dd.elements.SHELL.y >= (dd.getWndH() + dd.getScrollY() - dd.elements.SHELL.h - 4))
+         deltaY = -deltaY;
+       dd.elements.SHELL.moveBy(deltaX,deltaY);
+       count--;
+       var f = function() { moveIt(deltaX,deltaY,count,cb); }
+       setTimeout(f,30);
+     }
+   else
+     if (arguments.length>3 && (cb))
+       cb();
+ }
+
+
+function float(obj,speed,angle,x,y,cb)
+ {
+   var newX = x + (angle * speed);
+   var newY = y + (angle * speed);
+ log("Float: angle="+angle+" speed="+speed+"  old x="+x+" y="+y+" new x="+newX+" y="+newY);
+   if (newX < 0)
+     {
+       if (arguments.length>5 && (cb)) cb(4,obj,speed,angle); // Hit Left
+     }
+   else
+   if (newX >= (dd.getWndW() + dd.getScrollX() - obj.w - 4))
+     {
+       if (arguments.length>5 && (cb)) cb(2,obj,speed,angle); // Hit Right
+     }
+   else
+   if (newY < 0)
+     {
+       if (arguments.length>5 && (cb)) cb(1,obj,speed,angle); // Hit Top
+     }
+   else
+   if (newY >= (dd.getWndH() + dd.getScrollY() - obj.h - 4))
+     {
+       if (arguments.length>5 && (cb)) cb(3,obj,speed,angle); // Hit Bottom
+     }
+   else
+     {
+       dd.elements.SHELL.moveTo(newX,newY);
+       var f = function() { float(obj,speed,angle,newX,newY,cb); }
+       setTimeout(f,30);
+     }
+ }
+
+
+function shrink(obj,speed,targetRatio,x,y,w,h,cb)
+ {
+   var wDelta  = (obj.defw / 100) * speed;
+   var hDelta  = (obj.defh / 100) * speed;
+   var newW    = w - wDelta;
+   var newH    = h - hDelta;
+   var newX    = x + (wDelta/2);
+   var newY    = y + (hDelta/2);
+   var targetW = obj.defw * targetRatio;
+   var targetH = obj.defh * targetRatio;
+
+   if (newW > targetW || newH > targetH)
+     {
+// log("Shrink: new x="+x+" y="+y+" w="+newW+" h="+newH+"   target w="+targetW+" h="+targetH);
+       obj.resizeTo(newW,newH);
+       obj.moveTo(newX,newY);
+       var f = function() { shrink(obj,speed,targetRatio,newX,newY,newW,newH,cb); }
+       setTimeout(f,30);
+     }
+   else
+     {
+// log("Shrink (C): new x="+x+" y="+y+" w="+newW+" h="+newH+"   target w="+targetW+" h="+targetH);
+       obj.resizeTo(targetW,targetH);
+       obj.moveTo(newX,newY);
+       obj.swapImage("pushy-screen-black-8.png");
+       grow(obj,speed,1.0,newX,newY,newW,newH,cb);
+       // if (arguments.length>5 && (cb))
+       //  cb();
+     }
+ }
+
+
+function grow(obj,speed,targetRatio,x,y,w,h,cb)
+ {
+   var wDelta  = (obj.defw / 100) * speed;
+   var hDelta  = (obj.defh / 100) * speed;
+   var newW    = w + wDelta;
+   var newH    = h + hDelta;
+   var newX    = x - (wDelta/2);
+   var newY    = y - (hDelta/2);
+   var targetW = obj.defw * targetRatio;
+   var targetH = obj.defh * targetRatio;
+
+   if (newW < targetW || newH < targetH)
+     {
+// log("Grow: new x="+x+" y="+y+" w="+newW+" h="+newH+"   target w="+targetW+" h="+targetH);
+       obj.resizeTo(newW,newH);
+       obj.moveTo(newX,newY);
+       var f = function() { grow(obj,speed,targetRatio,newX,newY,newW,newH,cb); }
+       setTimeout(f,30);
+     }
+   else
+     {
+// log("Grow (C): new x="+x+" y="+y+" w="+newW+" h="+newH+"   target w="+targetW+" h="+targetH);
+       obj.resizeTo(obj.defw,obj.defh);
+       obj.moveTo(dd.elements.PUSHY_HOME.x,dd.elements.PUSHY_HOME.y);
+       obj.swapImage("pushy-shell.png");
+       if (arguments.length>5 && (cb))
+         cb();
+     }
+ }
+
+function reset()
+ {
+   dd.elements.SHELL.moveTo(dd.elements.PUSHY_HOME.x,dd.elements.PUSHY_HOME.y);
+   dd.elements.SHELL.swapImage("pushy-shell.png");
+ }
+
+function shrinkIt(obj,speed,targetRatio,cb)
+ {
+   shrink(obj,speed,targetRatio,obj.x,obj.y,obj.w,obj.h,cb);
+ }
+
+function floatIt(obj,speed,angle,cb)
+ {
+   float(obj,speed,angle,obj.x,obj.y,cb);
+ }
+
+
+
+
+function runMove()
+ {
+   reset();
+   moveIt(5,5,200,quit);
+ }
+
+function runShrink()
+ {
+   reset();
+   shrinkIt(dd.elements.SHELL,6,.06,quit);
+ }
+
+function runFloat()
+ {
+   reset();
+   floatIt(dd.elements.SHELL,6,(dd.elements.SHELL.h / dd.elements.SHELL.w), nextFloat);
+ }
+function nextFloat(collision,obj,speed,angle)
+ {
+   floatIt(obj,speed,-angle,quit);
+ }
+
+
+function quit()
+ {
+ }
+
+
+function getpushy_clicked()
+ {
+   alert("ouch");
+ }
+function getpushy_over()
+ {
+   dd.elements.GETPUSHY.setCursor(CURSOR_HAND);
+   dd.elements.GETPUSHY.swapImage("get-pushy-hover.png");
+ }
+function getpushy_out()
+ {
+   dd.elements.GETPUSHY.swapImage("get-pushy.png");
+ }
+
+function log(s)
+  {
+    var p = document.getElementById('SCRATCH_PAD');
+    if (p) p.value += s+"\n";
+  }
+</script>
+</head>
+<body topmargin=0>
+<script type="text/javascript" src="xxx-min.js"></script>
+<br>
+
+
+<a href=javascript:runMove()>Move It</a><br>
+<a href=javascript:runShrink()>Shrink It</a><br>
+<a href=javascript:runFloat()>Float It</a><br>
+
+<!-- * * * * * * * * * * * * * * -->
+<div id="PUSHY_HOME"       style="position:absolute; top:300px;   left:200px; height:445px; width:360px;"></div>
+<img id="SHELL"            style="position:absolute; top:0px;   left:600px; width:360px;  height:445px;" src="pushy-shell.png" border="0">
+<img id="GETPUSHY"         style="position:absolute; top:500px; left:600px; width:140px;  height:36px;"  src="get-pushy.png" border="0">
+<iframe id="SCROLLER"      style="position:absolute; top:500px; left:600px; width:296px;  height:256px;" src="http://tjw.ap.com/"  frameborder="0" scrolling="no"></iframe>
+<!-- * * * * * * * * * * * * * * -->
+
+<p>&nbsp;<br /></p>
+<PRE><textarea cols=110 rows=10 id="SCRATCH_PAD"></textarea></PRE>
+<p>&nbsp;<br /></p>
+
+<script type="text/javascript">
+
+SET_DHTML("PUSHY_HOME"+NO_DRAG,"SHELL","GETPUSHY"+NO_DRAG,"SCROLLER"+NO_DRAG);
+
+dd.elements.SHELL.moveTo(dd.elements.PUSHY_HOME.x,dd.elements.PUSHY_HOME.y);
+
+/***
+dd.elements.GETPUSHY.moveTo(dd.elements.PUSHY_HOME.x+111,dd.elements.PUSHY_HOME.y+(445-36));
+dd.elements.GETPUSHY.maximizeZ();
+dd.elements.SHELL.addChild(dd.elements.GETPUSHY);
+dd.elements.SCROLLER.moveTo(dd.elements.PUSHY_HOME.x+32,dd.elements.PUSHY_HOME.y+128);
+dd.elements.SCROLLER.maximizeZ();
+dd.elements.SHELL.addChild(dd.elements.SCROLLER);
+
+dd.elements.GETPUSHY.div.onmouseover=getpushy_over;
+dd.elements.GETPUSHY.div.onmouseout=getpushy_out;
+dd.elements.GETPUSHY.div.onclick=getpushy_clicked;
+***/
+
+</script>
+</body>
+</html>

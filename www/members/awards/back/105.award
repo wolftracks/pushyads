@@ -1,0 +1,14 @@
+<table align=center width=100% border=0 cellspacing=0 cellpadding=0 style="border: 2px dashed #FFCC00; padding: 15px; margin-top: 20px;" bgcolor=#FFF8DE>
+  <tr>
+    <td><span class="red bold size18">This is a special placeholder <?php echo $firstname?> </span>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=size10>105</span>
+
+       <p class=largetext><img src="http://pds1106.s3.amazonaws.com/images/video-anim3.png" style="float: left; margin: 0 20px 20px 0;">
+
+         ...while we set up the new format for the bonuses you get with each membership level. More great stuff will be added soon.
+         In the mean time, watch the video below, and check out all your bonuses.
+       </p>
+
+    </td>
+  </tr>
+</table>

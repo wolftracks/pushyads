@@ -1,0 +1,1588 @@
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO,MYSQL323' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+DROP TABLE IF EXISTS activity;
+CREATE TABLE activity (
+  `date` varchar(10) default '',
+  visits int(11) NOT NULL default '0',
+  signups int(11) NOT NULL default '0',
+  neworders_pro int(11) NOT NULL default '0',
+  upgrades_pro int(11) NOT NULL default '0',
+  renewals_pro int(11) NOT NULL default '0',
+  neworders_elite int(11) NOT NULL default '0',
+  upgrades_elite int(11) NOT NULL default '0',
+  renewals_elite int(11) NOT NULL default '0'
+) TYPE=MyISAM;
+
+INSERT INTO activity VALUES ('2009-12-30',2,0,0,0,0,0,0,0);
+INSERT INTO activity VALUES ('2009-12-28',0,0,0,0,1,0,0,1);
+INSERT INTO activity VALUES ('2009-12-29',0,0,0,0,1,0,0,1);
+DROP TABLE IF EXISTS ads;
+CREATE TABLE ads (
+  ad_id bigint(20) NOT NULL auto_increment,
+  date_created varchar(10) default '',
+  last_modified varchar(10) default '',
+  member_id varchar(20) default '',
+  pushy_network int(11) NOT NULL default '0',
+  elite_bar int(11) NOT NULL default '0',
+  elite_pool int(11) NOT NULL default '0',
+  product_list int(11) NOT NULL default '0',
+  reseller_listing int(11) NOT NULL default '0',
+  product_id bigint(20) NOT NULL default '0',
+  product_url varchar(64) default '',
+  affiliate_signup_url varchar(64) default '',
+  lastview_pushy bigint(20) NOT NULL default '0',
+  lastview_elitebar bigint(20) NOT NULL default '0',
+  existing_products_requested int(11) NOT NULL default '0',
+  UNIQUE KEY ad_id (ad_id)
+) TYPE=MyISAM AUTO_INCREMENT=1272;
+
+INSERT INTO ads VALUES (1225,'2009-11-17','2009-11-17','paw1200',1,0,0,0,1,1213,'http://abc.def?my_id=98765','',0,0,0);
+INSERT INTO ads VALUES (1226,'2009-11-17','2009-11-19','paw1200',0,0,1,0,0,1223,'http://autoprospector.com','http://imtools.apr52.com',1261890874069193,1262294959274016,1);
+INSERT INTO ads VALUES (1207,'2009-11-10','2009-11-16','paw1200',0,1,0,0,0,1207,'http://yahoo.com','http://yahoo.com',1258658757999336,1262291401608416,1);
+INSERT INTO ads VALUES (1209,'2009-11-10','2009-12-20','paw1200',0,0,0,1,0,1209,'http://msn.com','http://my_product/signup.html',0,0,1);
+INSERT INTO ads VALUES (1242,'2009-11-19','2009-11-19','wef1232b',1,1,1,0,1,1222,'http://bigdogleads.apr52.com','',1262253142570487,1262294839123041,0);
+INSERT INTO ads VALUES (1213,'2009-11-12','2009-11-12','hfe1201w',0,0,0,0,0,1213,'http://pushyads.com/123','http://pushyads.com/',1258071276211839,1258657465322889,1);
+INSERT INTO ads VALUES (1252,'2009-11-20','2009-11-20','frg1223',0,0,0,0,1,1211,'http://www.affiliatemoney.ws/go/imking/get_tt','',0,1258757366791699,0);
+INSERT INTO ads VALUES (1215,'2009-11-12','2009-11-12','hfe1201w',1,1,1,0,0,1215,'http://pushyads.com/1202-m1dm','',1261890838173261,1262295079428464,0);
+INSERT INTO ads VALUES (1217,'2009-11-15','2009-11-15','hdn1208',0,0,0,0,0,1217,'http://cbs.com','http://autoprospector.com',0,0,1);
+INSERT INTO ads VALUES (1253,'2009-11-20','2009-11-20','frg1223',1,0,1,1,0,1238,'http://www.affiliatemoney.ws/go/imking/get_tt','http://www.affiliatemoney.ws/affiliates.php',1262248002624263,1262294959274016,1);
+INSERT INTO ads VALUES (1223,'2009-11-16','2009-11-19','hdn1208',1,1,1,1,0,1222,'http://pushy.apr52.com','http://pushy.apr52.com/affiliates',1262248002616370,1262295079431565,1);
+INSERT INTO ads VALUES (1221,'2009-11-15','2009-11-15','hdn1208',0,0,0,0,0,1221,'http://abc.com','http://cbs.com',0,0,1);
+INSERT INTO ads VALUES (1227,'2009-11-17','2009-11-17','mbr1217',0,0,0,0,0,1224,'http://google.com','http://autoprospector.com/service',0,0,1);
+INSERT INTO ads VALUES (1229,'2009-11-17','2009-11-17','mbr1217',0,0,0,0,0,1226,'http://cnn.com','',0,0,0);
+INSERT INTO ads VALUES (1230,'2009-11-17','2009-11-17','mbr1217',0,0,0,0,1,1214,'http://msn.com','',0,0,0);
+INSERT INTO ads VALUES (1256,'2009-11-21','2009-11-21','wef1232b',0,0,0,0,1,1211,'http://pushyads.com/1233-','',0,0,0);
+INSERT INTO ads VALUES (1232,'2009-11-19','2009-11-19','gcw1222p',1,0,0,0,0,1228,'http://www.andreapettit.net','',0,0,0);
+INSERT INTO ads VALUES (1233,'2009-11-19','2009-11-19','gcw1222p',0,1,1,0,0,1229,'http://www.rightfromtheheart.biz','',1262253142575155,1262295079431565,0);
+INSERT INTO ads VALUES (1234,'2009-11-19','2009-11-19','hkd1225',0,1,0,0,0,1230,'http://webbizmarket.com/blogomator','',1259425143013572,1259447063117758,0);
+INSERT INTO ads VALUES (1235,'2009-11-19','2009-11-19','x1229pd',1,0,0,0,1,1222,'http://zappacosta.apr52.com/affiliate','',0,0,0);
+INSERT INTO ads VALUES (1251,'2009-11-20','2009-11-20','frg1223',0,1,0,0,1,1222,'http://getwitit.apr52.com','',0,1258756103010220,0);
+INSERT INTO ads VALUES (1236,'2009-11-19','2009-11-19','x1229pd',0,0,0,0,0,1231,'http://www.tvi10kexplosion.com','',0,0,0);
+INSERT INTO ads VALUES (1237,'2009-11-19','2009-11-19','x1229pd',0,0,1,0,1,1223,'http://zappacosta.apr52.com','',1261890838130692,1262295079431565,0);
+INSERT INTO ads VALUES (1238,'2009-11-19','2009-11-19','x1229pd',0,0,0,0,0,1232,'http://www.recessionproofwealth.us','',0,0,0);
+INSERT INTO ads VALUES (1239,'2009-11-19','2009-11-19','dht1227c',0,0,0,0,1,1222,'http://watchdogleads.apr52.com/affiliates','',0,1258703640710060,0);
+INSERT INTO ads VALUES (1240,'2009-11-19','2009-11-19','dht1227c',0,0,0,0,1,1223,'http://watchdogleads.apr52.com','',0,1258704900906200,0);
+INSERT INTO ads VALUES (1244,'2009-11-20','2009-11-20','dht1227c',0,0,0,0,1,1211,'http://pushyads.com/1228-m9nj','',0,1258760084466864,0);
+INSERT INTO ads VALUES (1245,'2009-11-20','2009-11-20','d1233cw',1,1,0,0,1,1222,'http://markpetty.apr52.com','',0,0,0);
+INSERT INTO ads VALUES (1246,'2009-11-20','2009-11-20','d1233cw',0,0,0,0,0,1234,'http://www.millioncashplan.com','',0,0,0);
+INSERT INTO ads VALUES (1247,'2009-11-20','2009-11-20','d1233cw',0,0,0,0,0,1235,'http://www.realcashfreedom.com','',0,0,0);
+INSERT INTO ads VALUES (1248,'2009-11-20','2009-11-20','d1233cw',0,0,1,0,1,1211,'http://pushyads.com/1234-','',1261688445917450,1261740558356143,0);
+INSERT INTO ads VALUES (1249,'2009-11-20','2009-11-20','dht1227c',1,0,1,0,0,1236,'http://budurl.com/freegift1','',1262253142574273,1262295079431565,0);
+INSERT INTO ads VALUES (1250,'2009-11-20','2009-11-25','cfv1221s',0,0,0,1,0,1237,'http://networkernet.com','http://pushyads.com/1222-48hv',0,0,1);
+INSERT INTO ads VALUES (1255,'2009-11-20','2009-11-23','cfv1221s',0,1,0,0,1,1238,'http://pushyads.com/1222-48hv','',0,1262289581841659,0);
+INSERT INTO ads VALUES (1257,'2009-11-21','2009-11-21','djf1224',1,0,1,0,1,1211,'http://mymonavie.com/susiebrown','',1262248002620301,1262294959274016,0);
+INSERT INTO ads VALUES (1258,'2009-11-21','2009-11-21','hkd1225',1,0,0,0,1,1211,'http://pushyads.com/1226-tf2s','',0,0,0);
+INSERT INTO ads VALUES (1260,'2009-11-23','2009-11-23','cfv1221s',0,0,1,0,1,1222,'http://pushyads.com/1222-48hv','',1262248194579586,1262294959274016,0);
+INSERT INTO ads VALUES (1261,'2009-11-23','2009-11-25','cfv1221s',1,0,0,0,1,1223,'http://networkernet.com','',0,0,0);
+INSERT INTO ads VALUES (1262,'2009-11-23','2009-11-23','hkd1225',0,0,1,0,0,1242,'http://webbizmarket.com/dailypay.htm','',1262248002625196,1262295079431565,0);
+INSERT INTO ads VALUES (1263,'2009-11-23','2009-11-23','d1240wy',0,0,0,0,0,1243,'http://www.12secondcommute.com/rep/recommends.html','',0,0,0);
+INSERT INTO ads VALUES (1264,'2009-11-23','2009-11-23','d1240wy',1,0,0,0,1,1211,'http://pushyads.com/1241-','',0,0,0);
+INSERT INTO ads VALUES (1265,'2009-11-24','2009-11-24','fbt1241d',0,0,0,0,1,1223,'http://www.doitnow4freedom.com','',0,0,0);
+INSERT INTO ads VALUES (1266,'2009-11-24','2009-11-24','fbt1241d',1,0,0,0,1,1222,'http://www.doitnow4freedom.com','',1259615477687354,1259622205823337,0);
+INSERT INTO ads VALUES (1267,'2009-11-24','2009-11-24','fbt1241d',0,1,0,0,1,1211,'http://www.doitnow4freedom.com','',0,0,0);
+INSERT INTO ads VALUES (1268,'2009-11-25','2009-11-25','fbt1241d',0,0,1,0,1,1238,'http://pushyads.com/1242-','',1262248194580493,1262295079431565,0);
+INSERT INTO ads VALUES (1269,'2009-11-26','2009-11-26','wce1245k',1,0,0,0,0,1244,'http://www.buildwealthonlinenow.com','',0,0,0);
+INSERT INTO ads VALUES (1270,'2009-11-26','2009-11-26','wce1245k',0,0,0,0,0,1246,'http://www.markep.futureawakenings.com','',0,0,0);
+DROP TABLE IF EXISTS credit_map;
+CREATE TABLE credit_map (
+  member_id varchar(20) default '',
+  credits_allocated int(11) NOT NULL default '0',
+  credits_awarded int(11) NOT NULL default '0',
+  last_awarded bigint(20) NOT NULL default '0'
+) TYPE=MyISAM;
+
+INSERT INTO credit_map VALUES ('paw1200',40,0,1262253142559967);
+INSERT INTO credit_map VALUES ('hfe1201w',10,0,1262253142566612);
+INSERT INTO credit_map VALUES ('cfv1221s',2,0,1262248194573811);
+DROP TABLE IF EXISTS earnings_daily;
+CREATE TABLE earnings_daily (
+  member_id varchar(20) NOT NULL default '',
+  yymmdd varchar(10) NOT NULL default '',
+  sales_pro int(11) NOT NULL default '0',
+  earnings_pro decimal(14,2) NOT NULL default '0.00',
+  sales_elite int(11) NOT NULL default '0',
+  earnings_elite decimal(14,2) NOT NULL default '0.00',
+  bonus_count int(11) NOT NULL default '0',
+  bonus_amount decimal(14,2) NOT NULL default '0.00',
+  returns_count int(11) NOT NULL default '0',
+  returns_amount decimal(14,2) NOT NULL default '0.00'
+) TYPE=MyISAM;
+
+INSERT INTO earnings_daily VALUES ('hdn1208','2009-11-10',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('pushy','2009-11-10',2,'47.00',3,'122.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('paw1200','2009-11-10',0,'0.00',0,'0.00',1,'38.20',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hyv1204b','2009-11-10',2,'28.20',1,'29.10',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('brd1203n','2009-11-11',1,'23.50',1,'25.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('paw1200','2009-11-11',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('paw1200','2009-11-12',0,'0.00',0,'0.00',1,'10.61',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hyv1204b','2009-11-12',0,'0.00',1,'15.91',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('paw1200','2009-11-13',1,'23.50',0,'0.00',1,'9.40',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hyv1204b','2009-11-13',1,'14.10',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('brd1203n','2009-11-14',3,'70.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('paw1200','2009-11-15',0,'0.00',0,'0.00',1,'10.61',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hyv1204b','2009-11-15',0,'0.00',1,'15.91',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-11-17',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-11-18',2,'47.00',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('cfv1221s','2009-11-19',0,'0.00',3,'145.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-11-19',0,'0.00',4,'194.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('pushy','2009-11-19',0,'0.00',2,'97.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-11-20',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('pushy','2009-11-21',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-11-22',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-11-23',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-11-24',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-11-24',0,'0.00',2,'97.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-11-26',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-11-27',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('paw1200','2009-12-04',0,'0.00',1,'41.44',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-04',0,'0.00',0,'0.00',1,'65.80',0,'0.00');
+INSERT INTO earnings_daily VALUES ('tsm1248','2009-12-04',7,'98.70',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-06',1,'23.50',1,'25.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('pushy','2009-12-06',2,'47.00',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-09',4,'94.00',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-10',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('paw1200','2009-12-10',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('pushy','2009-12-10',1,'23.50',2,'97.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('s1246vn','2009-12-10',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('paw1200','2009-12-11',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('brd1203n','2009-12-11',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-17',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('cfv1221s','2009-12-20',0,'0.00',3,'145.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-12-20',0,'0.00',4,'194.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('pushy','2009-12-20',0,'0.00',2,'97.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('pushy','2009-12-21',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-12-22',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-12-23',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-23',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-12-24',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-24',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-12-26',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-12-27',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-27',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-12-28',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-28',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('gcw1222p','2009-12-29',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_daily VALUES ('hfe1201w','2009-12-29',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+DROP TABLE IF EXISTS earnings_semi_monthly;
+CREATE TABLE earnings_semi_monthly (
+  member_id varchar(20) NOT NULL default '',
+  yymmdd varchar(10) NOT NULL default '',
+  sales_pro int(11) NOT NULL default '0',
+  earnings_pro decimal(14,2) NOT NULL default '0.00',
+  sales_elite int(11) NOT NULL default '0',
+  earnings_elite decimal(14,2) NOT NULL default '0.00',
+  bonus_count int(11) NOT NULL default '0',
+  bonus_amount decimal(14,2) NOT NULL default '0.00',
+  returns_count int(11) NOT NULL default '0',
+  returns_amount decimal(14,2) NOT NULL default '0.00'
+) TYPE=MyISAM;
+
+INSERT INTO earnings_semi_monthly VALUES ('brd1203n','2009-11-15',4,'94.00',1,'25.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('hdn1208','2009-11-15',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('paw1200','2009-11-15',2,'47.00',0,'0.00',4,'68.82',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('pushy','2009-11-15',2,'47.00',3,'122.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('cfv1221s','2009-11-30',0,'0.00',3,'145.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('gcw1222p','2009-11-30',0,'0.00',9,'436.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('hfe1201w','2009-11-30',3,'70.50',3,'145.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('pushy','2009-11-30',0,'0.00',3,'145.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('hfe1201w','2009-12-15',5,'117.50',2,'73.50',1,'65.80',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('paw1200','2009-12-15',1,'23.50',2,'89.94',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('pushy','2009-12-15',3,'70.50',2,'97.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('brd1203n','2009-12-15',0,'0.00',1,'48.50',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('s1246vn','2009-12-15',1,'23.50',0,'0.00',0,'0.00',0,'0.00');
+INSERT INTO earnings_semi_monthly VALUES ('tsm1248','2009-12-15',7,'98.70',0,'0.00',0,'0.00',0,'0.00');
+DROP TABLE IF EXISTS member;
+CREATE TABLE member (
+  member_id varchar(20) NOT NULL default '',
+  lft int(11) default '0',
+  rgt int(11) default '0',
+  user_level int(11) default '0',
+  system int(11) NOT NULL default '0',
+  refid varchar(20) default '',
+  affiliate_id varchar(20) NOT NULL default '',
+  `password` varchar(20) default '',
+  firstname varchar(30) default '',
+  lastname varchar(30) default '',
+  email varchar(60) default '',
+  member_disabled int(11) NOT NULL default '0',
+  email_disabled int(11) default '0',
+  confirmed int(11) NOT NULL default '0',
+  registered int(11) NOT NULL default '0',
+  lastaccess int(11) NOT NULL default '0',
+  date_registered varchar(10) default '',
+  date_lastaccess varchar(10) default '',
+  company_name varchar(30) default '',
+  address1 varchar(30) default '',
+  address2 varchar(30) default '',
+  city varchar(30) default '',
+  state varchar(25) default '',
+  country char(30) default 'USA',
+  zip varchar(10) default '',
+  phone varchar(25) default '',
+  phone_ext varchar(6) default '',
+  payable_to varchar(40) default '',
+  taxid varchar(16) default '',
+  paypal_email varchar(60) default '',
+  currency varchar(3) NOT NULL default 'USD',
+  website varchar(100) default '',
+  user_ip varchar(20) NOT NULL default '',
+  record_id bigint(20) NOT NULL auto_increment,
+  ts_current_level int(11) NOT NULL default '0',
+  cc_holdername varchar(30) NOT NULL default '',
+  cc_number varchar(18) NOT NULL default '',
+  cc_expmmyyyy varchar(7) NOT NULL default '',
+  cc_address varchar(30) NOT NULL default '',
+  cc_zip varchar(12) NOT NULL default '',
+  cc_cvv2 varchar(5) NOT NULL default '',
+  paypal_profile_id varchar(20) NOT NULL default '',
+  last_payment_date varchar(10) NOT NULL default '',
+  next_payment_due varchar(10) NOT NULL default '',
+  current_level_date varchar(10) NOT NULL default '',
+  anniversary_target varchar(10) NOT NULL default '',
+  awards varchar(256) NOT NULL default '',
+  current_year_personal_domains bigint(20) NOT NULL default '0',
+  current_year_referral_domains bigint(20) NOT NULL default '0',
+  current_year_personal_traffic bigint(20) NOT NULL default '0',
+  current_year_referral_traffic bigint(20) NOT NULL default '0',
+  current_year_memberships_vip bigint(20) NOT NULL default '0',
+  current_year_memberships_pro bigint(20) NOT NULL default '0',
+  current_year_memberships_elite bigint(20) NOT NULL default '0',
+  prior_week_total_credits bigint(20) NOT NULL default '0',
+  prior_week_start_date varchar(10) NOT NULL default '',
+  free_trial int(11) NOT NULL default '0',
+  getresponse_id varchar(10) NOT NULL default '',
+  getresponse_created varchar(10) NOT NULL default '',
+  getresponse_campaign varchar(10) NOT NULL default '',
+  charter_elite_expiration varchar(10) NOT NULL default '',
+  PRIMARY KEY  (member_id),
+  UNIQUE KEY record_id (record_id),
+  UNIQUE KEY email (email)
+) TYPE=MyISAM AUTO_INCREMENT=1281;
+
+INSERT INTO member VALUES ('pushy',0,131,2,1,'SYSTEM','pushy','tjw998468','Pushy','Ads','noreply@pushyads.com',0,0,1240000000,1249170505,1261342099,'2009-10-01','2009-12-20','','','','','','','','','','','','','','','',1200,0,'Pushy Ads','5104863275748366','07-2010','','','372','','','','','','',2,6,0,0,0,3,6,20,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('paw1200',1,12,2,0,'pushy','1201-x1rr','tjw998468','Tim','Wolf','tim@webtribune.com',0,0,1250000000,1257876107,1262288967,'2009-11-10','2009-12-31','Wolftracks','','','','','United States','','','','','','','USD','','127.0.0.1',1201,0,'Tim Wolf','5555555555554444','12-2012','123 Maple','27526','234','','2009-12-10','2010-01-10','2009-11-10','2010-01-10','~103~',2,0,0,0,1,2,0,40,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('hfe1201w',13,56,2,0,'pushy','1202-m1dm','tjw998468','Bartholomew','Simpson','bart@simpson.com',0,0,1250000000,1257885646,1261941994,'2009-11-10','2009-12-27','','','','','','United States','','','','','','','USD','','208.100.133.76',1202,0,'Bart Simpson','5555555555554444','03-2011','123 ford st','123454','123','','2009-12-10','2010-01-10','2009-11-10','2010-01-10','~102~105~',0,0,0,0,5,3,5,10,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('wef1232b',94,95,2,0,'cfv1221s','1233-vkpr','surfer7','Tom','Bauman','tom@tombauman.com',0,0,1250000000,1258691627,1259827442,'2009-11-19','2009-12-03','Pure Source Solutions','601 Mar Vista Drive','','Los Osos','California','United States','93402','805-797-4755','','','','','USD','','71.95.140.91',1233,0,'Tom Bauman','5555555555554444','01-2010','601 Mar Vista Drive','93402','555','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',1,0,0,0,0,0,0,0,'2009-12-20',0,'nYKPL','2009-11-19','md1','');
+INSERT INTO member VALUES ('brd1203n',57,60,1,0,'pushy','1204-fvvt','tjw998468','Bob','Bumpkin','bob@bumpkin.com',0,0,1250000000,1257886294,1261342186,'2009-11-10','2009-12-20','','','','','','United States','','','','','','','USD','','208.100.133.76',1204,0,'Bob Bumpkin','5555555555554444','12-2011','123 ford st','123454','123','','2009-12-10','2010-01-10','2009-11-10','2010-01-10','~103~',0,0,0,0,0,1,1,0,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('j1205rmb',4,5,1,0,'paw1200','1206-zbjc','tjw998468','Daniel','Boone','dboone@webtribune.com',0,0,1250000000,1257901278,1261341960,'2009-11-10','2009-12-20','','','','','','USA','','','','','','','USD','','71.70.248.120',1206,0,'Daniel Boone','5555555555554444','11-2011','123 Maple','53425','432','','2009-12-11','2010-01-11','2009-11-11','2010-01-11','~101~104~',0,0,0,0,0,0,0,0,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('f1206wkt',6,7,2,0,'paw1200','1207-6xbn','tjw998468','Davey','Crockett','dcrockett@webtribune.com',0,0,1250000000,1257902249,1262290441,'2009-11-10','2009-12-31','','','','','','USA','','','','','','','USD','','71.70.248.120',1207,0,'Davey Crockett','5555555555554444','11-2011','123 maple','27526','234','','2009-12-04','2010-01-04','2009-11-13','2010-01-04','~101~104~105~',0,0,0,0,0,0,0,0,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('y1230vt',121,122,2,0,'pushy','1231-593m','mobileads987','Larry','Miller','adaem@aol.com',0,0,1250000000,1258682893,1262248209,'2009-11-19','2009-12-31','','3928 N. Rosebud Dr.','SE-4','Grand Rapids','MI','United States','49512','616-682-0268','','Ellen Miller','377-48-3196','larryhmiller@comcast.net','USD','','24.11.169.138',1231,0,'Larry Miller','5555555555554444','01-2013','3928 N.Rosebud Dr. SE-4','49512','577','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',1,0,0,0,0,0,0,0,'2009-12-20',0,'TPRr0','2009-12-31','Jjt','');
+INSERT INTO member VALUES ('hdn1208',1,2,2,0,'paw1200','1209-cgzd','tjw998468','Humpty','Dumpty','hump@dump.com',0,0,1250000000,1257917653,1258951550,'2009-11-10','2009-11-22','','','','','','USA','','','','','','','USD','','208.100.133.76',1209,0,'Humpty Dumpty','5555555555554444','11-2011','123 yackadoodledoo','12vb','123','','2009-12-10','2010-01-10','2009-11-10','2010-01-10','~103~',0,0,0,0,0,1,0,0,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('cfv1210',58,59,2,0,'brd1203n','1211-4twc','tjw998468','Captain','Kangaroo','cappy@webtribune.com',0,0,1250000000,1257971436,1260942921,'2009-11-11','2009-12-15','','','','','','USA','','','','','','','USD','','71.70.248.120',1211,0,'Captain Kangaroo','5555555555554444','11-2011','123 Maple','54325','453','','2009-12-11','2010-01-11','2009-11-11','2010-01-11','~101~104~105~',0,0,0,0,0,0,0,0,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('x1229pd',69,70,2,0,'gcw1222p','1230-79dk','spike69','Mike','Lapenna','rumrunner40@sympatico.ca',0,0,1250000000,1258680937,1258680940,'2009-11-19','2009-11-19','','','','','','USA','','','','','','','USD','','69.157.122.4',1230,0,'Mike Lapenna','5555555555554444','08-2012','53 peartree rd. fall glen ny','14712','654','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nYnJQ','2009-11-19','md1','');
+INSERT INTO member VALUES ('w1215pk',14,15,0,0,'hfe1201w','1216-3bz9','tjw998468','Dennis','Menace','tim5@ibmt.net',0,0,1250000000,1258339993,1260380001,'2009-11-15','2009-12-09','','','','','','USA','','','','','','','USD','','71.70.248.120',1216,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',0,'','','','');
+INSERT INTO member VALUES ('tsm1248',30,33,1,0,'hfe1201w','1249-cztv','tjw998468','Sumthin','Special','mark@gilbertmania.com',0,0,1259425582,1259425658,1260414286,'2009-11-28','2009-12-09','','','','','','USA','','','','','','','USD','','216.228.181.27',1249,0,'Sumthin Special','5555555555554444','02-2011','123 Ford st','12345','123','','2009-12-09','2010-01-09','2009-12-09','2010-01-09','~101~104~',0,0,0,0,0,0,0,0,'2009-12-20',0,'Tp8QS','2009-11-28','md1','');
+INSERT INTO member VALUES ('mbr1217',16,17,2,0,'hfe1201w','1218-t3g6','tjw998468','Ap','Team','t_e_a_m@autoprospector.com',0,0,1250000000,1258492546,1258693385,'2009-11-17','2009-11-19','','','','','','USA','','','','','','','USD','','71.70.248.120',1218,0,'Ap Team','5555555555554444','09-2010','123 Maple','53425','654','','2009-12-17','2010-01-17','2009-11-17','2010-01-17','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nvESG','2009-11-17','md1','');
+INSERT INTO member VALUES ('d1233cw',71,72,0,0,'gcw1222p','1234-svrp','34219865','Mark','Petty','blinkent@look.ca',0,0,1250000000,1258744545,1258827866,'2009-11-20','2009-11-21','','POB 116','','Zephyr','Ontario','Canada','L0E1T0','800-807-5969','','MARK PETTY','999999999','markjam@look.ca','USD','','216.66.135.62',1234,0,'Mark Petty','5555555555554444','11-2009','POB 116','L0E1T0','111','','2009-11-20','','2009-11-20','2009-12-20','~103~',0,0,0,0,0,0,0,0,'2009-12-13',0,'TPgII','2009-12-30','Jjt','');
+INSERT INTO member VALUES ('ahb1234',123,124,2,0,'pushy','1235-ts5r','1val4mis','Steve','Ward','steve@stevewardco.com',0,0,1250000000,1258811275,1258937428,'2009-11-21','2009-11-22','','2721 Central Ave','','Memphis','TN','United States','38111','901-878-9273','','Steve Ward','570864194','accounting@stevewardco.com','USD','','75.65.7.75',1235,0,'Steve Ward','5555555555554444','12-2009','2721 Central Ave','38111','999','','2009-12-21','2010-01-21','2009-11-21','2010-01-21','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nYhEl','2009-11-21','md1','');
+INSERT INTO member VALUES ('cfv1221s',61,120,2,0,'pushy','1222-48hv','pushy1234','David','Hennessy','david@dhennessypublications.com',0,0,1250000000,1258626223,1262125375,'2009-11-19','2009-12-29','','','','','','United States','','','','','','david@dhennessypublications.com','USD','','60.226.32.172',1222,0,'David Hennessy','5555555555554444','12-2009','13 Orient Road, Yeronga Queens','4104','123','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',3,7,0,0,1,0,3,2,'2009-12-20',0,'nH9n2','2009-11-19','md1','');
+INSERT INTO member VALUES ('gcw1222p',62,89,2,0,'cfv1221s','1223-vdkw','aliera04','Andrea','Pettit','andreap@rightfromtheheart.com',0,0,1250000000,1258652194,1258816821,'2009-11-19','2009-11-21','','','','','','USA','','','','','','','USD','','174.16.68.68',1223,0,'Andrea Pettit','5555555555554444','11-2010','1591 Holly St','80220','178','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',2,2,0,0,1,0,9,0,'2009-12-20',0,'nHUVd','2009-11-19','md1','');
+INSERT INTO member VALUES ('frg1223',63,64,2,0,'gcw1222p','1224-2wst','y24uwv6udjhpgje6japm','Thaddeus','Hairston','webmaster@getwitit.net',0,0,1250000000,1258655293,1258755630,'2009-11-19','2009-11-20','','','','','','USA','','','','','','','USD','','75.75.45.207',1224,0,'Thaddeus Hairston','5555555555554444','12-2012','P.O. Box 490','24054','555','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',1,0,0,0,0,0,0,0,'2009-12-20',0,'nH1bi','2009-11-19','md1','');
+INSERT INTO member VALUES ('djf1224',65,66,2,0,'gcw1222p','1225-7pfx','saklook3','Susie','Brown','sbrown7557@aol.com',0,0,1250000000,1258657087,1258828441,'2009-11-19','2009-11-21','','','','','','USA','','','','','','','USD','','64.12.117.12',1225,0,'Susie Brown','5555555555554444','12-2009','P.O.  Box  436805','60643','307','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'TPdBP','2009-12-31','Jjt','');
+INSERT INTO member VALUES ('hkd1225',90,91,2,0,'cfv1221s','1226-tf2s','agent107107','Brent','Bush','brntbush@yahoo.com',0,0,1250000000,1258661504,1260228494,'2009-11-19','2009-12-07','','','','','','USA','','','','','','','USD','','67.223.213.155',1226,0,'Brent Bush','5555555555554444','12-2010','26695 jingo rd.','66053','165','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',4,0,0,0,0,0,0,0,'2009-12-20',0,'nHHZw','2009-11-19','md1','');
+INSERT INTO member VALUES ('w1226xa',92,93,0,0,'cfv1221s','1227-xmr4','','John','Dillman','john@ptmx.net',0,0,1250000000,0,0,'','','','','','','','USA','','','','','','','USD','','75.204.241.112',1227,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'nHsXf','2009-11-19','73q','');
+INSERT INTO member VALUES ('tma1231s',18,19,1,0,'hfe1201w','1232-vse4','tjw998468','Dick','Tracy','tracy@webtribune.com',0,0,1250000000,1256409653,1260323953,'2009-10-24','2009-12-08','','','','','','USA','','','','','','','USD','','71.70.248.120',1232,0,'Dick Tracy','5555555555554444','09-2011','123 Maple','27526','423','','2009-12-09','2010-01-09','2009-12-09','2010-01-09','~104~',0,0,0,0,0,0,0,0,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('dht1227c',67,68,2,0,'gcw1222p','1228-m9nj','contractor007','Brian','Crain','bcrain007@gmail.com',0,0,1250000000,1258681509,1259004100,'2009-11-19','2009-11-23','','','','','','USA','','','','','','','USD','','71.204.177.232',1228,0,'Brian Crain','5555555555554444','01-2012','961 Rhodes Ct.','94523','1234','','2009-12-20','2010-01-20','2009-11-19','2010-01-20','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nYn9b','2009-11-19','md1','');
+INSERT INTO member VALUES ('pnd1236',73,74,2,0,'gcw1222p','1237-m4ps','bl3ssings','Mikayla','Martinsen','mikaylaro@gmail.com',0,0,1250000000,1258954356,1258954359,'2009-11-22','2009-11-22','','','','','','USA','','','','','','','USD','','68.7.27.194',1237,0,'Mikayla Martinsen','5555555555554444','11-2012','2514 Jamacha Rd Ste 502 PMB 14','92019','555','','2009-12-22','2010-01-22','2009-11-22','2010-01-22','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nbDg4','2009-11-23','md1','');
+INSERT INTO member VALUES ('d1237myf',75,76,0,0,'gcw1222p','1238-pt65','','Barbara','Blevins','babs.blevins@gmail.com',0,0,1250000000,0,0,'','','','','','','','USA','','','','','','','USD','','92.24.63.212',1238,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'ndc0m','2009-11-23','73q','');
+INSERT INTO member VALUES ('d1238jmk',77,78,0,0,'gcw1222p','1239-m54e','','Mark','Trofimov','marktrofimov@live.co.uk',0,0,1259262068,0,0,'','','','','','','','USA','','','','','','','USD','','71.70.248.120',1239,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'ndo6R','2009-11-26','73q','');
+INSERT INTO member VALUES ('mjb1239n',79,80,0,0,'gcw1222p','1240-brtw','redefine80','Iain','Forrest','iainforrest@vodafone.co.nz',0,0,1250000000,1259007029,1259007032,'2009-11-23','2009-11-23','','','','','','USA','','','','','','','USD','','118.92.102.20',1240,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',0,'ndr7o','2009-11-23','73q','');
+INSERT INTO member VALUES ('d1240wy',81,82,2,0,'gcw1222p','1241-mgt3','thejerk08','Ken','Ostrye','kostrye@aol.com',0,0,1250000000,1259027455,1259125096,'2009-11-23','2009-11-24','','','','','','USA','','','','','','','USD','','70.41.25.26',1241,0,'Ken Ostrye','5555555555554444','12-2012','555 High Country Road','36054','069','','2009-12-23','2010-01-23','2009-11-23','2010-01-23','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'ndGZ3','2009-11-23','md1','');
+INSERT INTO member VALUES ('fbt1241d',83,84,2,0,'gcw1222p','1242-w5tp','gdklein777','Diane','Kleinsasser','dianek57@gmail.com',0,0,1250000000,1259079905,1259622169,'2009-11-24','2009-11-30','','411 59 street NE','','Calgary','Alberta','Canada','t2a 4a8','','','Diane Kleinsasser','','dianekleinsasser@yahoo.com','USD','','70.75.83.24',1242,0,'Diane Kleinsasser','5555555555554444','11-2011','411 59 street  NE','T2A 4A8','021','','2009-12-24','2010-01-24','2009-11-24','2010-01-24','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nddCJ','2009-11-24','md1','');
+INSERT INTO member VALUES ('b1242ycp',85,86,0,0,'gcw1222p','1243-pr55','','Calee','Smith','goodemailme@aol.com',0,0,1250000000,0,0,'','','','','','','','USA','','','','','','','USD','','207.200.116.10',1243,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'nR8k6','2009-11-24','73q','');
+INSERT INTO member VALUES ('r1243ya',20,21,2,0,'hfe1201w','1244-s73p','tjw998468','Mark','Gilbert','admin@u2project.com',0,0,1250000000,1259126276,1259368232,'2009-11-24','2009-11-27','','','','','','USA','','','','','','','USD','','216.228.181.27',1244,0,'Mark Gilbert','5555555555554444','03-2010','123 ford st','123454','123','','2009-12-24','2010-01-24','2009-11-24','2010-01-24','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nRizb','2009-11-24','md1','');
+INSERT INTO member VALUES ('v1247cxt',28,29,0,0,'hfe1201w','1248-9g8f','','Sumthin','Special','signup5@gilbertmania.com',0,0,0,0,0,'','','','','','','','USA','','','','','','','USD','','208.100.133.146',1248,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'','','','');
+INSERT INTO member VALUES ('wce1245k',85,86,2,0,'gcw1222p','1246-zzg6','trekky11','Mark','Powell','markep66@aol.com',0,0,1259277191,1259277357,1259286394,'2009-11-26','2009-11-26','','','','','','USA','','','','','','','USD','','64.12.117.12',1246,0,'Mark Powell','5555555555554444','12-2009','2907 Wendell Dr','61109','000','','2009-12-29','2010-01-26','2009-11-26','2010-01-26','~103~',0,0,0,0,0,0,0,0,'2009-12-13',0,'nE1G8','2009-11-26','md1','');
+INSERT INTO member VALUES ('s1246vn',20,25,1,0,'hfe1201w','1247-st1z','tjw998468','Easy','Duzzit','mark@u2project.com',0,0,1259353488,1259353733,1259364971,'2009-11-27','2009-11-27','','','','','','USA','','','','','','','USD','','216.228.181.27',1247,0,'Easy Duzzit','5555555555554444','03-2011','123 Too Easy Street','123456','123','','2009-12-29','2010-01-27','2009-11-27','2010-01-27','~101~104~',0,0,0,0,1,1,0,0,'2009-12-13',0,'TV0bG','2009-11-27','md1','');
+INSERT INTO member VALUES ('c1251kf',36,37,0,0,'hfe1201w','1252-fbwz','tjw998468','Joe','Blo','signup9@gilbertmania.com',0,0,1260132790,1260132846,1261947850,'2009-12-06','2009-12-27','','','','','','USA','','','','','','','USD','','208.100.133.146',1252,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',1,'Tavl1','2009-12-06','73q','');
+INSERT INTO member VALUES ('svd1249',31,32,1,0,'tsm1248','1250-xzxr','tjw998468','Sumthin','Special','signup8@gilbertmania.com',0,0,1259973920,1259974780,1260892825,'2009-12-04','2009-12-15','','','','','','USA','','','','','','','USD','','208.100.133.146',1250,0,'Sumthin Special','5555555555554444','10-2010','123 ford st','123454','123','','2009-12-04','2010-01-04','2009-12-04','2010-01-04','~101~104~',0,0,0,0,0,0,0,0,'2009-12-20',0,'T6Dhc','2009-12-04','md1','');
+INSERT INTO member VALUES ('thm1250c',34,35,2,0,'hfe1201w','1251-5p9c','p-64z69p5v','Whatson','Second','jv@gilbertmania.com',0,0,1260487769,1260493333,1260493557,'2009-12-10','2009-12-10','','','','','','USA','','','','','','','USD','','208.100.133.146',1251,0,'Whatson Second','5555555555554444','02-2011','123 ford st','123454','1233','','2009-12-10','2010-01-10','2009-12-10','2010-01-10','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'T61oS','2009-12-05','md1','');
+INSERT INTO member VALUES ('g1252wf',38,39,0,0,'hfe1201w','1253-nv7f','tjw998468','Hanky','Panky','facebook@gilbertmania.com',0,0,1260130286,1260138855,1260144862,'2009-12-06','2009-12-06','','','','','','USA','','','','','','','USD','','208.100.133.146',1253,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'TaHCg','2009-12-06','73q','');
+INSERT INTO member VALUES ('x1253ft',40,41,0,0,'hfe1201w','1254-hmh3','','Walmart','Greeter','qwerty@webtribune.com',0,0,0,0,0,'','','','','','','','USA','','','','','','','USD','','71.70.248.120',1254,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'','','','');
+INSERT INTO member VALUES ('vhk1254',42,43,0,0,'hfe1201w','1255-8xvb','','Walmart','Greeter','qwerty25@webtribune.com',0,0,0,0,0,'','','','','','','','USA','','','','','','','USD','','71.70.248.120',1255,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'','','','');
+INSERT INTO member VALUES ('nar1255',44,45,2,0,'hfe1201w','1256-8kk5','tjw998468','Who','Is','signup7@gilbertmania.com',0,0,1260139079,1260160484,1260163729,'2009-12-06','2009-12-06','','','','','','USA','','','','','','','USD','','208.100.133.146',1256,0,'Who Is','5555555555554444','02-2010','123 ford st','123454','123','','2009-12-06','2010-01-06','2009-12-06','2010-01-06','',0,0,0,0,0,0,0,0,'2009-12-20',0,'TaRSA','2009-12-06','md1','');
+INSERT INTO member VALUES ('v1256hfe',125,126,1,0,'pushy','1257-mr4z','p-rm5w8762','Lap','Top','digg@gilbertmania.com',0,0,1260151663,1260151714,0,'2009-12-06','','','','','','','USA','','','','','','','USD','','168.103.230.58',1257,0,'Lap Top','5555555555554444','02-2010','123 ford st','123454','123','','2009-12-06','2010-01-06','2009-12-06','2010-01-06','~102~',0,0,0,0,0,0,0,0,'2009-12-20',0,'nhEtR','2009-12-06','md1','');
+INSERT INTO member VALUES ('dcr1257',127,128,1,0,'pushy','1258-76wp','p-75pht1xg','Lap','Top','jill@gilbertmania.com',0,0,1260150816,1260151117,1260327922,'2009-12-06','2009-12-08','','','','','','USA','','','','','','','USD','','168.103.230.58',1258,0,'Lap Top','5555555555554444','09-2010','123 fres','12345','123','','2009-12-06','2010-01-06','2009-12-06','2010-01-06','~102~',0,0,0,0,0,0,0,0,'2009-12-20',0,'T8nDA','2009-12-06','md1','');
+INSERT INTO member VALUES ('j1258cf',46,47,0,0,'hfe1201w','1259-fn8h','','Ham','Mer','youtube@gilbertmania.com',0,0,1260160815,0,0,'','','','','','','','USA','','','','','','','USD','','208.100.133.146',1259,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'T8WoN','2009-12-06','73q','');
+INSERT INTO member VALUES ('m1259yn',48,49,1,0,'hfe1201w','1260-bmd6','p-g856p2rg','Yew','Betcha','warriors@gilbertmania.com',0,0,1260406305,1260410035,1260419795,'2009-12-09','2009-12-09','','','','','','USA','','','','','','','USD','','208.100.133.146',1260,0,'Yew Betcha','5555555555554444','02-2011','123 Ford st','12345','123','','2009-12-09','2010-01-09','2009-12-09','2010-01-09','',0,0,0,0,0,0,0,0,'2009-12-20',0,'TWF6N','2009-12-09','md1','');
+INSERT INTO member VALUES ('n1260ep',50,51,1,0,'hfe1201w','1261-fkj4','p-2fpv76dm','How','Come','adv@gilbertmania.com',0,0,1260406670,1260410369,0,'2009-12-09','','','','','','','USA','','','','','','','USD','','208.100.133.146',1261,0,'How Come','5555555555554444','02-2010','123 ford st','123454','123','','2009-12-09','2010-01-09','2009-12-09','2010-01-09','',0,0,0,0,0,0,0,0,'2009-12-20',0,'TWFQ3','2009-12-09','md1','');
+INSERT INTO member VALUES ('h1261npg',23,24,0,0,'s1246vn','1262-5vx1','tjw998468','Whats','This','ppp@gilbertmania.com',0,0,1260406754,1260406779,0,'2009-12-09','2009-12-09','','','','','','USA','','','','','','','USD','','208.100.133.146',1262,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',1,'TWF56','2009-12-09','73q','');
+INSERT INTO member VALUES ('m1262npt',8,9,0,0,'paw1200','1263-rrbp','','Ben','Franklin','ben@webtribune.com',0,0,1260483401,0,0,'','','','','','','','USA','','','','','','','USD','','71.70.248.120',1263,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'','','','');
+INSERT INTO member VALUES ('a1263se',25,26,1,0,'s1246vn','1264-mmx5','tjw998468','Whoson','First','reseller@gilbertmania.com',0,0,1260487330,1260487794,1260487796,'2009-12-10','2009-12-10','','','','','','USA','','','','','','','USD','','208.100.133.146',1264,0,'Whoson First','5555555555554444','01-2011','123 ford st','123454','1233','','2009-12-10','2010-01-10','2009-12-10','2010-01-10','~102~',0,0,0,0,0,0,0,0,'2009-12-20',0,'TBm4i','2009-12-10','md1','');
+INSERT INTO member VALUES ('m1264epr',52,53,0,0,'hfe1201w','1265-z2xt','tjw998468','Bob','Smith','networth81@gmail.com',0,0,1261420106,1261420395,1261420397,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1265,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T5FSs','2009-12-21','73q','');
+INSERT INTO member VALUES ('f1265hdp',96,119,0,0,'cfv1221s','1266-7nrp','tjw998468','Yankee','Doodle','mark@pushyads.com',0,0,1261420880,1261420968,1261420971,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1266,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T5Xww','2009-12-21','73q','');
+INSERT INTO member VALUES ('s1266jmg',97,118,0,0,'f1265hdp','1267-jdrr','tjw998468','Lorne','Green','twitter@gilbertmania.com',0,0,1261421987,1261422033,1261422036,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1267,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T5CzE','2009-12-21','73q','');
+INSERT INTO member VALUES ('eyb1267d',98,117,0,0,'s1266jmg','1268-c7xj','tjw998468','Cookie','Monster','learn@gilbertmania.com',0,0,1261422226,1261422258,1261422260,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1268,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T5CLx','2009-12-21','73q','');
+INSERT INTO member VALUES ('xed1268',99,116,0,0,'eyb1267d','1269-tj7f','tjw998468','Pop','Sickle','delicious@gilbertmania.com',0,0,1261422505,1261422525,1261422527,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1269,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T5C7M','2009-12-21','73q','');
+INSERT INTO member VALUES ('ahc1269y',100,113,0,0,'xed1268','1270-cr75','tjw998468','Eye','Stumble','stumble@gilbertmania.com',0,0,1261422620,1261422640,1261422642,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1270,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T5Cl0','2009-12-21','73q','');
+INSERT INTO member VALUES ('f1270xt',114,115,0,0,'xed1268','1271-s5zf','tjw998468','Happy','Gilmore','veoh@gilbertmania.com',0,0,1261422764,1261422784,1261422787,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1271,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T5C0g','2009-12-21','73q','');
+INSERT INTO member VALUES ('gjk1271h',101,112,0,0,'ahc1269y','1272-3k6k','tjw998468','Homer','Simpson','web20@gilbertmania.com',0,0,1261422924,1261422947,1261422949,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1272,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T5CNt','2009-12-21','73q','');
+INSERT INTO member VALUES ('msc1272',102,103,0,0,'gjk1271h','1273-vzw7','tjw998468','Herbert','Hoover','linkroll@gilbertmania.com',0,0,1261423102,1261423122,1261423125,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1273,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T5CHl','2009-12-21','73q','');
+INSERT INTO member VALUES ('mdf1273',104,105,0,0,'gjk1271h','1274-pvbr','tjw998468','Blog','Catalog','blogcatalog@gilbertmania.com',0,0,1261423290,1261423309,1261423311,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1274,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T57V0','2009-12-21','73q','');
+INSERT INTO member VALUES ('fje1274',106,107,0,0,'gjk1271h','1275-888b','','Crispy','Critter','mzinga@gilbertmania.com',0,0,1261423401,0,0,'','','','','','','','USA','','','','','','','USD','','208.100.133.146',1275,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'T574R','2009-12-21','73q','');
+INSERT INTO member VALUES ('xwt1275',108,111,0,0,'gjk1271h','1276-nh5g','tjw998468','Jack','Sprat','blackberry@gilbertmania.com',0,0,1261423789,1261423812,1261423814,'2009-12-21','2009-12-21','','','','','','USA','','','','','','','USD','','208.100.133.146',1276,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T575c','2009-12-21','73q','');
+INSERT INTO member VALUES ('mfs1276',109,110,0,0,'xwt1275','1277-c5kz','tjw998468','Issy','Wassy','bumpzee@gilbertmania.com',0,0,1261423912,1261423940,1262070886,'2009-12-21','2009-12-29','','','','','','USA','','','','','','','USD','','208.100.133.146',1277,0,'','','','','','','','','','','','~101~',0,0,0,0,0,0,0,0,'',1,'T57fD','2009-12-21','73q','');
+INSERT INTO member VALUES ('epr1277',54,55,2,0,'hfe1201w','1278-s589','tjw998468','Bob','Cat','bobcat@webtribune.com',0,0,1261605992,1261607209,1262294718,'2009-12-23','2009-12-31','','','','','','USA','','','','','','','USD','','71.70.248.120',1278,0,'Bob Cat','5555555555554444','11-2012','123 Maple','27526','534','','2009-12-23','2010-01-23','2009-12-23','2010-01-23','~103~',0,0,0,0,0,0,0,0,'2009-12-20',0,'','','','');
+INSERT INTO member VALUES ('t1278br',129,130,0,0,'pushy','1279-sp2m','','Chimp','Panzy','social@gilbertmania.com',0,0,0,0,0,'','','','','','','','USA','','','','','','','USD','','71.34.80.188',1279,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'','','','');
+INSERT INTO member VALUES ('r1279jk',10,11,0,0,'paw1200','1280-f6k6','','Pink','Panther','pinky@webtribune.com',0,0,1261962388,0,0,'','','','','','','','USA','','','','','','','USD','','71.70.248.120',1280,0,'','','','','','','','','','','','',0,0,0,0,0,0,0,0,'',0,'','','','');
+DROP TABLE IF EXISTS paypal_recurring_billing;
+CREATE TABLE paypal_recurring_billing (
+  snapshot_id bigint(20) NOT NULL default '0',
+  member_id varchar(20) NOT NULL default '',
+  profile_id varchar(20) NOT NULL default '',
+  profile_status int(11) NOT NULL default '0',
+  cc_number varchar(20) NOT NULL default '',
+  cc_expires varchar(10) NOT NULL default '',
+  cc_amount decimal(14,2) NOT NULL default '0.00',
+  frequency varchar(10) NOT NULL default '',
+  date_start varchar(20) NOT NULL default '',
+  date_created varchar(20) NOT NULL default '',
+  currency_symbol varchar(10) NOT NULL default ''
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS paypal_snapshots;
+CREATE TABLE paypal_snapshots (
+  snapshot_id bigint(20) NOT NULL default '0',
+  snapshot_timestamp int(11) NOT NULL default '0',
+  snapshot_date varchar(10) NOT NULL default '',
+  snapshot_time varchar(10) NOT NULL default '',
+  UNIQUE KEY snapshot_id (snapshot_id)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS product;
+CREATE TABLE product (
+  product_id bigint(20) NOT NULL auto_increment,
+  product_owner varchar(20) default '',
+  org_product_owner varchar(20) default '',
+  product_approved int(11) NOT NULL default '0',
+  product_submit_date varchar(10) NOT NULL default '',
+  media_type int(11) NOT NULL default '0',
+  media_format varchar(6) NOT NULL default '',
+  media_width int(11) NOT NULL default '0',
+  media_height int(11) NOT NULL default '0',
+  media_size int(11) NOT NULL default '0',
+  media_original_width int(11) NOT NULL default '0',
+  media_original_height int(11) NOT NULL default '0',
+  media_server int(11) NOT NULL default '0',
+  media_file varchar(32) default '',
+  product_name varchar(32) default '',
+  product_title varchar(64) default '',
+  product_categories varchar(256) default '',
+  product_description varchar(512) default '',
+  UNIQUE KEY product_id (product_id)
+) TYPE=MyISAM AUTO_INCREMENT=1249;
+
+INSERT INTO product VALUES (1224,'mbr1217','mbr1217',0,'2009-11-17',1,'jpg',93,165,5885,120,212,0,'1224.jpg','Product 1','Product 1','~112~113~117~119~123~127~128~','Product 1 Product 1 Product 1 Product 1');
+INSERT INTO product VALUES (1223,'paw1200','paw1200',0,'2009-11-17',1,'gif',120,140,14624,124,145,0,'1223.gif','Quality Leads','Affiliates Wanted','~103~104~107~108~109~114~113~','88% of profit with recurring earnings in HUGE market');
+INSERT INTO product VALUES (1207,'paw1200','paw1200',0,'2009-11-10',1,'jpg',120,125,4017,120,125,0,'1207.jpg','Tim Two','Tim Two','~101~103~108~110~112~130~138~','Tim Two Tim Two Tim Two Tim Two Tim Two');
+INSERT INTO product VALUES (1209,'paw1200','paw1200',0,'2009-11-10',1,'jpg',107,165,7119,120,185,0,'1209.jpg','Tim Four','Tim Four','~145~','Tim Four Tim Four Tim Four Tim Four Tim Four');
+INSERT INTO product VALUES (1234,'d1233cw','d1233cw',0,'2009-11-20',1,'jpg',120,82,5983,724,497,0,'1234.jpg','Million Cash Plan','Cash Coach','~108~','1 on 1 personal mentoring to earn $5,000+ weekly');
+INSERT INTO product VALUES (1211,'pushy','pushy',0,'2009-11-11',1,'jpg',119,165,6198,367,511,0,'1211.jpg','Pushy! Ads','Free Product Ad','~108~121~124~','Get your Product ad placed on a big network of widgets for FREE');
+INSERT INTO product VALUES (1213,'hfe1201w','hfe1201w',0,'2009-11-12',1,'jpg',120,149,6775,368,456,0,'1213.jpg','This Is The One','This Is The One','~104~110~','This is the one you want to promote to everyone online. Seriously!');
+INSERT INTO product VALUES (1214,'pushy','pushy',0,'2009-11-12',1,'jpg',120,154,4403,150,193,0,'1214.jpg','Something Big','Something Big','~130~','is coming to town and you need to be ready with both feet planted');
+INSERT INTO product VALUES (1215,'hfe1201w','hfe1201w',0,'2009-11-12',1,'png',120,154,22772,299,384,0,'1215.png','Pushyads','I Love Pushy!','~101~108~130~139~145~','PUSHY! is the best advertising idea I\'ve seen in ages');
+INSERT INTO product VALUES (1238,'frg1223','frg1223',0,'2009-11-20',1,'jpg',120,123,4669,181,186,0,'1238.jpg','Traffic Tactics','Convert Sales','~145~','Increase website or blog traffic with these techniques.');
+INSERT INTO product VALUES (1217,'hdn1208','hdn1208',0,'2009-11-15',1,'jpg',120,148,7576,386,476,0,'1217.jpg','Oh Boy!','Oh Boy Oh Boy!','~122~123~124~','Somethin is about to happen that you and everyone you know is going');
+INSERT INTO product VALUES (1244,'wce1245k','wce1245k',0,'2009-11-26',1,'jpg',120,148,5701,569,700,0,'1244.jpg','Home Business P Time','Top Home Biz','~108~118~','6Figure Income, Parttime, No Selling, Recession proof, Anywhere');
+INSERT INTO product VALUES (1242,'hkd1225','hkd1225',0,'2009-11-23',1,'jpg',119,165,5171,180,250,0,'1242.jpg','Ez Wealth','I\'ll Pay Your Way In','~108~','into level #1. You get paid 100% directly!');
+INSERT INTO product VALUES (1222,'hdn1208','hdn1208',0,'2009-11-16',1,'gif',103,107,12030,103,107,0,'1222.gif','Autoprospector','Autoprospector','~104~','Real time lead gen for highly qualified bizopp seekers');
+INSERT INTO product VALUES (1221,'hdn1208','hdn1208',0,'2009-11-15',1,'jpg',120,118,5535,420,413,0,'1221.jpg','Somethin Special','Somethin Big','~102~105~','If you are ready, you are about to see something really big');
+INSERT INTO product VALUES (1226,'mbr1217','mbr1217',0,'2009-11-17',1,'jpg',120,107,4489,120,107,0,'1226.jpg','Product 3','Product 3','~107~108~109~114~115~122~124~','Product 3 Product 3 Product 3 Product 3 Product 3');
+INSERT INTO product VALUES (1243,'d1240wy','d1240wy',0,'2009-11-23',1,'gif',119,100,10325,336,280,0,'1243.gif','12 Second Commute','Tool And Opportunity','~130~145~','If you\'re tired of empty promises ...');
+INSERT INTO product VALUES (1228,'gcw1222p','gcw1222p',0,'2009-11-19',1,'jpg',75,108,3684,75,108,0,'1228.jpg','Renegade University','Renegade University','~116~137~','Training for anyone in Network and Internet Marketing');
+INSERT INTO product VALUES (1229,'gcw1222p','gcw1222p',0,'2009-11-19',1,'jpg',85,127,2225,85,127,0,'1229.jpg','Lifepath Unlimited','Lifepath Unlimited','~108~137~','Personal Development and Home Based Business Opportunity - Transform');
+INSERT INTO product VALUES (1230,'hkd1225','hkd1225',0,'2009-11-19',1,'jpg',120,120,5672,150,150,0,'1230.jpg','Blogomator','Auto Blogging','~101~108~130~145~','Post to all of your blogs on auto pilot! Free Articles');
+INSERT INTO product VALUES (1231,'x1229pd','x1229pd',0,'2009-11-19',1,'gif',120,90,20412,120,90,0,'1231.gif','Tvi Explosion','Too Crazy For You','~108~','YOUR Life is about to Change! This will blow YOUR Mind!');
+INSERT INTO product VALUES (1232,'x1229pd','x1229pd',0,'2009-11-19',1,'jpg',120,90,3336,330,247,0,'1232.jpg','Magneticmoneymiracle','What Recession','~108~','My Wife almost died... when $13,500 rolled up to the front door!');
+INSERT INTO product VALUES (1235,'d1233cw','d1233cw',0,'2009-11-20',1,'gif',120,76,39346,248,157,0,'1235.gif','Real Cash Freedom','Cash Freedom','~108~','5-STAR international program is enjoying its best year yet!');
+INSERT INTO product VALUES (1236,'dht1227c','dht1227c',0,'2009-11-20',1,'jpg',120,120,3894,160,160,0,'1236.jpg','Ultimate Four','Ultimate License','~108~','Lead capture page, hosting, maint & autoresponder');
+INSERT INTO product VALUES (1237,'cfv1221s','cfv1221s',0,'2009-11-20',1,'gif',120,50,3355,192,80,0,'1237.gif','Tvi Expresss','Tvi Express','~130~141~','$250 into $10K in 6 weeks! Rely on your team, join the best.');
+INSERT INTO product VALUES (1246,'wce1245k','wce1245k',0,'2009-11-26',1,'jpg',120,148,5701,569,700,0,'1246.jpg','Awakening-the Movie','Time Freedom','~137~','Stop simply existing, Find direction here, Start flourishing.');
+DROP TABLE IF EXISTS product_pending;
+CREATE TABLE product_pending (
+  disposition int(11) NOT NULL default '0',
+  existing_products_requested int(11) NOT NULL default '0',
+  replaces_product_id bigint(20) NOT NULL default '0',
+  ts_submitted int(11) NOT NULL default '0',
+  product_owner varchar(20) default '',
+  product_name varchar(32) default '',
+  product_title varchar(64) default '',
+  product_categories varchar(256) default '',
+  product_description varchar(512) default ''
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS receipts;
+CREATE TABLE receipts (
+  txtype int(11) default '0',
+  src int(11) NOT NULL default '0',
+  receiptid varchar(48) NOT NULL default '',
+  refid varchar(20) NOT NULL default '',
+  ts_order int(11) NOT NULL default '0',
+  yymmdd varchar(10) default NULL,
+  yymm varchar(7) default NULL,
+  member_id varchar(20) default NULL,
+  firstname varchar(30) default NULL,
+  lastname varchar(30) default NULL,
+  ipaddr varchar(20) default NULL,
+  user_level int(11) NOT NULL default '0',
+  amount decimal(14,2) NOT NULL default '0.00',
+  paymentmethod varchar(20) default NULL,
+  authorizationcode varchar(32) default NULL,
+  `transaction` varchar(30) default NULL,
+  order_type varchar(40) default '',
+  product_title varchar(40) default '',
+  product_description varchar(40) default '',
+  is_prorated int(11) NOT NULL default '0',
+  orig_transaction varchar(30) NOT NULL default '',
+  orig_receiptid varchar(48) NOT NULL default '',
+  orig_yymmdd varchar(10) NOT NULL default '',
+  ref_commission_amount decimal(14,2) NOT NULL default '0.00'
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS resources;
+CREATE TABLE resources (
+  resource_id bigint(20) NOT NULL auto_increment,
+  date_created varchar(10) default '',
+  member_id varchar(20) default '',
+  resource_code int(11) NOT NULL default '0',
+  resource_link varchar(64) NOT NULL default '',
+  UNIQUE KEY resource_id (resource_id)
+) TYPE=MyISAM AUTO_INCREMENT=1200;
+
+DROP TABLE IF EXISTS service;
+CREATE TABLE service (
+  service_id varchar(20) NOT NULL default '',
+  seq int(11) NOT NULL default '0',
+  date_received varchar(10) NOT NULL default '',
+  ts_request int(11) default '0',
+  ts_response int(11) default '0',
+  member_id varchar(20) NOT NULL default '',
+  firstname varchar(30) NOT NULL default '',
+  lastname varchar(30) NOT NULL default '',
+  email varchar(45) NOT NULL default '',
+  `subject` varchar(80) NOT NULL default '',
+  request text NOT NULL,
+  responder varchar(16) NOT NULL default '',
+  response text NOT NULL,
+  assignee varchar(16) default '',
+  seen int(11) NOT NULL default '0',
+  UNIQUE KEY service_key (service_id,seq)
+) TYPE=MyISAM;
+
+INSERT INTO service VALUES ('HK10-67672498',1,'2009-11-10',1257904072,1257904136,'NON-MEMBER','Tim','Wolf','tim@webtribune.com','Testing','Testing Testing Testing','tim','Hi Tim,\r\n\r\n Testing\r\n\r\n\r\nHave a great day!\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK19-44415366',1,'2009-11-19',1258658415,1258661418,'gcw1222p','Andrea','Pettit','andreap@rightfromtheheart.com','Feedback #1','\r\n:-)  FUN!\r\nFirst set of feedback, hope it is helpful!\r\n\r\nWere you able to create a widget and deploy it on your website? \r\n\r\nYES\r\n\r\nHow easy or difficult was it? \r\n\r\nFairly easy with exception of the hover issue that will be mentioned below.  If it wasn\'t for what seems to be a problem with hover it would be very easy (with my html background)\r\n\r\nDescribe any troubles you may have had.\r\n1)  When filling out the information for my product and having a image, and then\r\nclicking on preview your ad; the image doesn\'t show up (add an upload image button?)\r\n2) Thre is a preview of the ad created when you are creating your product; when you click on preview your ad, it goes away, you click on it again and it appears again.\r\n3) In the preview form the entire information does not show up in the preview\r\n4) Went to pushy tab - andrea, rightfromtheheart.com, business oppty & self\r\nimprovement, 180x222, hover, top right, fade, wiggle on, no delay - preview NOTTA (didn\'t show up)\r\n5) Did the code for this same one anyway... did not shop up on my web page.\r\n6) When you try to go back from the preview screen - you can\'t, have to go to \"my\r\nstuff url\" to get back in action.\r\n7) The next one I tried was: andrea, rightfromtheheart.com, business oppty & self\r\nimprovement, 180x222, static, float, fade, medium wiggle on, no delay, no pause; showed up but cant start stimulation preview showed up for this one, pulled that code to my web page and it DOES shows up \r\n\r\nDid you get the behavior on your website that you were expecting?\r\n\r\nkind of....  (see answer below)\r\n\r\nWas the Preview on the PushyAds.com helpful in setting your expections? If not, why not? What may have made the Preview more helpful in setting your expectations?\r\n\r\nThe preview could perhaps show an example of the product (of a product scrolling) -- also it did not do the jiggle in the preview.\r\n\r\nDescribe your experience and impressions with the PushyAds.com member site.\r\nWhich  Behaviors did you select for your widget(s)? Why? \r\nI selected the behaviors randomly.  \r\n\r\nWhat were the primary considerations effecting that decision?\r\nThought if I was testing it I would just get something done and up. :-)\r\n\r\nWhich  Behaviors did you not see useful from your perspective? Why?\r\nThe wiggle is a bit weird HOWEVER, I would imagine that it would get attention. To answer further I would have to try some of the others out to see what their actual action is.\r\n\r\nOTHER COMMENTS\r\n\r\nRe:  Emails to Confirm ad submission:  it would be nice if you would put product name instead of my name there?  (that way if you did do more than one you would know by subject)\r\n\r\nRe:  Ad placement:  When updating product ad placement after approval if you have more than one product there seems to be constraints and as a user, I do not have a full understanding of what the pushy network is verses existing, verses elite bar, verses elite ad pool; some type of explanation here would be helpful\r\n\r\nRe:  Two months of free access:  When does that start?  At the kickoff in January?\r\n\r\nPretty cool!!!  Thanks for letting me help out!','tim','Hi Andrea,\r\n\r\nVery good feedback! Thank you. \r\n\r\nLet me just comment on a couple of your suggestions. \r\nWe will certainly investigate each ... sounds like \r\nyou may have uncovered a couple bugs. \r\n\r\n1) Right - the genral thought here and the intent of the \r\nPreview Pane was primariy one of AD LAYOUT (the specific \r\nimage doesn\'t help the AD Layout, and we didn\'t want to\r\ndisrupt the flow. Because the AD is all the pieces ... name, \r\ntitle, description ..., the other concern was the ability\r\nto upload arbitrary images that are not tied back to an Ad. \r\nI understand your comment.  We may need to look at this again. \r\n\r\n2) Yes, the Preview Link is designed as a TOGGLE, so you can \r\n\"Close and ReOpen it\" if it is in your way.  What I think would \r\nmake this more intuitive is if the Link Text were updated to reflect\r\nthe current Preview State e.g. Open Preview (when closed) and\r\nClose Preview (when open).  I will take this as a To-Do!\r\n\r\n3) Yes - that is actuall by design, and the whole intent of\r\nthe Preview. These Ads have Liited space that you can consume.\r\nWhat the Preview Widget is showing you is intended to help you\r\nselect the wording and Text that best fits the space allowed.\r\nMake Sense? \r\n\r\n4) This is definitely a bug.  I will investigate.\r\n\r\n5) Same\r\n\r\n6) This one I\'m not sure I understand.  There is an EXIT PREVIEW\r\n   button at the top of each PREVIEW pane. Did you see this? \r\n   or did it not Work?\r\n\r\n7) Like 4 above, changes yesterday looks like had broken something\r\n   I will investigate (Don\'t you love beta test ??)\r\n \r\n8) I will look. We may have intentionally turned off the wiggle for\r\n   Preview. Again, I think this may have been because of the intent\r\n   of the Pushy Preview is to help you think about the behaviors\r\n   and what they may mean on you website. Wiggle is only something\r\n   that happens every 60 seconds or so, and I don;t think we were\r\n   expecting that preview pane to remain up for 60 seconds, and \r\n   also didn\'t see where the periodic wiggle would add value to \r\n   what you were previewing. Nonetheless, I will investigate this \r\n   and we will re-think whether wiggle is imporant for Preview.\r\n\r\n\r\n Your Email suggestion is a good one - will investigate. \r\n\r\n Yes, there is a good deal of instructional content coming, as \r\n well as videos, etc. \r\n\r\n I will double-check, but yes, I believe the access awards will be \r\n given in January (since there is no real value prior). \r\n\r\nThanks Andrea - Very nice job. \r\nWill look forward to more of your feedback in the coming days.\r\n\r\nHave a great day!\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK19-44415366',2,'2009-11-19',1258668952,1258668952,'gcw1222p','Andrea','Pettit','andreap@rightfromtheheart.com','Feedback #1','- Unsolicited Customer Email -','tim','Hi Andrea,\r\n \r\nWe had some fairly big issues in the Pushy Preview Editor.\r\n\r\nYou had pointed out that the Pushy Preview was not Working.\r\n\r\nWe have made the changes we believe should fix the issues \r\nyou were having.\r\n\r\nCan I ask you to please spend a few minutes with your Pushy\r\nConfiguration and try the Preview Simulator again ?\r\n\r\nPlease let us know if you find any other issues!\r\n\r\nThankyou Andrea\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','tim',0);
+INSERT INTO service VALUES ('HK19-71636058',1,'2009-11-19',1258685636,1258699813,'y1230vt','Larry','Miller','adaem@aol.com','FYI INFO ON YOUR SIGN UP FORM','Hello Gents, fyi when first signing up\nyou have only one line for address\nI suggest you use two lines (sample)\n3928 N. Rosebud Dr.\nSE-4 \nNOTE IF ON SAME LINE US MAIL WILL NOT \nDELIVER BECAUSE IT MESSES UP THERE SCANNERS, IF YOU JUST LEAVE SE-4 OFF LOCAL US MAIL DOES NOT KNOW WHERE TO DELIVER = SO TWO LINES TAKES CARE OF BOTH PROBLESS, JUST TRYING TO HELP, LARRY MILLER\n','mark','Hi Larry,\r\n\r\nThe reason there is only one address field on our order forms is \r\nbecause that\'s the only information required by credit card \r\nprocessors. They don\'t need the rest of the address unless we \r\nare using their address verification system for fraud purposes.\r\n\r\nSince we have our own fraud detection system, we don\'t need the \r\nrest of the address.\r\n\r\nNow that\'s the lonnnnng answer ;-) The short answer is that we \r\nunderstand this may be a customer expectation, and are going \r\nto likely be adding the additional fields.\r\n\r\nThanks for the input. We do appreciate it. Please keep it \r\ncoming. We do value it.\r\n\r\nHave a great evening!\r\n\r\nRegards,\r\n\r\nMark\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK19-72736274',1,'2009-11-19',1258686736,1258690849,'dht1227c','Brian','Crain','bcrain007@gmail.com','problem','when I try to preview the two products besides qualiffied prospects leads and affiliate program so I can sign up as a affiliate it does not work.How can I join as a affiliate if the website will not display for me.','mark','Hi Brian,\r\n\r\nWell, the problem you\'re seeing has to do with the state of BETA \r\nright now. The \"other two products\" you\'re talking about inside  \r\nthe \"Existing Products\" list are only TEST products, remnants from \r\nour own internal testing. \r\n\r\nWhat I found as the \"Affiliate Signup URL\" for one, was a bogus \r\nwebsite address, which returned a 404 \"Page Not Found\".\r\n\r\nActually, I\'m glad you brought that to our attention. We\'ll either \r\ncorrect the link to the \"Affiliate Signup URL\", or remove the \r\nproduct altogether. \r\n\r\nThanks for your keen eye ;-)\r\n\r\nHave a great day!\r\n\r\nRegards,\r\n\r\nMark\r\nPushyAds.com\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK20-47483297',1,'2009-11-20',1258747883,1258747883,'@PUBLIC@','ALL','MEMBERS','','Subject: 24 hrs & Counting %firstname%',' -- To PushyAds Members --','','Hi %firstname%,\n\nThis is our first email to our BETA Testers from our admin system.\n\nI just wanted to send you a reminder to do two VERY IMPORTANT\nthings that are on your list of activities as a BETA Tester. One\nneeds to be done within 24 hours of your logging into the PUSHY!\nbackoffice. The other within 48 hours.\n\nNo rush! ....that is *IF* you don\'t want the $500+ in membership,\nproducts & services that we\'re going to give you when you\naccomplish these tasks. On the other hand, if you really do want\nto help us as a BETA tester, we actually need you to do these\ntwo things within 24 hours, and 48 hours after first logging in\n\n     * Submit at least one Product Ad in MY ADS in your backoffice\n     * Place a PUSHY! widget on a web page on your domain\n\nThat\'s it! Nothing really difficult at all, and both won\'t take\nyou more than oh.... maybe 30 minutes, at the most.\n\nThen give us your feedback on as much of your experience as\npossible. The questions are in the email Tim sent you, or there\nare a number of questions on the HOME page in your backoffice.\n\nThanks so much for your help, %firstname%. We do appreciate all\nthe feedback you can give us, after every time you spend on the\nsite. Feel free to be as CRITICAL as you want. We welcome as\nmuch criticism as you can muster. Really, we want it\n\nBRING IT ON %firstname%\n\nAll the best,\n\nMark\nPUSHY!\'s right hand man\nPushyAds.com','',0);
+INSERT INTO service VALUES ('HK20-55671645',1,'2009-11-20',1258756071,1258821612,'cfv1221s','David','Hennessy','david@dhennessypublications.com','Feedback - first day in back office','Hi Guys. Ok. read through your copy. Good stuff! I everything made sense to me. Though there is one typo on the Home page: Ordered list number 7 in questions you want to have answered.. the word should be \'affecting\' not \'effecting\' in the sentence.\nAs far as accessibility goes... I see that your navigation is Javascript driven. I think that you will have poor SEO ranks because of that (as some SEs cannot crawl JS very well – HTML links are the way to go). For those who have JavaScript disabled, they may not be able to use the site (though you could tell the m to turn it on since it is a member’s site, I guess).\n\nI like to open multiple pages at times with a right click and \'open in new tab\' but I could not do that here... So I could not refer to another page while typing this feedback else I would leave this page to do so.\nFinally.. I tested your site in Internet Explorer 6. All works fine, but (of course) the PNG graphics do not render with transparency.  It’s all good otherwise – expect for a speed issue due to the browsers’ slower parsing rates. \n\nNext up… Pushy testing \n','tim','Hi David,\r\n\r\nWanted to share some design decisions we made in response to\r\nyour Javascript observation. You are right - SEO could be a problem\r\nfor the site. This was a tradeoff we had given a lot of thought to \r\nwhen we set out to design the site. \r\n\r\nWe opted (we\'ll have to decide later - good or bad) to design the \r\nsite in the spirit of a Web 2.0 Rich Internet Application. What that\r\ngenerally means, and you may have noticed, is that teh site is pretty\r\nmuch a \"Single Page\" application from the Browser\'s perspective. \r\nThe good news is that there are no fill page refreshes, so you don\'t \r\nget lots of flicker, and in general, there is less data traffic between\r\nthe browser and server so the site feels generally more responsive than\r\nif each click had refreshed the entire page.\r\n\r\nThe bad news is what you pointed out ... because each click is just a\r\npartial page update and not a full page refresh, you lose some of the \r\nbehavior that you described (like right click -> Open Link as Tab) and\r\nyou probably do suffer from an SEO perspective. \r\n\r\nThe general thinking is that we wanted the site to \"feel\" responsive. \r\nYou might imagine what would happen on this site if evry click were\r\na New Page. The pages are fairly loaded (content + images, etc), so\r\nresponsiveness would very quickly degrade.  And then there is Pushy\r\nhimself - He would completely reload and start jumbing and Bouncing\r\non each click. Lastly, we have Ads running on the page that we want \r\nto control the View Times and Positions of (e.g. Elite Bar), which\r\nwe would lose control over if each click were refreshing the entire\r\npage. Still other thinks like Videos would RESTART from the beginning\r\nwith each tab click, etc.\r\n\r\nSo yes, you are right.  It was a tradeoff.  It was a conscious\r\ndecision, and we had to opt one way or the other.  We decided that \r\nthe alternative would be extremely painful for a user for all of the\r\nreasons above, and we will have to live with some of what is lost \r\ngoing this approach.\r\n\r\nWanted to get you this information as you had asked about it.\r\nMake sense?  \r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK20-56448331',1,'2009-11-20',1258756848,1258768159,'cfv1221s','David','Hennessy','david@dhennessypublications.com','Adding widget','Hi Guys Test page is here: \n\nhttp://networkernet.com/ I had intended to put two Pushys on the one page, but when I did I was forced to type in some authentication details which I did not have. It may have had to do with \'pulling\' the ads. I removed the second Pushy script to see it all work. Let me know if you want me to insert the second script so I can duplicate the issue for you to see. Creating the Pushy was fairly intuitive. \n\nSome feedback on filling in the widget wizard:\n\nDomain name:  - give instructions on format so there is no need to retype.  I put in www.networkernet.com first time had had to change it\n\nSize – I understood pixel dimensions as I know what size they are.. but perhaps others  may not have the same ability.  I don’ know how to get around that though… Maybe there could be a page that actually showed the sizes in comparison to each other and within a 1000 px width page? \n\nPosture:  Confused me… Posture.. means position of the body; the situation or disposition of the several parts of the body with respect to each other.   I thought it meant whether Pushy was going to be sitting down, slouching, leaning... and so on.\nPerhaps use \'action\' or \'motion\' instead as it is controlling what he will be doing on screen?\n\nI tested in Google Chrome, Firefox and IE6.  All ok. \n','tim','Hi David,\r\n \r\nSuper Feedback !!  \r\n\r\nExcellent thought/suggestions. \r\n\r\nWe\'ll be investigating and discussion all of your suggestions, but\r\na couple quick comments/questions: \r\n\r\nFirst the comment \r\n- We use the word Motion to describe the \"antics\" that precede \r\n  Push arriving at his Home Location.  We wrestled with what term\r\n  to use to distinguish the \"static\" resting place and the \"hover\". \r\n  We feel they needed to be distiguished because they are fundamentally\r\n  different at a number of levels. \r\n   - you would not expect motion/antics to preceed a hover. \r\n   - hover requires no space or allocation anywhere on the target page\r\n     whereas static does. (That is a very important distinction for those\r\n     that may simply not vae the ability/desire to \"reflow/redesign\" their\r\n     page in any way. \r\n\r\n  The word posture, while not particularly descriptive, was the best we\r\n  could come come up with that described Pushy\'s \"rest state\"\r\n\r\nI would like to understand the authentication popup you described.\r\nWe did have issues when we password-protected the site, but I was hoping\r\nthose issues had all been addressed - maybe not? \r\nAs I\'m thinking about it, I\'m wondering, however, whether we had ever expected \r\nanyone to have 2 widgets on the same page. I don\'t think we expected that. \r\nWas this just something you were doing for test or were you thinking that \r\nthis may actually be something someone would want to do ??  I don\'t think \r\nPushy is designed for that today. The only way this would work is if the\r\nsecond Pushy were in its own Frame(iFrame) and then, you would be OK if\r\nyou made them all \"static\" (non-Hover).  A Transition would be OK - but\r\nthe Bounce/Float motions would not really work too well.\r\n\r\n\r\nThanks again for you feedback.  Good Thoughts!\r\n\r\nHave a great day!\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK20-56866541',1,'2009-11-20',1258757266,1258774891,'cfv1221s','David','Hennessy','david@dhennessypublications.com','Plaig an ad','I first wanted to use an existing product but could not figure how to do that... So I made one myself.\n\nI figured this part out fairly easily because it is similar to Adwords. Although , I would recommend that you make the distinction between Product name and Product title greater. \n\nUsing ’product ‘ in both fields is confusing. Perhaps use ‘Product name’ to indicate product.  And Advertisement Title’ to indicate the tile of the ad itself (instead of Product title).  \nFinally… to force a user to upload an image before they can submit the ad may case a lot of ‘drop outs’ – It was fortunate that I had an image I could chuck up there.  But what I did not? I would have to cancel my ad placement and then go make an image.  What if I don’t want an image? \nPerhaps it would be best to not require and image at all, but to allow it if one has one? \n\nAll in all, though, great product! The work you have done is fantastic! \n','tim','Hi David,\r\n\r\nThanks again for your Feedback ....\r\n\r\nI would like to understand your first comment. You said you were\r\ntrying to use an Existing Product (be a Reseller) and could not \r\nfigure out how to do that. \r\n\r\nUnless you are experiencing some issue with your browser, or we \r\nhave not made this clear enough, this should be an extremely\r\nsimple action. \r\n\r\nIf you click on the \"My Ads\" tab in your Back Office, you\r\nshould see a line on top that says:\r\n\r\nI want  to advertise one of these:\r\n\r\nand directly below it,  2 radio buttons with the 2 types\r\nof products you can market: \r\n\r\n (1) An Existing Product/Service  or (2) My Own Product/Service \r\n\r\nBy default, \"An Existing Product/Service\" should be Checked\r\n\r\nThere should be a Drop Down with Label \"Product Name\" \r\nWhen you click the DropDown Box, you should see a few different\r\nads in the list that are available to you to market as a Reseller.\r\n\r\nso far so good? \r\n\r\nIf you simply select one of those products, provide your\r\nAffiliate URL for that product, and click SUBMIT YOUR AD\r\n\r\nYou should see a message Box Telling you that your Ad is ready\r\nto Market and it should appear in your Approved Ads List\r\n\r\nIt really is just that simple. The ad itself had been previously\r\napproved when it was submitted, so there is really no other approval \r\nrequired. Because its that simple, I am thinking maybe you are \r\nexperiencing some browser issue that I am not seeing?  I see it\r\nworking in FireFox and IE7 and Chrome. Might there be an issue\r\nin IE6? Can you try this for me? You can see that I signed in as\r\nyour and added a Product called \"Traffic Tactics\" as a Resellr Ad.\r\n\r\nIf you see this working differently from what I described above\r\nin IE 6 than ireFox or Chrome,  can you take a screenshot of what\r\nyou are seeing and send it to tim@pushyads.com ?? \r\n\r\n\r\nThanks David,\r\n\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK21-18530583',1,'2009-11-21',1258805330,1258818398,'gcw1222p','Andrea','Pettit','andreap@rightfromtheheart.com','Feedback #2','Hello, \r\nTested a bit this morning!\r\n\r\nPreview\r\nWhen pushy is lower right, after scrolling, I am then unable to scroll back up to exit the preview mode\r\n   (Back key then went to perpetual loading)\r\n\r\nWhen pushy is top left, after scrolling, I am also unable to scross back up to exit the preview mode\r\nTop right, same thing.\r\n\r\nHow long does it take for Ad placement to change?\r\n\r\nMade a pushy so that it would hover, bottom right morph. When I got the code to my website it is not doing at all what the preview did.  It is flying (slowly) in from the right, moves to the left and ends up at the top left. (No morphing) The code that follows is what I put in my website:\r\n<script type=\"text/javascript\" src=\"http://pushywidgets.com/control/68e7d2b4117e94b5326d86dccc8a2fa6.js?tracker=YOUR_TRACKING_ID\"></script>\r\n\r\n\r\n','tim','Hi Andrea,\r\n\r\nOn your Preview Comment \r\n\r\nFirst of all, We are aware of some of the issues with BACK BUTTON\r\non the site,  Rule of Thumb - Avoid it - unlikely to do the right thing\r\n\r\nI am  looking at your 2 Pushy Widgets ... the first one, named \"andrea\"\r\nis defined pretty much the behavior you are describing ... FLOAT, FADE.\r\nThe other, named \"hover\", which is the one you are expecting is defined\r\nas HOVER, Bottom Right, Morph ... \r\n\r\nThe two \"script lines that are shown in the CODE section\" will be\r\ndifferent (primarily different keys).  \r\n\r\n\r\nCan you do me a favor? \r\nChange the Widget Size on your widget named \"andrea\".\r\n\r\nThen refresh your web page - did the widget get bigger ?\r\nIf so, then your web page is apparently getting your \"andrea\" widget\r\nand you are expecting it to get your \"hover\" widget, so the next question\r\nis WHY.\r\n\r\nHere is the Andrea widget Code\r\n\r\n<script type=\"text/javascript\" src=\"http://pushywidgets.com/control/2b1bc75a43876e01ebd8cccaec871e76.js?tracker=YOUR_TRACKING_ID\"></script>\r\n\r\nHere is the hover widget code\r\n\r\n<script type=\"text/javascript\" src=\"http://pushywidgets.com/control/68e7d2b4117e94b5326d86dccc8a2fa6.js?tracker=YOUR_TRACKING_ID\"></script>\r\n\r\nWhen you refreshy your web page, can you (IE) click View -> Source\r\nand scroll to the bottom and verify that the line inside the page that\r\nis loaded in your browser looks like the \"hover\" script line above \r\nand not the \"andrea\" script line aabove. \r\n\r\nBrowsers all \"cache pages\" differently.  And there are a number of\r\nsettings in most browsers to control how pages get cached.  It sure \r\nfeels to me like your page is being cached by your browser and\r\ntherefore, NOT being reloaded from your server (and therefore,\r\npicking up your OLD script line and widget (andrea) instead of the\r\nNEW one (hover).\r\n\r\nIf that us whats happening, can you tell me which browser you are\r\nusing (with version if you know it) and we can see what options \r\nyou may be using for caching/refresh to see if they are really want\r\nyou are wanting. \r\n\r\nPlease try the above and let me know. \r\n\r\n\r\nHave a great day!\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK21-29968851',1,'2009-11-21',1258816768,1258820138,'ahb1234','Steve','Ward','steve@stevewardco.com','Ads','Unable to submit form for ads. True with Google Chrome, Firefox, and IE.\r\n\r\nUnable to see uploaded image in preview.\r\n\r\n','tim','Hi Steve,\r\n\r\nI Need some more information. \r\n\r\nI\'d like to better understand what you are seeing and what you are\r\ndoing when you say that you are unable to submit form for Ads.\r\n\r\nIt sounds like you clicked \"My Own Product/Service\" and you are \r\nuploading a product.  \r\n\r\nYou are then filling out the form and clicking the \"SUBMIT YOUR AD\"\r\nbutton?\r\n\r\nWhen you click the \"SUBMIT YOUR AD\" button, what do you see?\r\nAny \"Errors\" reported ? \r\n\r\nCan you send the image that you are trying to upload\r\nto tim@pushyads.com as an attachment ? \r\n\r\nIts possible the system is choking on the image - I would just\r\nhave to look and see what may be causing this. \r\n\r\nThanks Steve\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK21-18530583',2,'2009-11-21',1258819689,1258819689,'gcw1222p','Andrea','Pettit','andreap@rightfromtheheart.com','Feedback #2','- Unsolicited Customer Email -','tim','Hi Andrea,\r\n\r\nRegarding the issues you described with Preview\r\n \r\nI have not been able to recreate this, but I have a suspicion. \r\nAgain, I would like to know what browser you are using, but my\r\nsuspicion is this: \r\n \r\nThe Preview is a DIALOG. It has its own Scroll Bar independent\r\nof the browser\'s main scroll bar.  When you say that you are \r\nscrolling the Preview Window, are you using the scroll bar that\r\nis on the Preview Dialog itself ?  (The Browsers\' scroll bar \r\nwould only scroll the full web page and would have no effect\r\non the actual dialog). \r\n\r\nOtherwise, maybe I can get you to take a screen shot\r\n(Ctrl-PrintScreen) of the state of your browser when you are \r\nsaying you are \'unable to scroll back up\' to exit the preview mode\r\nand send me that screen shot.  \r\n\r\n(after you Ctrl-PrintScreen, the image of your deskyop is saved to the\r\nclipboard. So then you can click Start and the Run on the windows task\r\nbar, and type in mspaint.  MsPaint will let you paste the image you just\r\nsaved (Save As) a JPG file e.g. c:test.jpg)  that you can then attach\r\nto an email.\r\n\r\nThe email address you can send it to is: tim@pushyads.com \r\n\r\nThanks Andrea\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','tim',0);
+INSERT INTO service VALUES ('HK21-45675952',1,'2009-11-21',1258832475,1258846151,'wef1232b','Tom','Bauman','tom@tombauman.com','Pushy Ads Beta Test 1','Howdy,\n\nI\'ve uploaded my first Pushy widget on:\nhttp://pushyads.puresourcefineart.com ; note that this is a subdomain address.  I can change URLs if this would be better.  Note that upon configuring Pushy that I could not submit URL with subdomain, so actual page that Pushy is on is not listed in back office; ie: only listed as \"puresourcefineart.com.\n\nI\'ve added 2 out of 4 ads so far: (1) Autoprospector; and (2) PushyAds\n\nSo far so good, Pushy works as configured and performs on page; have not re-configured yet to try other Pushy performance capabilities.\n\nHowever, One significant problem that I encountered upon pressing the Pushy preview button:  the preview message is presented on subsequent page; but trying to get back to the previous page made Pushyads.com unstable; had to go back to home page and start Pushy config all over again.  There is no \"back\" button on \"preview\" page.  Had to use toolbar \"back\" icon.\n\nUnder \"my approved adds\":\nShould define \"Inactive\" on source page by question mark or hover of cursor; it took me a few to figure out after pop-up window was presented.\n\nCan you only run 1 ad at a time? As clicking boxes from active site to inactive site renders only one add at a time possible, unless I was missing something there.\n\nI\'ll keep playing with the site and give more feed back later.\n\nRegards,\n\nTom\n','tim','Hi Tom,\r\n\r\nGreat Feedback - Thanks! \r\n\r\nSubdomains were something we considered throughout.\r\nHere is what we\'re doing and why.  If you think there is\r\nsomething we are missing something here - please let us know.\r\nI\'ll explain what went into our decision and what we have done \r\ninstead.  But please feel free to challenge our thinking.  Maybe \r\nwe missed something here.\r\n\r\nThere is really only one fundamental reason that we require the \r\ndomain. Of sourse, it is an identification to the member, but the \r\nPushy Name itself is every bit as good in terms of identification. \r\nIts real purpose is authorization. When your pushy is loaded from \r\nyour website with its unique key, we make certain that key id in \r\nfact coming from the domain that you have indicated.  If not, Pushy\r\nwill not load. This helps you if you inadvertently put the wrong \r\nscript on the wrong server, and it protects us and you, because\r\nit prevents anyone else from seing the script on your page with\r\nyour Pushy Id and just copying it on to their website. \r\n\r\nSo back to subdomain. Subdomains don\'t help the above in terms of\r\nauthorization and in fact work agains the most common use of \r\nsubdomains on the intyernet - replicated pages.  If you have \r\naffiliates for a product, you may very well give them their own\r\nreplicated page using subdomains. But you would not want to require\r\nall of your affiliates to be PushyAds members and create their own \r\nPushy (though we\'d like that ;-) \r\n\r\nSo the only real purpose that allowing you to enter a subdomain would\r\nhave would be for YOUR identification, but we have that covered a\r\ndifferent way.  When you saw the <script> source, you noticed that \r\ntheir is a place for your to put your TRACKING ID.  \r\n\r\n<script type=\"text/javascript\" src=\"http://pushywidgets.local/control/f4d3c6d845d883ec45374f8e0b28606b.js?tracker=YOUR_TRACKING_ID\"></script>\r\n\r\nThat TRACKING_ID will show up on your traffic report. You could use a subdomain\r\nname as your tracking ID, or INCLUDE your subdomain name into your tracking \r\nID naming convention if you had a multi-page site and wanted multiple pushys \r\non the various pages that you wanted to track separately. \r\n\r\nWith the Tracking ID, it is not clear what allowing you to enter a Subdomain \r\nwould really even provide you over and above the Pushy Identification that \r\nis there (Pushy Name,  Tracking ID). \r\n\r\nIf you think we may have missed something here, Tom, please let us know. \r\n\r\n-----\r\n\r\nRegarding the Pushy Preview Page:\r\n\r\nYou said:  but trying to get back to the previous page made Pushyads.com unstable;\r\n\r\nI would really like to understand that fully. \r\n\r\nFirst of all, What Browser are you using?\r\n(Version ?? in Browser Help->About XXX)\r\n\r\nCan you describe \"Unstable\" ? (more description is better)\r\nDid you see the EXIT PREVIEW button on top of that dialog?\r\nThis is a MODAL Popup Dialog.\r\nIf you click the \"Exit Preview\" button above, the Dialog should\r\ngo away and you should be right where you were before you clicked\r\nthe \"Preview Pushy\" button.\r\n\r\nAgain, please describe what you did, what you saw. There could \r\nvery well be a bug.  I just haven\'t seen such.  Had you tried \r\nclicking the Exit Preview earlier ?  Or Was it not Obvious \r\nthat Exit Preview would take you \"Back\" ?? \r\n\r\nIf after reading this, you feel that a Screen shot may be helpful\r\nbecause the preview is not working as I just described,  please feel \r\nfree to take a screen shot\r\n(Ctrl-PrintSreen copies screen to ClipBoard - MsPaint will let you\r\n then Paste it and save it as JPG image).\r\nYou can send it to tim@pushyads.com\r\n\r\n----------------------------------\r\n\r\nYour last 2 questions had to do with ADS and AD PLACEMENT. Let me\r\ntackle them together ... if its still not clear, PLEASE let us \r\nknow.\r\n\r\nINACTIVE simply means \"Not Designated for any of the 4 Ad Placement\r\nOptions\".  It does mean inactive because an AD that has no designated\r\nplacement is not being Advertised.\r\n\r\nYour Suggestion to clarify this using TOOLTIP Help is very good one \r\nand I have noted it. (On this point, we will be adding more Help, \r\nand Training over the next couple weeks. This Feedback we are seeking\r\nis hugely important in determining where we need to focus and what \r\nmay be confusing and what areas may need the most focus)\r\n\r\nSometimes, you may wish to deactivate an ad temporarily and\r\nconsciously.  Most often, however, it is more likely an oversight. \r\nThe rule is that you can have 4 ADS as an Elite. And you have 4 \r\ndistinctly different ways that you can market that Ad. You can \r\nUse All 4 methods to market a single AD.  Or you can assign any \r\nnumber of methods to multiple ads.  he only thing you can\'t \r\ndo is have more than one Ad selected for the Same Method (Placement).\r\n\r\nI hope thats clear.  If you have some words that you think may help \r\nto clarify this, please pass the along.  That is what this Beta Test\r\nis all about!\r\n\r\nThanks Much Tom.  I look forward to your responses on any of the above. \r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK21-67441140',1,'2009-11-21',1258854241,1258859485,'cfv1221s','David','Hennessy','david@dhennessypublications.com','Replying to tickets','Hi Guys,\n\nI want to reply to the tickets responses you sent me, but I cannot find them in my back office.... am I not seeing them? \n\nHow would I go about replying to your feedback responses?','tim','Hi David,\r\n\r\n Just Post to Customer Support. \r\n\r\n\r\nHave a great day!\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK20-56866541',2,'2009-11-23',1259010245,1259019769,'cfv1221s','David','Hennessy','david@dhennessypublications.com','Placing an ad','ok.. I get it. I made an ad for an existing product.  It was the button next to the URL field that said \'Apply now\' (I didn\'t read the text above it very well) and so I thought I had to apply for an affiliate code.  When I pushed the button I could not do anything on the sales letter page.\n\nI have now made (I think) two ads for existing products.','tim','--- NO RESPONSE NEEDED / CLOSED --','tim',0);
+INSERT INTO service VALUES ('HK20-55671645',2,'2009-11-23',1259010454,1259019795,'cfv1221s','David','Hennessy','david@dhennessypublications.com','SEO stuff','Fair points, guys. You\'ve obviously thought this through very thoroughly.  You know.. I guess, since this is a member\'s section, SEO is not really worth much.  I assume that this area would not be crawled by search engines anyway.  So I I think your choice to optimise useability is agood one.\n\nI would suggest you focus on SEO for the front-end sales pages, though.','tim','--- NO RESPONSE NEEDED / CLOSED --','tim',0);
+INSERT INTO service VALUES ('HK21-67441140',2,'2009-11-23',1259010796,1259015402,'cfv1221s','David','Hennessy','david@dhennessypublications.com','Replying ot tickets','Well, I am replying to your tickets in th manner your requested.. but it is not a very user-friendly activity. A lot of cutting and pasting and sifting through emails to look for tracking numbers.  Then again, I am placing a lot of tickets.\n\n\nI do like how I get an email to confirm.. that is good customer service','tim','Hi David,\r\n  \r\n I\'ll look and see how we might improve that. \r\n   \r\n I should be able to provide a link in the email that takes you\r\n right into the Contact Dialog with the ticket prepopulated. \r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','tim',0);
+INSERT INTO service VALUES ('HK20-56448331',2,'2009-11-23',1259012005,1259015210,'cfv1221s','David','Hennessy','david@dhennessypublications.com','Ads on site','Hi Guys\n\nI set up a site with three pages - static, hover adn both types per page.\n\nBut for some reason the ads aren\'t popping up anywhere.. not are the \'authentication\' issues I referred to earlier.\n\nPlease have a look.. tell m if I have missed something: http://networkernet.com/index.php\n\nHas it got to do with how i configured the ads? \n\nCheers','tim','Hi David,\r\n\r\n No, it has to do with where you placed the script. \r\n \r\n to place the <sript> line as the LAST LINE IMMEDIATELY before\r\n the  </body>  (end body) tag\r\n\r\n You placed it before the <body> (Open Body)  tag \r\n \r\n That should do it ...  \r\n\r\n You may want to double check this for me, but the description \r\n that you see when you click  GET CODE  should be CLEAR about this. \r\n If you feel it was not Clear Enough, Please let me know.\r\n \r\nThanks David.\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','tim',0);
+INSERT INTO service VALUES ('HK23-73816560',1,'2009-11-23',1259033416,1259044131,'NON-MEMBER','Ken','Ostrye','kostrye@aol.com','comments/critique','these may all be things you are aware of, but ... these are also some of the DUH things I miss when proofing my work ... the notion is to beta and help, not be ugly ...\n1. First paragraph of confirmation eMail ...\n\n“So ya want to Get PUSHY!, do you? Sounds like a ton of fun to me. Go ahead and click on that link down there so he can let you inside!” – use of pronoun “he” could be confusing – perhaps use “PUSHY” or “I” \n\n2. Next to last paragraph on web page upon confirmation – space missing – however, great use of persons name throughout ...\n\n“Besides, the clock is ticking over thereKen, and just about to run out of”\n\n3. Assume you know there are no “Terms of Use”\n','tim','--- NO RESPONSE NEEDED / CLOSED --','',0);
+INSERT INTO service VALUES ('HK25-25778273',1,'2009-11-25',1259158178,1259158178,'@PUBLIC@','ALL','MEMBERS','','Important question for you %firstname%',' -- To PushyAds Members --','','Hi %firstname%,\r\n\r\nI just wanted to send you another note, regarding PUSHY!s BETA test, \r\nand how its going.\r\n\r\n     http://pushyads.com\r\n\r\nThanks to you and others, we have uncovered several issues, and been \r\nable to resolve them. Your feedback and participation is invaluable, \r\nand Tim and I just want to thank you from the bottom of our heart.\r\n\r\nCould you do something for me %firstname%, if you havent already \r\ndone so in the last couple of hours? Ive just uploaded a number of \r\nFrequently Asked Questions under the SUPPPORT tab in the members \r\nbackoffice (or under the *Contact* link at the top of the main site).\r\nCould you spend some time going over them and answer the following \r\nquestions?\r\n\r\n    * Are they clear? If not, be specific by telling us which ones \r\n      could be more clear, and how.\r\n\r\n    * Did they raise any more questions? If so, please ask.\r\n\r\n    * Do the answers help you better understand the PUSHY! System?\r\n\r\nI understand that they can be categorized better, and maybe even \r\nbe found under a different section. For now, however, my main \r\nconcern is, WHAT IS MISSING, or WHAT COULD I SAY DIFFERENTLY, if \r\nwhat I have described was not crisp enough.\r\n\r\nWe are planning on coming out with a number of short instructional \r\nvideos, highlighting a number of the features and how to use various \r\nfunctions in the backoffice. But one step at a time. For now, were \r\ntrying to get the FAQ buttoned up.\r\n\r\nLastly, if you havent placed a PUSHY! widget on your website, is \r\nthere any more information you need from us in order to help you \r\nso so %firstname? Have you submitted all 4 ads under the MY ADS \r\ntab in your backoffice?\r\n\r\nPlease send your questions, feedback, and any kind of support issues \r\nyou can offer us. We truly are relying on you to be as CRITICAL as \r\nyou can. This is where its not only OK to be critical. But we \r\nencourage you to be. Bring it on %firstname% ;-)\r\n\r\n     http://pushyads.com\r\n\r\nTalk to you soon,\r\n\r\nMark Gilbert\r\nPushyAds.com\r\n','',0);
+INSERT INTO service VALUES ('HK25-32314854',1,'2009-11-25',1259164714,1259166427,'hkd1225','Brent','Bush','brntbush@yahoo.com','11/25 Home Work','This is the only answer to a question that I think is not real clear.\n\nQuestion:   Do I need to place different code on my web page if I want PUSHY! in a different location? Answer:   Well, there are two answers to this question, depending on your desired \"Posture\" (Static or Hover). The Hover posture won\'t require any additional change in the code you originally paste on your website. If, however, you have chosen his posture to be Static, then you will need to place the snippet of code exactly where you want him on your website\n\nMaybe just be specific about the extra code that they need to place because they want\nstatic.\nOther then that I don\'t see any problems. But I have been playing around with it quit abit\nand am getting more and more familiar with it.\n\nBrent\n','tim','Hi Brent,\r\n\r\nYes, These FAQs are being typed up by someone that is not real\r\ntechnical.  I have to go through these FAQs from a \"technical\" \r\nperspective yet.\r\n \r\nActually the answer here is very simple: \"NO\"\r\nThe code you are given and that occurs in the script NEVER changes for the \r\nlife of that widget.\r\n\r\nWhat is being alluded to here is simply \"WHEN\" the Pushy Home \"DIV\" is Required.\r\nThe answer to that is:  \"For all Pushys with POSTURE=STATIC\"\r\nIt is NOT REQUIRED for POSTURE=HOVER\r\n  (i.e. he has no resting place embedded in your HTML)\r\n\r\nImportant to understand this difference, but generally doesn\'t come into play\r\nonce a particular configuration for a page is determined.  Make Sense?\r\n\r\nHave a great day!\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK25-34752600',1,'2009-11-25',1259167152,1259167152,'paw1200','Tim','Wolf','tim@webtribune.com','Hi Tim, This is a Test','-- Customer Email --','','\r\n Here is what I know about you: \r\n\r\n firstname: Tim\r\n lastname:  Wolf\r\n email:  tim@webtribune.com\r\n \r\n uid: tim@webtribune.com           \r\n password: tjw998468\r\n\r\n affiliate_id: 1201-x1rr\r\n affiliate_website: http://pushyads.com/1201-x1rr\r\n    ','',0);
+INSERT INTO service VALUES ('HK25-52853354',1,'2009-11-25',1259185253,1259356468,'cfv1221s','David','Hennessy','david@dhennessypublications.com','FAQs','Hi Tim and Mark\n\n Just read through the FAQs. Good information - albeit a bit technical in some part (ie \'algorithms\' and so on) but so long as you can expect your audience to know what you mean then go for it!. Perhaps an explanation of \'algorithm\' would be a good FAQ, since you use it so much? \n\nAlso. I think that a better form of categorisation is in order. I don\'t feel that users will readily understand the distinction between affiliates, members, website and pushy (in the menu tabs) well enough to know where to go to find the information they need. How about changing the categories to \'technical help\' or \'coding pushy\' or \'placing ads\' or ‘membership types’ or some other menu wording that talks about what the user will find in each category/be able to achieve from each section. \n\nI think that more sections would be useful - especially when you talk technical. You have answers relating to how to code PUSHY! in the same place you talk about ad placement. I think that gets a bit confusing. Stick with one them per FAQ section… I think this will help you fill the sections easier too. ;) \n\nAlso, and this is my journalism background coming through - so apologies for being a stickler: I noted that in a few places you use \'ad\' where you should use \'add\' (‘ad’ is slang for \'advertisement\' and \'add\' is short for ‘addition’). You could/should break the paragraphs up to be a single sentence per line break so the text is easy to read. I think that the line-height is a bit small.\n\nFinally, and this is a suggestion, I believe that you should be using single quotes (\') where you use double quotes (\"), eg, \"What is the difference between \'actual\' and \'potential\', instead of: \"What is the difference between “actual” and “potential”.\" Use single quotes when you are refereeing to a word that is being used in instance where is tenet normally used, or is being referenced (such as how you have done so with \'actual\' and \'potential\'). Use double quotes (\") where you are directly quoting what has been spoken or written elsewhere. \n\nAll, in all. Great content and very well developed. Looking forward to seeing what more you add. \n\nDavid\n','mark','Hi David,\r\n\r\nThanks so much for your input. Yes, your suggestion of a different \r\ncategorization was seen as soon as I began building the FAQ. The \r\ncategories I built into the design beforehand, are obviously \r\nlacking the proper descriptions. Will definitely do that.\r\n\r\nWill also add a definition of \"algorithm\", since this is actually \r\nwhat distinguishes PUSHY from all other types of traffic generation \r\nsystems.\r\n\r\nAnd, by the way, no apologies necessary for being a \"stickler\" \r\nabout grammar and proper use of quotes, etc. These are just some \r\nof the things I was looking for. It was a first draft, and as \r\nfirst drafts usually go, they need all types of editing ;-)\r\n\r\nSo, thanks much for your input. I will be working on \"touch up\" \r\nand editing over the weekend.\r\n\r\nHave a great day!\r\n\r\nRegards,\r\nMark\r\nPushyAds.com\r\n\r\n','mark',0);
+INSERT INTO service VALUES ('HK26-16856986',1,'2009-11-26',1259235656,1259259116,'NON-MEMBER','Mark','Trofimov','marktrofimov@live.co.uk','problems login in','my ID was pushybeta\r\npassword preview.\r\n\r\nI consider this type of technology to be great and am looking forward to testing the results on my landing page','tim','Hi Mark,\r\n\r\n I looked in the system and it appears that you did not complete the\r\n registration process. \r\n \r\n First of all (and I am sorry about any confusion), the\r\n   ID: pushybeta\r\n   PW: preview \r\n is only a Page Protection ID and Password that we are giving to \r\n Beta Testers to get into the site.  It is not your signin ID and\r\n Password.  Your Signin will be your email address.  The Password\r\n will be one that you create when you go through the Signup Process.\r\n (This will go away once we open the site to the public)\r\n\r\n We use a system called GetResponse that shuld havve sent you an\r\n email at:  marktrofimov@live.co.uk  when you signed up. \r\n You must click on the confirmation link in that email to complete\r\n the signup process.  It appears that you did not. \r\n\r\n If you had, then you should have been able to continue the signup\r\n process and create a password for yourself.\r\n\r\n What I did was to try signing you up again using your email address:\r\n marktrofimov@live.co.uk\r\n\r\n Did you receive an email today with a subject that said something\r\n like  Mark, Your Confirmation is Required ? \r\n\r\n It would be very heklpful to know whether yiou received this today when I \r\n resubmitted your signup request  (Helps to understand how GetResponse \r\n is working).  Please let us know. \r\n\r\n Can you also check yor mailbox at that same email address for such as message\r\n received on November 23 (looks like about 1:50 PM Eastern time?)  \r\n That is when the original confirmation email went out. \r\n \r\n I would very much like to know whether you found either of these. \r\n\r\n If you did, go ahead and click on the confirmation link in the email and \r\n follow the steps.  It will guide you through the completion of your\r\n registration on Pushyads.com.\r\n\r\n Refer to the earlier email you received to get any other instuctions. \r\n\r\n Please Confirm that you have received tthis email, and give us as much \r\n information as possible about what you needed to do to continue. \r\n\r\n Thanks Mark\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HK30-58269707',1,'2009-11-30',1259622669,1259628586,'fbt1241d','Diane','Kleinsasser','dianek57@gmail.com','placing my widget','I don\'t understand how to place my widget on my website, I tried cut and paste the code\nAm I missing something?','tim','Hi Diane,\r\n \r\n Well, yes, thats pretty much it (particulary for Hover, which is \r\n what you selected).  \r\n\r\n I looked at your domain: http://doitnow4freedom.com \r\n Is that the URL that you are expecting to see pushy on? \r\n Otherwise, please please post me back the exact URL where you were\r\n expecting your Pushy Widget to show up on. \r\n\r\n I looked at the above URL and saw that it was nothing more than a \r\n redirect to a site: \r\n   http://www.magneticmoneymiracle.com/members/gdklein777/home.php\r\n\r\n I did not see the Pushy Script (code) on either site.  \r\n \r\n Where did you paste the code? I\'ll need a URL to the exact page you\r\n are expecting your widget to appear on.  \r\n\r\n I should be able to go to the url you give me and see the Pushy Script\r\n (code) on that page.  If so, then I can hopefully tell you why your are\r\n not seeing it. \r\n\r\n Will wait to hear back from you ...\r\n\r\nRegards,\r\nTim\r\nCustomer Service\r\nPushyAds\r\n\r\n','',0);
+INSERT INTO service VALUES ('HL02-44993926',1,'2009-12-02',1259782193,1259787269,'NON-MEMBER','Mark','Gilbert','mark@autoprospector.com','Abuse Reported','testing','mark','--- NO RESPONSE NEEDED / CLOSED --','',0);
+INSERT INTO service VALUES ('HL02-45444468',1,'2009-12-02',1259782644,1259787274,'NON-MEMBER','Mark','Gilbert','mark@autoprospector.com','Abuse Reported','another test','mark','--- NO RESPONSE NEEDED / CLOSED --','',0);
+INSERT INTO service VALUES ('HL02-45600472',1,'2009-12-02',1259782800,1259787279,'NON-MEMBER','Mark','Gil','mark@autoprospector.com','Abuse Reported','TETINM','mark','--- NO RESPONSE NEEDED / CLOSED --','',0);
+INSERT INTO service VALUES ('HL02-45900681',1,'2009-12-02',1259783100,1259787283,'brd1203n','Bob','Bumpkin','bob@bumpkin.com','test','testing','mark','--- NO RESPONSE NEEDED / CLOSED --','',0);
+INSERT INTO service VALUES ('HL18-65198168',1,'2009-12-18',1261184798,1261294088,'cfv1221s','David','Hennessy','david@dhennessypublications.com','Updates','Hi Guys. Merry Christmas! I have not been on in a while  - sorry about that.  I have a new job that is taking my attention.\n\nI have, however, been unsure as to what more I can do for you without being prompted for task request.\n\nI have noted that since our last activitiy, that Pushy has become much faster and functioning better on my test server.  I am just now moving hosts and will see what happens when my DNS details change over.\n\nCheers','tim','--- NO RESPONSE NEEDED / CLOSED --','',0);
+INSERT INTO service VALUES ('HL21-04203991',1,'2009-12-21',1261383003,1261433849,'cfv1221s','David','Hennessy','david@dhennessypublications.com','Doctype Declaration','Hi Tim \'n Mark\n\nI have inserted the Strict DTD into my head pages and onto my dynamic pages (in CMS) and all versions of Pushy work... even the page with two ads.\n\nCheck out http://networkernet.com\n\nNice work!','tim','Hi David,\r\n\r\n Cool.  I see that the Single Pushy per Page cases are working. \r\n\r\n The second Pushy on the 2 Pushy Page is not really working, \r\n but that one we really hadn\'t intended to support.  I think I \r\n know what it would take to support it and can look at it in the\r\n future, but I\'m not yet convinced its something that anyone would \r\n really do.\r\n\r\n Thanks for verifying the DocType issues - glad to see thats all \r\n working now.\r\n\r\nHave a great day!\r\n\r\nRegards,\r\nTim\r\nPushyAds.com\r\n\r\n','',0);
+INSERT INTO service VALUES ('HL29-54162402',1,'2009-12-29',1262124162,1262127696,'NON-MEMBER','Just','Checkin','mark@autoprospector.com','Abuse Reported','Testing','mark','Hi Just,\r\n\r\nGo stick a pencil in your ear\r\n\r\nHave a great day!\r\n\r\nRegards,\r\nMark\r\nPushyAds.com\r\n\r\n','',0);
+DROP TABLE IF EXISTS session;
+CREATE TABLE `session` (
+  session_id varchar(32) default '',
+  member_id varchar(20) default '',
+  expires int(11) default '0',
+  is_admin int(11) default '0',
+  UNIQUE KEY session_id (session_id)
+) TYPE=MyISAM;
+
+INSERT INTO session VALUES ('1262248209818705TTJE','y1230vt',1262334609,0);
+INSERT INTO session VALUES ('1262289613702411DVVB','epr1277',1262376013,0);
+INSERT INTO session VALUES ('1262289160884261MWNT','epr1277',1262375560,0);
+INSERT INTO session VALUES ('1262288967814364CYHR','paw1200',1262375367,0);
+INSERT INTO session VALUES ('1262289810683419VDWS','epr1277',1262376210,0);
+INSERT INTO session VALUES ('1262290441134570DATE','f1206wkt',1262376841,0);
+INSERT INTO session VALUES ('1262294718507414EXTC','epr1277',1262381118,0);
+DROP TABLE IF EXISTS tracker_ad_category;
+CREATE TABLE tracker_ad_category (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_affiliate_page;
+CREATE TABLE tracker_affiliate_page (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_elite_bar;
+CREATE TABLE tracker_elite_bar (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_keys;
+CREATE TABLE tracker_keys (
+  created bigint(20) NOT NULL default '0',
+  date_created varchar(10) NOT NULL default '',
+  keydata varchar(128) NOT NULL default '',
+  UNIQUE KEY date_created (date_created,keydata)
+) TYPE=MyISAM;
+
+INSERT INTO tracker_keys VALUES (1262333064259484,'2010-01-01','H^143.143.115.247^tracker_pushy_widget^y1230vt^d9235fde9aa45e4e241df5b9fd9c8cdb@FirstPage^^');
+INSERT INTO tracker_keys VALUES (1262333064265479,'2010-01-01','H^143.143.115.247^tracker_widget_category^y1230vt^d9235fde9aa45e4e241df5b9fd9c8cdb@FirstPage^^108');
+INSERT INTO tracker_keys VALUES (1262333064270649,'2010-01-01','H^143.143.115.247^tracker_widget_category^y1230vt^d9235fde9aa45e4e241df5b9fd9c8cdb@FirstPage^^130');
+INSERT INTO tracker_keys VALUES (1262333064284409,'2010-01-01','H^230.246.178.134^tracker_pushy_widget^frg1223^da34be221190cf41a952aec8d956889c@tjwolf^^');
+INSERT INTO tracker_keys VALUES (1262333064289721,'2010-01-01','H^230.246.178.134^tracker_widget_category^frg1223^da34be221190cf41a952aec8d956889c@tjwolf^^108');
+INSERT INTO tracker_keys VALUES (1262333064304038,'2010-01-01','H^173.151.186.174^tracker_pushy_widget^gcw1222p^68e7d2b4117e94b5326d86dccc8a2fa6@rolling^^');
+INSERT INTO tracker_keys VALUES (1262333064311008,'2010-01-01','H^173.151.186.174^tracker_widget_category^gcw1222p^68e7d2b4117e94b5326d86dccc8a2fa6@rolling^^108');
+INSERT INTO tracker_keys VALUES (1262333064324920,'2010-01-01','H^203.254.187.147^tracker_pushy_widget^d1233cw^d3819b7da9e13887655e580e73c8b40f@awesome^^');
+INSERT INTO tracker_keys VALUES (1262333064330572,'2010-01-01','H^203.254.187.147^tracker_widget_category^d1233cw^d3819b7da9e13887655e580e73c8b40f@awesome^^108');
+INSERT INTO tracker_keys VALUES (1262333064338753,'2010-01-01','H^203.254.187.147^tracker_widget_category^d1233cw^d3819b7da9e13887655e580e73c8b40f@awesome^^120');
+INSERT INTO tracker_keys VALUES (1262333064353380,'2010-01-01','H^188.150.160.192^tracker_pushy_widget^hkd1225^f2ff5b7d91ba1bac47dc7aa75b15d752@awesome^^');
+INSERT INTO tracker_keys VALUES (1262333064358981,'2010-01-01','H^188.150.160.192^tracker_widget_category^hkd1225^f2ff5b7d91ba1bac47dc7aa75b15d752@awesome^^130');
+INSERT INTO tracker_keys VALUES (1262420954215996,'2010-01-02','H^136.198.147.137^tracker_pushy_widget^y1230vt^d9235fde9aa45e4e241df5b9fd9c8cdb@FirstPage^^');
+INSERT INTO tracker_keys VALUES (1262420954225376,'2010-01-02','H^136.198.147.137^tracker_widget_category^y1230vt^d9235fde9aa45e4e241df5b9fd9c8cdb@FirstPage^^108');
+INSERT INTO tracker_keys VALUES (1262420954230670,'2010-01-02','H^136.198.147.137^tracker_widget_category^y1230vt^d9235fde9aa45e4e241df5b9fd9c8cdb@FirstPage^^130');
+INSERT INTO tracker_keys VALUES (1262420954248205,'2010-01-02','H^124.110.199.123^tracker_pushy_widget^hkd1225^f2ff5b7d91ba1bac47dc7aa75b15d752@awesome^^');
+INSERT INTO tracker_keys VALUES (1262420954253786,'2010-01-02','H^124.110.199.123^tracker_widget_category^hkd1225^f2ff5b7d91ba1bac47dc7aa75b15d752@awesome^^130');
+INSERT INTO tracker_keys VALUES (1262420954259210,'2010-01-02','H^139.200.176.194^tracker_pushy_widget^hkd1225^f2ff5b7d91ba1bac47dc7aa75b15d752@awesome^^');
+INSERT INTO tracker_keys VALUES (1262420954264536,'2010-01-02','H^139.200.176.194^tracker_widget_category^hkd1225^f2ff5b7d91ba1bac47dc7aa75b15d752@awesome^^130');
+INSERT INTO tracker_keys VALUES (1262338676936773,'2010-01-01','H^166.236.117.168^tracker_pushy_widget^paw1200^29c6c527301b61068c1aa591bc50ea86@tim^^');
+INSERT INTO tracker_keys VALUES (1262338676946002,'2010-01-01','H^166.236.117.168^tracker_widget_category^paw1200^29c6c527301b61068c1aa591bc50ea86@tim^^111');
+INSERT INTO tracker_keys VALUES (1262338676951392,'2010-01-01','H^166.236.117.168^tracker_widget_category^paw1200^29c6c527301b61068c1aa591bc50ea86@tim^^145');
+INSERT INTO tracker_keys VALUES (1262367068247406,'2010-01-01','H^133.174.239.229^tracker_pushy_widget^cfv1221s^7b749c99ad4a75d90ec3eb65f08f40c3@happy_new_year^^');
+INSERT INTO tracker_keys VALUES (1262367068255621,'2010-01-01','H^133.174.239.229^tracker_widget_category^cfv1221s^7b749c99ad4a75d90ec3eb65f08f40c3@happy_new_year^^137');
+INSERT INTO tracker_keys VALUES (1262367068260865,'2010-01-01','H^133.174.239.229^tracker_widget_category^cfv1221s^7b749c99ad4a75d90ec3eb65f08f40c3@happy_new_year^^147');
+INSERT INTO tracker_keys VALUES (1262453724886835,'2010-01-02','H^147.111.198.136^tracker_pushy_widget^cfv1221s^7b749c99ad4a75d90ec3eb65f08f40c3@happy_new_year^^');
+INSERT INTO tracker_keys VALUES (1262453724892393,'2010-01-02','H^147.111.198.136^tracker_widget_category^cfv1221s^7b749c99ad4a75d90ec3eb65f08f40c3@happy_new_year^^137');
+INSERT INTO tracker_keys VALUES (1262453724897479,'2010-01-02','H^147.111.198.136^tracker_widget_category^cfv1221s^7b749c99ad4a75d90ec3eb65f08f40c3@happy_new_year^^147');
+DROP TABLE IF EXISTS tracker_pushy_ads;
+CREATE TABLE tracker_pushy_ads (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_pushy_ads_mysites;
+CREATE TABLE tracker_pushy_ads_mysites (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_pushy_ads_referrals;
+CREATE TABLE tracker_pushy_ads_referrals (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS tracker_pushy_widget;
+CREATE TABLE tracker_pushy_widget (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+INSERT INTO tracker_pushy_widget VALUES ('paw1200','29c6c527301b61068c1aa591bc50ea86@FirstPage','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_pushy_widget VALUES ('paw1200','29c6c527301b61068c1aa591bc50ea86@SecondPage','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_pushy_widget VALUES ('paw1200','29c6c527301b61068c1aa591bc50ea86@ThirdPage','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_pushy_widget VALUES ('y1230vt','d9235fde9aa45e4e241df5b9fd9c8cdb@FirstPage','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,1,0);
+INSERT INTO tracker_pushy_widget VALUES ('frg1223','da34be221190cf41a952aec8d956889c@tjwolf','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_pushy_widget VALUES ('gcw1222p','68e7d2b4117e94b5326d86dccc8a2fa6@rolling','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_pushy_widget VALUES ('d1233cw','d3819b7da9e13887655e580e73c8b40f@awesome','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_pushy_widget VALUES ('hkd1225','f2ff5b7d91ba1bac47dc7aa75b15d752@awesome','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,2,0);
+INSERT INTO tracker_pushy_widget VALUES ('paw1200','29c6c527301b61068c1aa591bc50ea86@tim','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_pushy_widget VALUES ('cfv1221s','7b749c99ad4a75d90ec3eb65f08f40c3@happy_new_year','','','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,1,0);
+DROP TABLE IF EXISTS tracker_widget_category;
+CREATE TABLE tracker_widget_category (
+  member_id varchar(20) NOT NULL default '',
+  widget_key varchar(64) NOT NULL default '',
+  ad_id varchar(32) NOT NULL default '',
+  userkey varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_h0 int(11) NOT NULL default '0',
+  w1_c0 int(11) NOT NULL default '0',
+  w1_h1 int(11) NOT NULL default '0',
+  w1_c1 int(11) NOT NULL default '0',
+  w1_h2 int(11) NOT NULL default '0',
+  w1_c2 int(11) NOT NULL default '0',
+  w1_h3 int(11) NOT NULL default '0',
+  w1_c3 int(11) NOT NULL default '0',
+  w1_h4 int(11) NOT NULL default '0',
+  w1_c4 int(11) NOT NULL default '0',
+  w1_h5 int(11) NOT NULL default '0',
+  w1_c5 int(11) NOT NULL default '0',
+  w1_h6 int(11) NOT NULL default '0',
+  w1_c6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_h0 int(11) NOT NULL default '0',
+  w2_c0 int(11) NOT NULL default '0',
+  w2_h1 int(11) NOT NULL default '0',
+  w2_c1 int(11) NOT NULL default '0',
+  w2_h2 int(11) NOT NULL default '0',
+  w2_c2 int(11) NOT NULL default '0',
+  w2_h3 int(11) NOT NULL default '0',
+  w2_c3 int(11) NOT NULL default '0',
+  w2_h4 int(11) NOT NULL default '0',
+  w2_c4 int(11) NOT NULL default '0',
+  w2_h5 int(11) NOT NULL default '0',
+  w2_c5 int(11) NOT NULL default '0',
+  w2_h6 int(11) NOT NULL default '0',
+  w2_c6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_h0 int(11) NOT NULL default '0',
+  w3_c0 int(11) NOT NULL default '0',
+  w3_h1 int(11) NOT NULL default '0',
+  w3_c1 int(11) NOT NULL default '0',
+  w3_h2 int(11) NOT NULL default '0',
+  w3_c2 int(11) NOT NULL default '0',
+  w3_h3 int(11) NOT NULL default '0',
+  w3_c3 int(11) NOT NULL default '0',
+  w3_h4 int(11) NOT NULL default '0',
+  w3_c4 int(11) NOT NULL default '0',
+  w3_h5 int(11) NOT NULL default '0',
+  w3_c5 int(11) NOT NULL default '0',
+  w3_h6 int(11) NOT NULL default '0',
+  w3_c6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_h0 int(11) NOT NULL default '0',
+  w4_c0 int(11) NOT NULL default '0',
+  w4_h1 int(11) NOT NULL default '0',
+  w4_c1 int(11) NOT NULL default '0',
+  w4_h2 int(11) NOT NULL default '0',
+  w4_c2 int(11) NOT NULL default '0',
+  w4_h3 int(11) NOT NULL default '0',
+  w4_c3 int(11) NOT NULL default '0',
+  w4_h4 int(11) NOT NULL default '0',
+  w4_c4 int(11) NOT NULL default '0',
+  w4_h5 int(11) NOT NULL default '0',
+  w4_c5 int(11) NOT NULL default '0',
+  w4_h6 int(11) NOT NULL default '0',
+  w4_c6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_h0 int(11) NOT NULL default '0',
+  w5_c0 int(11) NOT NULL default '0',
+  w5_h1 int(11) NOT NULL default '0',
+  w5_c1 int(11) NOT NULL default '0',
+  w5_h2 int(11) NOT NULL default '0',
+  w5_c2 int(11) NOT NULL default '0',
+  w5_h3 int(11) NOT NULL default '0',
+  w5_c3 int(11) NOT NULL default '0',
+  w5_h4 int(11) NOT NULL default '0',
+  w5_c4 int(11) NOT NULL default '0',
+  w5_h5 int(11) NOT NULL default '0',
+  w5_c5 int(11) NOT NULL default '0',
+  w5_h6 int(11) NOT NULL default '0',
+  w5_c6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key (member_id,widget_key,ad_id,userkey)
+) TYPE=MyISAM;
+
+INSERT INTO tracker_widget_category VALUES ('y1230vt','d9235fde9aa45e4e241df5b9fd9c8cdb@FirstPage','','108','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,1,0);
+INSERT INTO tracker_widget_category VALUES ('y1230vt','d9235fde9aa45e4e241df5b9fd9c8cdb@FirstPage','','130','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,1,0);
+INSERT INTO tracker_widget_category VALUES ('frg1223','da34be221190cf41a952aec8d956889c@tjwolf','','108','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_widget_category VALUES ('gcw1222p','68e7d2b4117e94b5326d86dccc8a2fa6@rolling','','108','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_widget_category VALUES ('d1233cw','d3819b7da9e13887655e580e73c8b40f@awesome','','108','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_widget_category VALUES ('d1233cw','d3819b7da9e13887655e580e73c8b40f@awesome','','120','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_widget_category VALUES ('hkd1225','f2ff5b7d91ba1bac47dc7aa75b15d752@awesome','','130','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,2,0);
+INSERT INTO tracker_widget_category VALUES ('paw1200','29c6c527301b61068c1aa591bc50ea86@tim','','111','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_widget_category VALUES ('paw1200','29c6c527301b61068c1aa591bc50ea86@tim','','145','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO tracker_widget_category VALUES ('cfv1221s','7b749c99ad4a75d90ec3eb65f08f40c3@happy_new_year','','147','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO tracker_widget_category VALUES ('cfv1221s','7b749c99ad4a75d90ec3eb65f08f40c3@happy_new_year','','137','2009-11-29',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-06',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-13',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-20',0,0,0,0,0,0,0,0,0,0,0,0,0,0,'2009-12-27',0,0,0,0,0,0,0,0,0,0,0,0,1,0);
+DROP TABLE IF EXISTS userlevel_change_requests;
+CREATE TABLE userlevel_change_requests (
+  member_id varchar(20) NOT NULL default '',
+  target_level int(11) NOT NULL default '0',
+  request_date varchar(10) NOT NULL default '',
+  target_date varchar(10) NOT NULL default ''
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS widget;
+CREATE TABLE widget (
+  widget_key varchar(64) NOT NULL default '',
+  enabled int(11) NOT NULL default '0',
+  member_id varchar(20) NOT NULL default '',
+  _pushy_scroller_ varchar(48) NOT NULL default '',
+  refid varchar(20) default '',
+  widget_name varchar(32) NOT NULL default '',
+  domain varchar(64) NOT NULL default '',
+  widget_id int(11) NOT NULL default '0',
+  widget_categories varchar(256) NOT NULL default '',
+  width int(11) NOT NULL default '0',
+  height int(11) NOT NULL default '0',
+  posture int(11) NOT NULL default '0',
+  motion int(11) NOT NULL default '0',
+  transition int(11) NOT NULL default '0',
+  origin int(11) NOT NULL default '0',
+  speed int(11) NOT NULL default '0',
+  wiggle int(11) NOT NULL default '0',
+  delay int(11) NOT NULL default '0',
+  pause int(11) NOT NULL default '0',
+  style int(11) NOT NULL default '0',
+  date_created varchar(10) NOT NULL default '',
+  date_last_modified varchar(10) NOT NULL default '',
+  date_first_access varchar(10) NOT NULL default '',
+  date_last_access varchar(10) NOT NULL default '',
+  weekly_access_count bigint(20) NOT NULL default '0',
+  total_access_count bigint(20) NOT NULL default '0',
+  UNIQUE KEY widget_key (widget_key)
+) TYPE=MyISAM;
+
+INSERT INTO widget VALUES ('2ff0bf884d5f568610bbc0a66551fc5d',1,'pushy','','SYSTEM','PushyAds','pushyads.com',0,'~101~130~',270,333,0,1,1,0,0,1,2,3,0,'2009-11-10','2009-11-18','2009-11-10','2009-12-31',1123,1123);
+INSERT INTO widget VALUES ('29c6c527301b61068c1aa591bc50ea86',1,'paw1200','','pushy','Tims Website','webtribune.com',0,'~111~145~',360,445,1,0,0,0,0,1,2,0,0,'2009-11-10','2009-12-09','2009-11-18','2009-12-20',61,61);
+INSERT INTO widget VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633',1,'pushy','_pushy_registration_.php','SYSTEM','Registration','pushyads.com',0,'~101~',180,222,1,0,0,3,0,1,0,0,0,'2009-11-10','2009-11-10','2009-11-10','2009-12-27',222,222);
+INSERT INTO widget VALUES ('2b1bc75a43876e01ebd8cccaec871e76',1,'gcw1222p','','cfv1221s','andrea','rightfromtheheart.com',0,'~108~137~',180,222,0,2,3,0,0,1,0,0,0,'2009-11-19','2009-11-19','2009-11-19','2009-11-21',10,10);
+INSERT INTO widget VALUES ('b14470a0a77a8bf9791ceea98f5753a9',1,'hkd1225','','cfv1221s','webbiz','webbizmarket.com',0,'~101~130~',250,309,0,1,2,0,0,1,0,0,0,'2009-11-19','2009-11-21','2009-11-19','2009-11-24',28,28);
+INSERT INTO widget VALUES ('d6039d38b64468137c88515bca933362',1,'dht1227c','','gcw1222p','watchdog','ebiz4today.com',0,'~108~',360,445,1,0,1,2,0,1,0,0,0,'2009-11-19','2009-11-19','','',0,0);
+INSERT INTO widget VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3',1,'hkd1225','','cfv1221s','jbb','joinbrentbush.com',0,'~130~',240,296,1,0,1,1,0,1,2,0,0,'2009-11-20','2009-11-24','2009-11-20','2009-12-28',115,115);
+INSERT INTO widget VALUES ('c5bbbf0764e773a184eaa053c9371108',1,'cfv1221s','','pushy','DHPushy','networkernet.com',0,'~138~145~',200,247,1,0,2,0,0,1,0,0,0,'2009-11-20','2009-11-23','2009-11-20','2009-11-23',62,62);
+INSERT INTO widget VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb',1,'y1230vt','','pushy','Mobi','mobibizclub.com',0,'~108~130~',210,259,0,1,1,0,0,1,0,0,0,'2009-11-20','2009-11-20','2009-11-25','2009-12-30',73,73);
+INSERT INTO widget VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3',1,'cfv1221s','','pushy','DHPushy2','networkernet.com',0,'~137~147~',350,432,0,0,0,0,0,0,0,0,0,'2009-11-20','2009-11-23','2009-11-20','2009-12-21',104,104);
+INSERT INTO widget VALUES ('da34be221190cf41a952aec8d956889c',1,'frg1223','','gcw1222p','getwitit','getwit-it.com',0,'~108~',320,395,1,0,2,2,0,1,2,0,0,'2009-11-20','2009-11-20','2009-11-20','2009-11-20',2,2);
+INSERT INTO widget VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6',1,'gcw1222p','','cfv1221s','hover','rightfromtheheart.com',0,'~108~',180,222,1,0,2,3,0,1,0,0,0,'2009-11-21','2009-11-21','2009-11-22','2009-12-28',44,44);
+INSERT INTO widget VALUES ('d3819b7da9e13887655e580e73c8b40f',1,'d1233cw','','gcw1222p','magnetic','millioncashplan.com',0,'~108~120~',230,284,0,2,2,0,0,1,0,0,0,'2009-11-21','2009-11-21','','',0,0);
+INSERT INTO widget VALUES ('f4d3c6d845d883ec45374f8e0b28606b',1,'wef1232b','','cfv1221s','Bob','puresourcefineart.com',0,'~103~',280,346,0,1,1,0,0,1,0,0,0,'2009-11-21','2009-11-27','2009-11-21','2009-11-27',19,19);
+INSERT INTO widget VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752',1,'hkd1225','','cfv1221s','webbiz home','webbizmarket.com',0,'~130~',280,346,0,1,2,0,0,1,0,3,0,'2009-11-21','2009-11-22','2009-11-21','2009-12-31',116,116);
+INSERT INTO widget VALUES ('bd2737d38810269baa848da7aa3d8337',1,'mjb1239n','','gcw1222p','THBT','thehomebusinesstutor.com',0,'~108~130~',180,222,0,2,2,0,0,1,0,0,0,'2009-11-23','2009-11-23','2009-11-23','2009-12-03',150,150);
+INSERT INTO widget VALUES ('1c781c13d734aded0673e1adf142679f',1,'cfv1221s','','pushy','Pushy3','networkernet.com',0,'~103~107~',330,407,0,2,1,0,0,1,0,0,0,'2009-11-23','2009-11-23','2009-11-23','2009-12-28',176,176);
+INSERT INTO widget VALUES ('b209ded37e42db80a9cb486a0ca15dd8',1,'hkd1225','','cfv1221s','webbizdailypay','webbizmarket.com',0,'~108~',240,296,0,1,1,0,0,1,3,3,0,'2009-11-23','2009-11-23','2009-11-23','2009-12-28',50,50);
+INSERT INTO widget VALUES ('9a4f1fed4af718d9c2c48d3afb0dc0f5',1,'r1243ya','','hfe1201w','u2project','u2project.com',0,'~101~108~',210,259,1,0,1,1,0,1,0,0,0,'2009-11-24','2009-11-24','','',0,0);
+INSERT INTO widget VALUES ('abc4c5b21c30148d56af9e8a1108ff1b',1,'fbt1241d','','gcw1222p','plexy','doitnow4freedom.com',0,'~108~',200,247,1,0,3,3,0,1,4,0,0,'2009-11-25','2009-11-25','','',0,0);
+INSERT INTO widget VALUES ('bf5ed4e04ef5e1f034e248e9b4aab34b',1,'r1243ya','','hfe1201w','u2project2','u2project.com',0,'~101~108~',210,259,0,1,1,0,1,0,0,0,0,'2009-11-27','2009-11-27','','',0,0);
+INSERT INTO widget VALUES ('49f912ddd8b70c8b2fe46aa0152b5c0e',1,'r1243ya','','hfe1201w','autoprospector','autoprospector.com',0,'~101~108~',210,259,1,0,1,2,0,1,0,0,0,'2009-11-27','2009-11-27','','',0,0);
+INSERT INTO widget VALUES ('d152fc492b96f3da7d0cd529e127a1b4',1,'paw1200','','pushy','GangBusters','webtribune.com',0,'~106~109~',240,296,0,1,2,0,0,1,0,2,0,'2009-12-20','2009-12-20','2009-12-20','2009-12-20',6,6);
+DROP TABLE IF EXISTS widget_tracker;
+CREATE TABLE widget_tracker (
+  widget_key varchar(64) NOT NULL default '',
+  yymm varchar(7) NOT NULL default '',
+  d01 int(11) NOT NULL default '0',
+  d02 int(11) NOT NULL default '0',
+  d03 int(11) NOT NULL default '0',
+  d04 int(11) NOT NULL default '0',
+  d05 int(11) NOT NULL default '0',
+  d06 int(11) NOT NULL default '0',
+  d07 int(11) NOT NULL default '0',
+  d08 int(11) NOT NULL default '0',
+  d09 int(11) NOT NULL default '0',
+  d10 int(11) NOT NULL default '0',
+  d11 int(11) NOT NULL default '0',
+  d12 int(11) NOT NULL default '0',
+  d13 int(11) NOT NULL default '0',
+  d14 int(11) NOT NULL default '0',
+  d15 int(11) NOT NULL default '0',
+  d16 int(11) NOT NULL default '0',
+  d17 int(11) NOT NULL default '0',
+  d18 int(11) NOT NULL default '0',
+  d19 int(11) NOT NULL default '0',
+  d20 int(11) NOT NULL default '0',
+  d21 int(11) NOT NULL default '0',
+  d22 int(11) NOT NULL default '0',
+  d23 int(11) NOT NULL default '0',
+  d24 int(11) NOT NULL default '0',
+  d25 int(11) NOT NULL default '0',
+  d26 int(11) NOT NULL default '0',
+  d27 int(11) NOT NULL default '0',
+  d28 int(11) NOT NULL default '0',
+  d29 int(11) NOT NULL default '0',
+  d30 int(11) NOT NULL default '0',
+  d31 int(11) NOT NULL default '0',
+  UNIQUE KEY widget_key (widget_key)
+) TYPE=MyISAM;
+
+INSERT INTO widget_tracker VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','2009-11',0,0,0,0,0,0,0,0,0,50,51,35,39,5,19,8,12,14,115,44,44,18,62,26,23,33,29,15,11,16,0);
+INSERT INTO widget_tracker VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','2009-11',0,0,0,0,0,0,0,0,0,12,3,3,25,8,6,0,6,9,13,3,3,1,7,7,0,2,3,3,0,0,0);
+INSERT INTO widget_tracker VALUES ('29c6c527301b61068c1aa591bc50ea86','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,1,2,0,3,0,0,0,0,0,1,0,0);
+INSERT INTO widget_tracker VALUES ('2b1bc75a43876e01ebd8cccaec871e76','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3,1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('b14470a0a77a8bf9791ceea98f5753a9','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,2,15,5,0,1,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,0,21,37,18,1,2,0,1,0,0);
+INSERT INTO widget_tracker VALUES ('c5bbbf0764e773a184eaa053c9371108','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,1,2,40,0,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,64,15,2,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('da34be221190cf41a952aec8d956889c','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('f4d3c6d845d883ec45374f8e0b28606b','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,0,4,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,9,4,0,10,1,5,2,7,0,0);
+INSERT INTO widget_tracker VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,2,1,2,0,0,1,0);
+INSERT INTO widget_tracker VALUES ('bd2737d38810269baa848da7aa3d8337','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,55,24,22,20,0,10,6,0);
+INSERT INTO widget_tracker VALUES ('1c781c13d734aded0673e1adf142679f','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,30,4,0,2,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('b209ded37e42db80a9cb486a0ca15dd8','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,5,0,0,0,0,0,0,0);
+INSERT INTO widget_tracker VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','2009-11',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,14,1,1,6,0);
+INSERT INTO widget_tracker VALUES ('d152fc492b96f3da7d0cd529e127a1b4','2009-12',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0);
+DROP TABLE IF EXISTS widget_visitor;
+CREATE TABLE widget_visitor (
+  widget_key varchar(64) NOT NULL default '',
+  ipaddr varchar(16) NOT NULL default '',
+  yymmdd varchar(10) NOT NULL default '',
+  `timestamp` int(11) NOT NULL default '0',
+  impressions int(11) NOT NULL default '0',
+  UNIQUE KEY widget_visit (widget_key,ipaddr)
+) TYPE=MyISAM;
+
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','127.0.0.1','2009-11-10',1262297668,30);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.70.248.120','2009-11-10',1262289606,439);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','208.100.133.76','2009-11-10',1258738332,175);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','71.70.248.120','2009-11-10',1261962388,37);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','208.100.133.76','2009-11-10',1258615287,60);
+INSERT INTO widget_visitor VALUES ('29c6c527301b61068c1aa591bc50ea86','71.70.248.120','2009-11-18',1261369882,59);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','60.226.32.172','2009-11-19',1261382955,18);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','60.226.32.172','2009-11-19',1258625746,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','174.16.68.68','2009-11-19',1258807317,5);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','174.16.68.68','2009-11-19',1258651985,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','75.75.45.207','2009-11-19',1258755556,2);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','75.75.45.207','2009-11-19',1258655078,1);
+INSERT INTO widget_visitor VALUES ('2b1bc75a43876e01ebd8cccaec871e76','174.16.68.68','2009-11-19',1258804187,7);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','64.12.116.203','2009-11-19',1262243535,3);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','64.12.116.67','2009-11-19',1258656547,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','67.223.213.155','2009-11-19',1260228435,28);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','67.223.213.155','2009-11-19',1258660948,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','68.171.234.25','2009-11-19',1258663645,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','75.204.241.112','2009-11-19',1258671151,2);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','75.204.241.112','2009-11-19',1258670732,1);
+INSERT INTO widget_visitor VALUES ('b14470a0a77a8bf9791ceea98f5753a9','67.223.213.155','2009-11-19',1259065465,28);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.204.177.232','2009-11-19',1258948333,29);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','71.204.177.232','2009-11-19',1258681254,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','69.157.122.4','2009-11-19',1258682807,2);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','69.157.122.4','2009-11-19',1258680843,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','24.11.169.138','2009-11-19',1262248176,13);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','24.11.169.138','2009-11-19',1258682168,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.95.140.91','2009-11-19',1259827397,17);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','71.95.140.91','2009-11-19',1258691276,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','77.70.117.10','2009-11-20',1258709685,1);
+INSERT INTO widget_visitor VALUES ('2b1bc75a43876e01ebd8cccaec871e76','24.99.109.61','2009-11-20',1258730462,1);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','67.223.213.155','2009-11-20',1259162608,76);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','216.66.135.62','2009-11-20',1258826910,6);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','216.66.135.62','2009-11-20',1258744256,3);
+INSERT INTO widget_visitor VALUES ('2b1bc75a43876e01ebd8cccaec871e76','75.34.253.9','2009-11-20',1258744785,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','118.93.20.213','2009-11-20',1258746214,1);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','60.226.32.172','2009-11-20',1259015882,47);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','71.70.248.120','2009-11-20',1259014843,2);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','60.226.32.172','2009-11-20',1261184429,64);
+INSERT INTO widget_visitor VALUES ('da34be221190cf41a952aec8d956889c','75.75.45.207','2009-11-20',1258759177,2);
+INSERT INTO widget_visitor VALUES ('2b1bc75a43876e01ebd8cccaec871e76','98.242.108.245','2009-11-20',1258776068,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','75.65.7.75','2009-11-21',1258937404,15);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','75.65.7.75','2009-11-21',1258811132,1);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','71.95.140.91','2009-11-21',1259011150,3);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','205.188.116.77','2009-11-21',1258831445,2);
+INSERT INTO widget_visitor VALUES ('f4d3c6d845d883ec45374f8e0b28606b','71.95.140.91','2009-11-21',1259360180,19);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','67.223.213.155','2009-11-21',1260368818,23);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','220.255.7.118','2009-11-21',1258859835,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','216.228.181.27','2009-11-22',1259876078,131);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','77.31.46.70','2009-11-22',1258930513,2);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','216.228.181.27','2009-11-22',1259014298,6);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','216.228.181.27','2009-11-22',1259348629,4);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','68.7.27.194','2009-11-22',1259091691,6);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','68.7.27.194','2009-11-22',1258954198,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','92.24.63.212','2009-11-23',1258998736,1);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','92.24.63.212','2009-11-23',1258998811,1);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','92.24.63.212','2009-11-23',1258999002,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','84.69.165.124','2009-11-23',1259235300,3);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','84.69.165.124','2009-11-23',1259262069,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.212.242.167','2009-11-23',1259002750,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','118.92.102.20','2009-11-23',1259006180,1);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','118.92.102.20','2009-11-23',1259006987,3);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.92.102.20','2009-11-23',1259009794,9);
+INSERT INTO widget_visitor VALUES ('c5bbbf0764e773a184eaa053c9371108','118.92.102.20','2009-11-23',1259010360,3);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','71.95.140.91','2009-11-23',1259011150,3);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','60.226.32.172','2009-11-23',1259012221,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','68.104.186.63','2009-11-23',1259012262,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','76.179.18.141','2009-11-23',1259012979,1);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','216.228.181.27','2009-11-23',1259772228,5);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','71.70.248.120','2009-11-23',1261433971,22);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','71.70.248.120','2009-11-23',1262033884,76);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','67.223.213.155','2009-11-23',1259065531,9);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','60.226.32.172','2009-11-23',1261468430,73);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','70.41.25.26','2009-11-23',1259124877,8);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','70.41.25.26','2009-11-23',1259026380,1);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','216.228.181.27','2009-11-23',1259858595,10);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','71.70.248.120','2009-11-23',1261986856,26);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','216.228.181.27','2009-11-23',1259803279,7);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','71.70.248.120','2009-11-24',1261985899,20);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','70.75.83.24','2009-11-24',1259622148,11);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','70.75.83.24','2009-11-24',1259079240,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','207.200.116.71','2009-11-24',1259095095,1);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','207.200.116.13','2009-11-24',1259095601,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.10.84','2009-11-24',1259099593,6);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.9.247','2009-11-24',1259130031,49);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','216.228.181.27','2009-11-24',1259425621,11);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.14.39','2009-11-25',1259146390,21);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','71.70.248.120','2009-11-25',1259533591,16);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','71.70.248.120','2009-11-25',1259384338,4);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','71.70.248.120','2009-11-25',1259384383,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','71.70.248.120','2009-11-25',1262033870,3);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','190.84.42.71','2009-11-25',1259199184,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.179.50.124','2009-11-26',1259225684,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','59.154.42.131','2009-11-26',1259490769,10);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.71.125','2009-11-26',1259270327,12);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','24.215.21.37','2009-11-26',1259271324,1);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','64.12.116.141','2009-11-26',1259277193,1);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','124.157.148.167','2009-11-26',1259290338,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.64.134','2009-11-26',1259298678,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','124.182.98.221','2009-11-27',1259309599,14);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.79.43','2009-11-27',1259307952,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','115.109.153.17','2009-11-27',1259309228,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','216.228.181.27','2009-11-27',1259803109,4);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','216.228.181.27','2009-11-27',1259803388,8);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','216.228.181.27','2009-11-27',1259365051,3);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','75.177.5.223','2009-11-27',1262206365,29);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','216.228.181.27','2009-11-27',1259391099,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','206.80.1.253','2009-11-28',1259453410,2);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','112.110.181.75','2009-11-28',1259465288,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','78.137.163.133','2009-11-29',1261156959,4);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','68.197.216.100','2009-11-29',1260377502,3);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','24.11.169.138','2009-11-29',1262206520,33);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.92.103.134','2009-11-29',1259551580,9);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','216.66.130.216','2009-11-30',1259608578,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.92.125.54','2009-11-30',1259624598,6);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','64.203.211.61','2009-11-30',1259624432,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','96.254.185.107','2009-12-01',1259692892,1);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','207.66.210.230','2009-12-01',1259699540,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','72.23.118.93','2009-12-01',1259713230,1);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.92.119.227','2009-12-01',1259722401,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','98.238.214.110','2009-12-01',1259728691,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.75.182.168','2009-12-02',1259762078,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','68.17.10.130','2009-12-02',1259764971,1);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','71.34.80.114','2009-12-02',1259772919,2);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','71.34.80.114','2009-12-02',1259772919,2);
+INSERT INTO widget_visitor VALUES ('bd2737d38810269baa848da7aa3d8337','118.93.0.49','2009-12-03',1259872889,2);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','208.100.133.146','2009-12-04',1262125364,160);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','80.184.46.205','2009-12-04',1259953617,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','71.173.195.93','2009-12-04',1259958820,2);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','208.100.133.146','2009-12-04',1261423927,83);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','75.154.224.113','2009-12-04',1259976353,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','66.235.124.132','2009-12-05',1261565299,4);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','208.100.133.146','2009-12-05',1262018217,4);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','206.53.153.101','2009-12-06',1260099736,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','98.88.103.229','2009-12-06',1260114589,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','168.103.230.58','2009-12-06',1260151385,4);
+INSERT INTO widget_visitor VALUES ('f958e8ce1f1a881fe6bc12d1f8c23633','168.103.230.58','2009-12-06',1260151101,4);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','222.73.220.112','2009-12-07',1260207214,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','204.8.228.54','2009-12-07',1260225053,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','68.19.48.45','2009-12-07',1260244049,2);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','190.213.62.180','2009-12-08',1260280113,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.246.172.48','2009-12-08',1260281603,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','24.170.159.167','2009-12-08',1260291972,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','174.129.183.171','2009-12-08',1260302559,2);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','174.129.53.21','2009-12-08',1260312709,2);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','174.129.121.132','2009-12-08',1260321868,2);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','75.101.173.198','2009-12-09',1260345401,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','24.73.88.226','2009-12-09',1260367913,1);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','208.100.133.146','2009-12-09',1261955065,14);
+INSERT INTO widget_visitor VALUES ('7b749c99ad4a75d90ec3eb65f08f40c3','208.100.133.146','2009-12-09',1261425854,8);
+INSERT INTO widget_visitor VALUES ('29c6c527301b61068c1aa591bc50ea86','208.100.133.146','2009-12-09',1260407973,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','69.21.116.54','2009-12-10',1260469306,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','68.218.192.214','2009-12-10',1260486311,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','148.78.32.110','2009-12-10',1260491036,2);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','72.199.165.119','2009-12-10',1260507266,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','71.58.1.136','2009-12-11',1260538292,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','173.131.44.135','2009-12-12',1260625020,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.160.105.40','2009-12-12',1260653843,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.190.144.165','2009-12-12',1260679443,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','24.17.225.71','2009-12-13',1260750994,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','98.238.126.75','2009-12-14',1260828018,1);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','97.95.73.32','2009-12-14',1260848294,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.176.30.67','2009-12-15',1260873849,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','218.111.6.190','2009-12-15',1260936332,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.238.159.5','2009-12-16',1260983717,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.176.133.75','2009-12-16',1261021410,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','209.85.73.26','2009-12-16',1261023912,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.190.192.230','2009-12-17',1261072783,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','120.28.64.77','2009-12-17',1261117024,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','66.239.211.34','2009-12-18',1261170827,1);
+INSERT INTO widget_visitor VALUES ('b209ded37e42db80a9cb486a0ca15dd8','60.226.32.172','2009-12-18',1261184758,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','67.246.174.245','2009-12-20',1261349945,1);
+INSERT INTO widget_visitor VALUES ('d152fc492b96f3da7d0cd529e127a1b4','71.70.248.120','2009-12-20',1261369906,6);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','208.100.133.146','2009-12-21',1261508436,13);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','76.93.32.252','2009-12-21',1261444757,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','166.214.108.118','2009-12-21',1261459532,1);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','111.93.133.4','2009-12-22',1261476604,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','216.16.44.79','2009-12-22',1261486727,1);
+INSERT INTO widget_visitor VALUES ('52c33fccfc7bbf2b7dbfc887d84f27b3','74.215.57.171','2009-12-22',1261491543,7);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.244.50.108','2009-12-22',1261530850,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','69.231.153.106','2009-12-23',1261552496,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','68.219.69.71','2009-12-23',1261576405,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','66.177.245.5','2009-12-23',1261592887,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','174.51.177.53','2009-12-23',1261605081,1);
+INSERT INTO widget_visitor VALUES ('2ff0bf884d5f568610bbc0a66551fc5d','71.34.80.188','2009-12-23',1261625073,4);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','24.178.98.249','2009-12-24',1261653960,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','72.145.100.243','2009-12-24',1261680974,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','98.245.149.181','2009-12-25',1261783847,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','24.183.205.86','2009-12-25',1261788168,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','89.34.98.21','2009-12-26',1261825214,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.237.53.121','2009-12-26',1261844694,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','70.31.6.55','2009-12-26',1261864028,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','41.213.126.12','2009-12-27',1261922214,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','174.124.85.122','2009-12-27',1261967064,2);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','74.243.106.39','2009-12-28',1262012590,1);
+INSERT INTO widget_visitor VALUES ('1c781c13d734aded0673e1adf142679f','201.216.245.25','2009-12-28',1262023073,1);
+INSERT INTO widget_visitor VALUES ('68e7d2b4117e94b5326d86dccc8a2fa6','98.192.10.66','2009-12-28',1262048402,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','79.68.67.88','2009-12-29',1262078239,2);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','190.75.164.209','2009-12-29',1262106561,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','71.8.195.152','2009-12-30',1262191741,1);
+INSERT INTO widget_visitor VALUES ('d9235fde9aa45e4e241df5b9fd9c8cdb','99.145.84.211','2009-12-30',1262213919,1);
+INSERT INTO widget_visitor VALUES ('f2ff5b7d91ba1bac47dc7aa75b15d752','196.25.253.13','2009-12-31',1262253133,2);
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+

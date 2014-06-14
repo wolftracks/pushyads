@@ -1,0 +1,38 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=You forgot something, %firstname%
+MESSAGE
+Hi %firstname%,
+
+On %signupdate%, you signed up to get more information on PUSHY Technlogy
+so you could start generating viral targeted traffic to your website.
+
+THE PROBLEM is that you didn't finish your registration process. You still
+need to create a password so you can login to your backoffice and get all
+your goodies.
+
+Here's what you need to do... Just click on this link and you can finish
+up the registration. Just scroll through the information, and make sure
+you click on one of the links at the bottom of the page.
+
+   %confirmation_link%
+
+Then there's one more page to scroll through before you get to the page
+where you'll need to create your password. And that's all there is to it.
+See you inside!
+
+Here's to Getting PUSHY!, %firstname%
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com
+
+
+
+To unsubscribe from this notice, click this link:
+  http://pushyads.com/new_registration_unsubscribe.php?mid=%mid%
+
+
+

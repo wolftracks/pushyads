@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php
+END
+php_get_contact_clicks.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact_clicks.php
+END
+php_delete_account_blacklist.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_delete_account_blacklist.html
+END
+php_get_account_blacklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_account_blacklist.php
+END
+php_get_messages.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_messages.html
+END
+php_set_contact_name.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_set_contact_name.html
+END
+php_get_contact_customs.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact_customs.html
+END
+php_set_contact_cycle.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_set_contact_cycle.php
+END
+php_get_contact_geoip.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact_geoip.html
+END
+php_get_contact.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact.php
+END
+php_add_account_blacklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_add_account_blacklist.php
+END
+php_get_link.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_link.php
+END
+php_ping.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_ping.php
+END
+php_move_contact.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_move_contact.html
+END
+php_get_contact_clicks.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact_clicks.html
+END
+php_get_message.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_message.html
+END
+php_get_message_contents.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_message_contents.php
+END
+php_set_contact_customs.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_set_contact_customs.html
+END
+php_get_campaigns.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_campaigns.php
+END
+php_get_message_stats.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_message_stats.php
+END
+php_add_contact.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_add_contact.php
+END
+php_get_campaign_blacklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_campaign_blacklist.php
+END
+php_get_account_info.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_account_info.php
+END
+php_delete_campaign_blacklist.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_delete_campaign_blacklist.html
+END
+php_get_contact_customs.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact_customs.php
+END
+php_get_contact.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact.html
+END
+php_add_account_blacklist.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_add_account_blacklist.html
+END
+php_get_link.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_link.html
+END
+php_get_contact_geoip.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact_geoip.php
+END
+php_get_message_contents.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_message_contents.html
+END
+php_get_campaign.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_campaign.php
+END
+getting_started_with_php.text
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/getting_started_with_php.text
+END
+php_move_contact.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_move_contact.php
+END
+php_send_newsletter.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_send_newsletter.html
+END
+php_get_campaign_blacklist.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_campaign_blacklist.html
+END
+php_get_account_info.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_account_info.html
+END
+php_get_message.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_message.php
+END
+php_set_contact_customs.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_set_contact_customs.php
+END
+php_delete_campaign_blacklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_delete_campaign_blacklist.php
+END
+php_delete_contact.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_delete_contact.html
+END
+php_get_contacts.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contacts.html
+END
+php_get_campaign.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_campaign.html
+END
+php_add_campaign_blacklist.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_add_campaign_blacklist.html
+END
+php_get_links.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_links.html
+END
+php_get_contact_opens.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact_opens.php
+END
+php_get_account_blacklist.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_account_blacklist.html
+END
+php_set_contact_cycle.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_set_contact_cycle.html
+END
+php_send_newsletter.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_send_newsletter.php
+END
+php_delete_account_blacklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_delete_account_blacklist.php
+END
+php_get_messages.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_messages.php
+END
+php_set_contact_name.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_set_contact_name.php
+END
+php_ping.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_ping.html
+END
+php_get_contact_opens.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contact_opens.html
+END
+php_delete_contact.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_delete_contact.php
+END
+php_get_contacts.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_contacts.php
+END
+php_get_campaigns.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_campaigns.html
+END
+php_get_message_stats.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_message_stats.html
+END
+php_add_campaign_blacklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_add_campaign_blacklist.php
+END
+php_get_links.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_get_links.php
+END
+php_add_contact.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/getresponse-devzone/!svn/ver/13/trunk/src/wp-content/themes/devzone/data/php/php_add_contact.html
+END

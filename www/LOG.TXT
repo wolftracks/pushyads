@@ -1,0 +1,199 @@
+2010-02-13 07:29
+-- THANKYOU --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+mid=y1614wej<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PGAGENT=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 07:40
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+email=tim2@ibmt.net<br>
+from=tim2@ibmt.net<br>
+meta_adtracking=pushysignup<br>
+meta_message=1001<br>
+name=David Crockett<br>
+unit=pushyads<br>
+add_url=http://pushyads.com/awbr_thankyou.php?mid=y1614wej<br>
+add_notes=71.70.248.120<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PGAGENT=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 07:50
+-- THANKYOU --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+mid=t1616gf<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PGAGENT=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 07:51
+-- THANKYOU --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+affid=1617-vdfp<br>
+email=tim3@ibmt.net<br>
+from=tim3@ibmt.net<br>
+listname=pushyads<br>
+member_id=t1616gf<br>
+meta_adtracking=pushysignup<br>
+meta_message=1<br>
+meta_required=email,name (awf_first),name (awf_last)<br>
+meta_split_id=<br>
+meta_tooltip=<br>
+meta_web_form_id=401205923<br>
+mid=t1616gf<br>
+name=Beany Andcecil<br>
+name_(awf_first)=Beany<br>
+name_(awf_last)=Andcecil<br>
+refid=paw1200<br>
+submit=Submit<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PGAGENT=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 10:26
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 10:27
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 10:29
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 10:29
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 10:30
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 10:30
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 10:31
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 10:31
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 10:32
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 13:07
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+email=tim2@ibmt.net<br>
+from=tim2@ibmt.net<br>
+meta_adtracking=pushysignup<br>
+meta_message=1001<br>
+name=Abe Lincoln<br>
+unit=pushyads<br>
+add_url=http://pushyads.com/awbr_thankyou.php?mid=jeb1614k<br>
+add_notes=71.70.248.120<br>
+custom_mid=jeb1614k<br>
+custom_affid=1630-jznb<br>
+custom_refid=paw1200<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>
+2010-02-13 13:09
+-- CONFIRMED --<br><br>Method: GET<br><br><br>
+-------- REQUEST VARS -- (Get/Post/Cookie/Files) ---<br>
+email=tim2@ibmt.net<br>
+from=tim2@ibmt.net<br>
+meta_adtracking=pushysignup<br>
+meta_message=1001<br>
+name=Abe Lincoln<br>
+unit=pushyads<br>
+add_url=http://pushyads.com/awbr_thankyou.php?mid=jeb1614k<br>
+add_notes=71.70.248.120<br>
+custom_mid=jeb1614k<br>
+custom_affid=1630-jznb<br>
+custom_refid=paw1200<br>
+PUSHYSIGNIN=tim@webtribune.com<br>
+PGAGENT=tim<br>
+GETPUSHY=0<br>
+PAREF=1201-x1rr<br>
+SVCAUTHOR=tim<br>
+PUSHY_ELITE_ADS_VIEWED=1288~1316~1317~1319~1360<br>
+<br><br><br>

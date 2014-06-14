@@ -1,0 +1,7 @@
+AuthUserFile   /usr/home/teligis/passwd
+AuthName       "Access Restricted"
+AuthType       Basic
+
+<Limit GET POST PUT>
+require valid-user
+</Limit>

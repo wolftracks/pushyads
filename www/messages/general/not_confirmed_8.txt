@@ -1,0 +1,34 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=Time's up in 24 hrs, %firstname%
+MESSAGE
+Hi %firstname%,
+
+So here's the deal. This has to be my last email to you, regarding the information you
+wanted several days ago when you signed up at http://pushyads.com
+
+I'm going to need to remove you from our notification list, never to be heard from
+again. If you want to finish the registration process, and gain access to our backoffice
+where we keep all the proprietary information on generating viral traffic, then go to
+
+     http://pushyads.com
+
+Scroll to the bottom of the page and fill out the form. It will take you through a couple
+more steps that will get you in the back office where you can set up multiple widgets
+to start generating traffic for your websites, and referral income.
+
+See you inside %firstname%. I'm looking forward to getting you the information.
+
+All the best,
+
+Mark
+PUSHY!'s right hand man,
+PushyAds.com
+
+
+
+To unsubscribe from this notice, click this link:
+  http://pushyads.com/new_registration_unsubscribe.php?mid=%mid%
+
+
+

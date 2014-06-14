@@ -1,0 +1,26 @@
+AuthUserFile   /password
+AuthName       "Access Restricted"
+AuthType       Basic
+
+<Limit GET POST PUT>
+require valid-user
+</Limit>
+
+SetOutputFilter DEFLATE
+
+RewriteEngine On
+#
+# RewriteCond %{REQUEST_FILENAME} !-f            - Do Not ReWrite if URI Refers to an Existing File
+# RewriteCond %{REQUEST_FILENAME} !-d            - Do Not ReWrite if URI Refers to an Existing Directory
+# RewriteRule RewriteRule ^(.+)$ /index.php/$1   - Send Everything Else to root level index.php
+#
+RewriteBase /
+
+# RewriteCond  %{HTTP_USER_AGENT}  ^Mozilla.*
+# RewriteRule ^(.+)$ /api/index.php/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.+)$ /
+# RewriteRule ^(.+)$ /index.php
+RewriteRule ^(.+)$ /mod-rewrite.php/$1

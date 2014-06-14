@@ -1,0 +1,33 @@
+FROMNAME=PushyAds Administration
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=24 hour notice %firstname%
+MESSAGE
+Hi %firstname%,
+
+You only have 24 hours before your ad disappears, and your 30 day 
+trial PUSHY membership expires.
+
+You can prevent this from happening by upgrading your membership right 
+now. We'll give you $422 to $1,271 worth in bonuses on top of the regular 
+benefits and exposure of your membership if you do.
+
+Just LOGIN at http://pushyads.com then click on the UPGRADE link at the 
+top right corner in your backoffice.
+
+To see the long list of bonuses you get with your upgraded membership, 
+click on MY STUFF inside your backoffice.
+
+Look inside "Introduction & Goodies" and scroll to the bottom and look 
+at what you'll get as a PRO or ELITE member.
+
+This is just about everything you need to launch a successful Internet 
+business, or grow your current business.
+
+See you inside %firstname%
+
+All the best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com
+

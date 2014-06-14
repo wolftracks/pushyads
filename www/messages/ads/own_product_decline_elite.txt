@@ -1,0 +1,30 @@
+FROMNAME=PUSHY!
+FROMEMAIL=noreply@pushyads.com
+SUBJECT=So sorry %firstname%
+MESSAGE
+So sorry %firstname%,
+
+But PUSHY! had to decline your ad.
+
+     Product Name: %product_name%
+
+Hey, I'm just the messenger so don't get mad at me. The following reason was given
+for the decline:
+
+      %reason%
+
+We'll be adding a feature that will enable you to correct the problem with your ads,
+right from inside your backoffice. But for now, we just need to decline them if they
+don't pass the muster.
+
+Go ahead and resubmit an ad that doesn't have one of the problems listed above.
+If you have questions, please take a look at our FAQ, matching the related issues.
+Otherwise, submit a question in our Support page.
+
+     http://pushyads.com
+
+The very best,
+
+Mark
+PUSHY!'s right hand man
+PushyAds.com

@@ -1,0 +1,40 @@
+
+<table align=center width=100% border=0 cellspacing=0 cellpadding=0 style="border: 2px dashed #FFCC00; padding: 20px;" bgcolor=#FFF8DE>
+  <tr>
+    <td>
+
+      <div align=center><span class="red bold size22 tahoma">Awesome <?php echo $firstname?>! Let's Go Get
+        <img src="http://pds1106.s3.amazonaws.com/images/pushy18.png" style="vertical-align: -1px"></span>&#8482
+      </div>
+
+      <p class=largetext>
+        <a href=javascript:openVideo('http://pds1106.s3.amazonaws.com/video/int/awards_all.flv') title="Video Introduction">
+        <img src="http://pds1106.s3.amazonaws.com/images/v_icon_login.png" width=130 style="float: left; margin: 0 20px 20px 0;"></a>
+
+        So here's the deal! As a <b>PRO</b>, we've given you enough power and functionality to get really dangerous ...&
+        <img src="http://pds1106.s3.amazonaws.com/images/pushy14.png" style="vertical-align: -1px"> too. I'm not kidding! Not dangerous in a way that will hurt you. It's just
+        that you now have more power than you're used to. Go ahead and watch the video and see what I mean. </p>
+
+      <p align=center class="red text" style="margin-top: 30px"><i><b>Pssssst! HINT! HINT!</b> The <b>Money</b> is in the "<b>My Ads</b>" and "<b>PUSHY</b>" Tabs!</i>
+
+    </td>
+  </tr>
+</table>
+<div align=center><img src="http://pds1106.s3.amazonaws.com/images/shadow.gif" width=600 height=31></div>
+
+<!------------------
+<table align=center width=100% border=0 cellspacing=0 cellpadding=0 style="border: 2px dashed #FFCC00; padding: 15px; margin-top: 20px;" bgcolor=#FFF8DE>
+  <tr>
+    <td><span class="red bold size18">This is a special placeholder <?php echo $firstname?> 
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=size10>102</span>
+
+       <p class=largetext><img src="http://pds1106.s3.amazonaws.com/images/video-anim3.png" style="float: left; margin: 0 20px 20px 0;">
+
+         ...while we set up the new format for the bonuses you get with each membership level. More great stuff will be added soon.
+         In the mean time, watch the video below, and check out all your bonuses.
+       </p>
+
+    </td>
+  </tr>
+</table>
+-------------------->

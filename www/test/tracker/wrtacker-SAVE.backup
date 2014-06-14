@@ -1,0 +1,63 @@
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO,MYSQL323' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+DROP TABLE IF EXISTS wtracker;
+CREATE TABLE wtracker (
+  member_id  varchar(20) NOT NULL default '',
+  tracker_id varchar(32) NOT NULL default '',
+  dt_1 varchar(10) default '',
+  w1_0 int(11) NOT NULL default '0',
+  w1_1 int(11) NOT NULL default '0',
+  w1_2 int(11) NOT NULL default '0',
+  w1_3 int(11) NOT NULL default '0',
+  w1_4 int(11) NOT NULL default '0',
+  w1_5 int(11) NOT NULL default '0',
+  w1_6 int(11) NOT NULL default '0',
+  dt_2 varchar(10) default '',
+  w2_0 int(11) NOT NULL default '0',
+  w2_1 int(11) NOT NULL default '0',
+  w2_2 int(11) NOT NULL default '0',
+  w2_3 int(11) NOT NULL default '0',
+  w2_4 int(11) NOT NULL default '0',
+  w2_5 int(11) NOT NULL default '0',
+  w2_6 int(11) NOT NULL default '0',
+  dt_3 varchar(10) default '',
+  w3_0 int(11) NOT NULL default '0',
+  w3_1 int(11) NOT NULL default '0',
+  w3_2 int(11) NOT NULL default '0',
+  w3_3 int(11) NOT NULL default '0',
+  w3_4 int(11) NOT NULL default '0',
+  w3_5 int(11) NOT NULL default '0',
+  w3_6 int(11) NOT NULL default '0',
+  dt_4 varchar(10) default '',
+  w4_0 int(11) NOT NULL default '0',
+  w4_1 int(11) NOT NULL default '0',
+  w4_2 int(11) NOT NULL default '0',
+  w4_3 int(11) NOT NULL default '0',
+  w4_4 int(11) NOT NULL default '0',
+  w4_5 int(11) NOT NULL default '0',
+  w4_6 int(11) NOT NULL default '0',
+  dt_5 varchar(10) default '',
+  w5_0 int(11) NOT NULL default '0',
+  w5_1 int(11) NOT NULL default '0',
+  w5_2 int(11) NOT NULL default '0',
+  w5_3 int(11) NOT NULL default '0',
+  w5_4 int(11) NOT NULL default '0',
+  w5_5 int(11) NOT NULL default '0',
+  w5_6 int(11) NOT NULL default '0',
+  UNIQUE KEY tracker_key(member_id,tracker_id)
+) TYPE=MyISAM;
+
+INSERT INTO wtracker VALUES ('c1257xh','a','2009-08-23',1,1,1,1,1,1,1,'2009-08-30',1,1,1,1,1,1,1,'2009-09-06',1,1,1,1,1,1,1,'2009-09-13',1,1,1,1,1,1,1,'2009-09-20',0,0,0,0,0,0,0);
+INSERT INTO wtracker VALUES ('c1257xh','b','2009-08-23',1,2,3,4,5,6,7,'2009-08-30',7,6,5,4,3,2,1,'2009-09-06',1,2,3,4,5,6,7,'2009-09-13',7,6,5,4,3,2,1,'2009-09-20',0,0,0,0,0,0,0);
+INSERT INTO wtracker VALUES ('c1257xh','c','2009-08-23',0,0,0,0,0,0,0,'2009-08-30',1,1,1,1,1,1,1,'2009-09-06',2,2,2,2,2,2,2,'2009-09-13',3,3,3,3,3,3,3,'2009-09-20',0,0,0,0,0,0,0);
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
